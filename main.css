@@ -195,7 +195,11 @@ html, body {
 body {
   background: #fff;
   color: #363636;
-  font: 18px/30px "Stem Text","Arial","Helvetica",sans-serif;
+  font: 18px/30px "Arial",sans-serif;
+}
+
+.fonts-loaded body {
+  font-family: "Stem Text","Arial",sans-serif;
 }
 
 a {
@@ -215,7 +219,6 @@ h1 {
   font-size: 70px;
   line-height: 90px;
   letter-spacing: 2px;
-  font-family: "Stem","Arial","Helvetica",sans-serif;
   font-weight: bold;
 }
 
@@ -223,7 +226,6 @@ h2 {
   font-size: 40px;
   line-height: 50px;
   letter-spacing: 1.5px;
-  font-family: "Stem","Arial","Helvetica",sans-serif;
 }
 
 h4 {

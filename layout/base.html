@@ -25,6 +25,11 @@
     <meta name="theme-color" content="#000000">
   </head>
   <body>
+    <script type="text/javascript">
+      if (sessionStorage.fontsLoaded) {
+        document.documentElement.classList.add('fonts-loaded');
+      }
+    </script>
     <div class="main">
     </div>
     <script src="/js/app.min.js" type="text/javascript"></script>
