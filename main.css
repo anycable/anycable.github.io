@@ -190,6 +190,7 @@ svg:not(:root){
 html, body {
   height: 100%;
   width: 100%;
+  min-width: 300px;
 }
 
 body {
@@ -243,7 +244,29 @@ h4 {
   display: none;
 }
 
-@media (max-width: 601px) {
+@media (max-width: 800px) and (min-width: 601px) {
+  body {
+    font-size: 3vw;
+    line-height: 5vw;
+  }
+
+  h1 {
+    font-size: 14vw;
+    line-height: 18vw;
+  }
+
+  h2 {
+    font-size: 5vw;
+    line-height: 7vw;
+  }
+
+  h4 {
+    font-size: 2vw;
+  }
+}
+
+
+@media (max-width: 600px) {
   body {
     font-size: 4vw;
     line-height: 6vw;
@@ -290,6 +313,15 @@ h4 {
   justify-content: flex-end;
   height: 100%;
   padding-right: 120px;
+}
+
+@media (max-width: 800px) and (min-width: 601px){
+
+  .illustration{}
+
+  .illustration--content{
+    padding-right: 60px;
+  }
 }
 
 #i-logo{
@@ -429,7 +461,15 @@ h4 {
   color: #9e9e9e;
   margin-left: 10px;
 }
-@media (max-width: 601px){
+@media (max-height: 600px), (max-width: 800px){
+
+  .slide{}
+
+  .slide--actions{
+    display: none;
+  }
+}
+@media (max-width: 600px){
 
   .slide{
     flex-direction: column-reverse;
@@ -451,7 +491,7 @@ h4 {
     width: 70vw;
   }
 }
-@media (min-width: 600px){
+@media (min-width: 601px){
 
   .slide--item{
     padding-top: 30vh !important;
@@ -481,6 +521,12 @@ h4 {
   height: 30px;
   padding: 0 10px;
   font-size: 14px;
+}
+@media (max-width: 800px) and (min-width: 601px){
+
+  .topnav{
+    left: 0;
+  }
 }
 .slide--chart{
   display: flex;
@@ -514,7 +560,7 @@ h4 {
 .slide--chart--caption.green{
   color: #7ed321;
 }
-@media (max-width: 601px){
+@media (max-width: 600px){
 
   .slide--chart--caption{
     font-size: 3vw;
@@ -571,10 +617,29 @@ h4 {
   left: 0;
 }
 
-@media (max-width: 601px){
+@media (max-width: 960px) and (min-width: 801px){
+
+  .main-slide{}
+
+  .main-slide--title{
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 800px) and (min-width: 601px){
+
+  .main-slide{}
+
+  .main-slide--title{
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 600px){
 
   .main-slide{
     flex-direction: column;
+    margin-bottom: 60px;
   }
 
   .main-slide--logo svg{
@@ -590,7 +655,7 @@ h4 {
 .ac-slide--image{
   margin-top: 90px;
 }
-@media (max-width: 601px){
+@media (max-width: 600px){
 
   .ac-slide{}
 
@@ -638,7 +703,7 @@ h4 {
   top: 0;
   line-height: 10px;
 }
-@media (max-width: 601px){
+@media (max-width: 600px){
 
   .footer{
     flex-direction: column;
