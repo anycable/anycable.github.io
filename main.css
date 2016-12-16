@@ -324,79 +324,79 @@ h4 {
   }
 }
 
-#i-logo{
+.i-logo{
   transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.frame-1 #i-logo{
+.frame-1 .i-logo{
   transform: scale(2) translate(33px, 80px);
 }
 
-.frame-2 #i-logo{
+.frame-2 .i-logo{
   transform: scale(1) translate(106px, 0);
 }
 
-.frame-3 #i-logo{
+.frame-3 .i-logo{
   transform: scale(1) translate(106px, 380px);
 }
 
-.frame-3 #i-logo .i-leg, .frame-3 #i-logo .i-leg{
+.frame-3 .i-logo .i-leg, .frame-3 .i-logo .i-leg{
   transition: opacity 500ms;
   opacity: 0;
 }
 
-.frame-4 #i-logo{
+.frame-4 .i-logo{
   transform: scale(2) translate(33px, 40px);
 }
 
-#i-chart{
+.i-chart{
   transition: transform 500ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-#i-chart .i-arrow{
+.i-chart .i-arrow{
   transition: opacity 500ms;
   opacity: 0;
   transition-delay: 250ms;
 }
 
-#i-chart #i-anycable-text{
+.i-chart .i-anycable-text{
   display: none;
   transition-delay: 250ms;
 }
 
-#i-chart #i-question{
+.i-chart .i-question{
   transition: transform 400ms cubic-bezier(0.215, 0.61, 0.355, 1);
 }
 
-.frame-1 #i-chart, .frame-4 #i-chart{
+.frame-1 .i-chart, .frame-4 .i-chart{
   transform: translate(0, 1000px);
 }
 
-.frame-2 #i-chart{
+.frame-2 .i-chart{
   transform: translate(0, 280px);
 }
 
-.frame-3 #i-chart{
+.frame-3 .i-chart{
   transform: translate(0, 280px);
 }
 
-.frame-3 #i-chart .i-ws-box{
+.frame-3 .i-chart .i-ws-box{
   stroke: #363636;
 }
 
-.frame-3 #i-chart #i-ws-logo{
+.frame-3 .i-chart .i-ws-logo{
   fill: #f64242;
 }
 
-.frame-3 #i-chart .i-arrow{
+.frame-3 .i-chart .i-arrow{
   opacity: 1;
 }
 
-.frame-3 #i-chart #i-anycable-text{
+.frame-3 .i-chart .i-anycable-text{
   display: block;
 }
 
-.frame-3 #i-chart #i-question{
+.frame-3 .i-chart .i-question{
   transform: translateY(450px);
 }
 .slide{
