@@ -174,8 +174,8 @@ svg:not(:root){
   text-transform: uppercase;
   padding: 0 20px;
   text-align: center;
-  background: #ff5e5e;
-  transition: opacity 200ms;
+  background: #f64343;
+  transition: opacity 200ms, background-color 200ms, color 200ms;
   color: white;
   font-weight: bold;
   font-size: 16px;
@@ -187,6 +187,12 @@ svg:not(:root){
   white-space: nowrap;
   will-change: opacity;
 }
+F
+
+  .btn.small .btn--icon:first-child{
+  margin-left: -5px;
+  margin-right: 5px;
+}
 .btn:hover, .btn:focus{
   opacity: 0.8;
   transition: none;
@@ -197,29 +203,44 @@ svg:not(:root){
 .btn.outline{
   background-color: transparent;
   color: #f64343;
-  padding: 0 15px;
+  padding: 0 12px;
   height: 30px;
+  text-transform: none;
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 15px;
 }
 .btn.outline:visited, .btn.outline:hover, .btn.outline:active{
   color: #f64343;
   background-color: transparent;
 }
-.btn.secondary{
-  background-color: #c3c3c3;
-  color: #363636;
-}
-.btn.secondary:visited, .btn.secondary:hover, .btn.secondary:active{
-  color: #363636;
-  background-color: #c3c3c3;
-}
-.btn.small{
-  height: 30px;
-  padding: 0 10px;
-  font-size: 14px;
-}
-.btn.small .btn--icon{
+.btn.outline .btn--icon:first-child{
   margin-left: -5px;
   margin-right: 5px;
+}
+.btn.outline .btn--icon:last-child{
+  margin-left: 5px;
+  margin-right: -5px;
+}
+.btn.secondary{
+  background: rgba(243, 43, 43, 0.2);
+  color: #f64343;
+}
+.btn.secondary:visited, .btn.secondary:hover, .btn.secondary:active{
+  background: rgba(243, 43, 43, 0.2);
+  color: #f64343;
+}
+.btn.light{
+  background: #ff5e5e;
+}
+.btn.small{
+  height: 40px;
+  padding: 0 15px;
+  font-size: 14px;
+}
+.btn.small .btn--icon:last-child{
+  margin-left: 5px;
+  margin-right: -5px;
 }
 @media (hover: none){
 
@@ -250,7 +271,12 @@ svg:not(:root){
   width: 20px;
   height: 20px;
   line-height: 1;
+}
+.btn--icon:first-child{
   margin-right: 16px;
+}
+.btn--icon:last-child{
+  margin-left: 16px;
 }
 .btn--text{
   line-height: 1;
@@ -282,11 +308,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #ff5e5e
+  color: #f64343
 }
 
 a:visited, a:active{
-  color: #ff5e5e;
+  color: #f64343;
 }
 
 a:hover{
@@ -852,6 +878,9 @@ h4 {
     background: none;
   }
 }
+.slide.red{
+  background-color: #f64343;
+}
 .slide--block{
   margin-top: 60px;
 }
@@ -910,6 +939,10 @@ h4 {
   .slide--item.fullscreen.with-padding h2{
     padding: 0;
   }
+}
+.slide--item.red{
+  background-color: #f64343;
+  color: #fff;
 }
 .slide--item.try-it-now{
   padding-bottom: 0;
@@ -977,7 +1010,7 @@ h4 {
   }
 }
 .slide--value--number{
-  color: #ff5e5e;
+  color: #f64343;
   font-size: 100px;
   font-weight: bold;
   line-height: 80px;
@@ -1097,6 +1130,10 @@ h4 {
     justify-content: flex-start;
   }
 
+  .slide.red{
+    margin-top: 40px;
+  }
+
   .slide--item{
     width: auto;
     border: none;
@@ -1114,6 +1151,12 @@ h4 {
   .slide--item h2.with-images{
     margin: 0 -10vw;
     padding: 40px 10vw 0;
+  }
+
+  .slide--item.red{}
+
+  .slide--item.red h2{
+    background-image: none;
   }
 
   .slide--text{
@@ -1173,6 +1216,15 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+}
+.main-slide--btn-cta.is-inverted{}
+.main-slide--btn-cta.is-inverted .topnav--btn{
+  background: #fff;
+  color: #f64343;
+}
+.main-slide--btn-cta.is-inverted .topnav--btn.secondary{
+  background: #ff5e5e;
+  color: #fff !important;
 }
 @media (max-width: 1320px){
 
@@ -1275,7 +1327,7 @@ h4 {
   pointer-events: auto;
 }
 .topnav--title{
-  color: #ff5e5e;
+  color: #f64343;
   font-size: 24px;
   font-weight: bold;
   letter-spacing: 2px;
@@ -1353,8 +1405,16 @@ h4 {
 }
 @media (max-width: 800px){
 
+  .slide--item.red .features--list{
+    background-image: none;
+  }
+
   #howitworks .features--list{
     margin-top: 350px;
+  }
+
+  #pro .features--list{
+    margin-top: 0px;
   }
 
   #cloud .features--list{
@@ -1380,7 +1440,7 @@ h4 {
   margin-right: 30px;
   flex-shrink: 0;
   font-weight: bold;
-  background: #ff5e5e;
+  background: #f64343;
   color: #fff;
 }
 @media (max-width: 1080px){
@@ -1392,6 +1452,10 @@ h4 {
         height: 4vw;
         line-height: 4vw; */
   }
+}
+.features--footer{
+  margin-left: 60px;
+  display: inline-block;
 }
 .slide--feedback{
   background: #f3f3f3;
@@ -1485,7 +1549,7 @@ h4 {
 }
 .contact-form .error{
   display: none;
-  color: #ff5e5e;
+  color: #f64343;
 }
 .contact-form.is-error .error{
   display: block;
@@ -1546,6 +1610,7 @@ h4 {
 .form--control .btn{
   display: block;
   height: 50px;
+  line-height: 56px;
 }
 .form--honeypot{
   position: absolute;
