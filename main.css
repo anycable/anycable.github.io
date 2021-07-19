@@ -355,6 +355,10 @@ h2 {
   font-weight: bold;
 }
 
+h3 {
+  font-weight: normal;
+}
+
 h4 {
   font-size: 18px;
   font-weight: bold;
@@ -451,7 +455,7 @@ h4 {
   left: 0;
   bottom: 0;
   z-index: 0;
-  width: 50vw;
+  width: calc(50vw - ((100vw - 100%)/2));
   /* use viewport because of the fixed position (percentage could be incorrect) */
   box-sizing: border-box;
   border-right: solid 1px #e3e3e3;
@@ -1146,8 +1150,8 @@ h4 {
   left: 0;
   bottom: 0;
   z-index: 0;
-  width: 50vw;
-  /* use viewport because of the fixed position (percentage could be incorrect) */
+  width: calc(50vw - ((100vw - 100%)/2));
+  /* use viewport because of the fixed position (percentage could be incorrect); https://stackoverflow.com/a/34884924 */
   box-sizing: border-box;
   border-right: solid 1px #9e9e9e;
 }
@@ -1254,6 +1258,14 @@ h4 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
+  flex-wrap: wrap;
+}
+.main-slide--btn-cta{
+  padding: 18px;
+  background-color: #f3f3f3;
+}
+.main-slide--btn-cta .btn{
+  margin-top: 18px;
 }
 .main-slide--btn-cta.is-inverted{}
 .main-slide--btn-cta.is-inverted .topnav--btn{
@@ -1269,9 +1281,8 @@ h4 {
   .main-slide{}
 
   .main-slide--buttons-secondary{
-    flex-direction: column;
     align-items: flex-start;
-    margin-left: -15px;
+    flex-wrap: wrap-reverse;
   }
 }
 @media (max-width: 1080px) and (min-width: 801px){
