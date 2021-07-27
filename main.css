@@ -1896,5 +1896,97 @@ h4 {
   overflow-y: scroll;
   border: 1px black solid;
 }
+.blog{}
+.blog--nav{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  right: 0;
+  z-index: 30;
+  display: flex;
+  box-sizing: border-box;
+  padding: 30px;
+}
+.blog--nav--link{
+  display: flex;
+  align-items: center;
+}
+.blog--nav--arrow{
+  margin-right: 8px !important;
+}
+.blog--nav--text{
+  color: black;
+  font-size: 18px;
+}
+.blog--content{
+  margin: 60px 0 30px 0;
+  padding: 0 15em;
+  font-size: 20px;
+}
+@media (max-width: 1080px){
+
+  .blog--content{}
+
+  .blog--content{
+    padding: 0 10em;
+  }
+}
+@media (max-width: 800px){
+
+  .blog--content{}
+
+  .blog--content{
+    padding: 0 10%;
+  }
+}
+.blog--content h1{
+  text-align: center;
+  text-transform: none;
+  font-size: 50px;
+  line-height: 60px;
+}
+.blog--content .date{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 32px;
+}
+.blog--content .intro{
+  font-size: 23px;
+  font-weight: 700;
+}
+.blog--content .divider{
+  border-bottom: 4px solid #f64343;
+  display: block;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 30px;
+  height: 0;
+}
+.blog--content p{
+  padding: 0 0 1em 0;
+}
+.blog--content blockquote{
+  padding: 1em 2em 0 2em;
+  background: #f3f3f3;
+  border-radius: 1em;
+  font-weight: 700;
+  margin-bottom: 1em;
+  position: relative;
+}
+.blog--content blockquote::before{
+  content: url('data:image/svg+xml; utf8, <svg fill="none" height="4" viewBox="0 0 80 4" width="80" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h80v4h-80z" fill="%23f64343"/></svg>');
+  color: #f64343;
+  font-weight: bold;
+  position: absolute;
+  font-size: 10px;
+  left: calc(-40px - 1em);
+}
+@media (max-width: 1080px){
+
+  .blog--content blockquote::before{
+    left: initial;
+    position: relative;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */
