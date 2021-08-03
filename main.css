@@ -824,10 +824,10 @@ h4 {
   background-color: #f64343;
   padding-top: 90px;
 }
-.slide.red a{
+.slide.red a:not(.btn){
   color: #ffd700;
 }
-.slide.red a:hover{
+.slide.red a:not(.btn):hover{
   text-decoration: underline;
   opacity: inherit;
 }
