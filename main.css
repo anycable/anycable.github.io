@@ -824,6 +824,13 @@ h4 {
   background-color: #f64343;
   padding-top: 90px;
 }
+.slide.red a{
+  color: #ffd700;
+}
+.slide.red a:hover{
+  text-decoration: underline;
+  opacity: inherit;
+}
 @media (max-width: 800px){
 
   .slide.red{}
