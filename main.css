@@ -2372,6 +2372,44 @@ h4{
 
     z-index: 25;
 }
+.pro--price{
+
+    background: #fff;
+
+    color: #f64343;
+
+    border-radius: 2px;
+
+    font-weight: bold;
+
+    padding: 2px;
+}
+.pro--price.old{
+
+    color: #fff;
+
+    background: #ff5e5e;
+
+    position: relative;
+}
+.pro--price.old::after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+
+    left: -5%;
+
+    width: 110%;
+
+    height: 2px;
+
+    background: #fff;
+
+    transform: rotate(-15deg);
+}
 .footer{
 
     width: 100%;
