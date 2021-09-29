@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AnyCable: build lightning fast, reliable real-time applications with Ruby and Rails</title>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+    <link rel="stylesheet" href="/main.css"><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WPCXB7B');</script>
+<!-- End Google Tag Manager -->
+
+    <meta name="description" content="Add real-time features to your Ruby on Rails application without ever having to switch to another platform or language.">
+    <meta name="keywords" content="anycable, ruby on rails, rails, actioncable, websocket, grpc, ruby, erlang, golang">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#000000"><!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="AnyCable: build lightning fast, reliable real-time applications with Ruby and Rails">
+    <meta itemprop="description" content="Add real-time features to your Ruby on Rails application without ever having to switch to another platform or language. Stay productive by writing clean, maintainable code in Ruby while being sure that your application scales without costing a fortune to run it.">
+    <meta itemprop="image" content="https://anycable.io/images/share.png"><!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@any_cable">
+    <meta name="twitter:title" content="AnyCable: build lightning fast, reliable real-time applications with Ruby and Rails">
+    <meta name="twitter:description" content="Add real-time features to your Ruby on Rails application without ever having to switch to another platform or language.">
+    <meta name="twitter:creator" content="@any_cable">
+    <meta name="twitter:image" content="https://anycable.io/images/share.png"><!-- Open Graph data -->
+    <meta property="og:title" content="AnyCable: build lightning fast, reliable real-time applications with Ruby and Rails">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://anycable.io/">
+    <meta property="og:image" content="https://anycable.io/images/share.png">
+    <meta property="og:description" content="Add real-time features to your Ruby on Rails application without ever having to switch to another platform or language. Stay productive by writing clean, maintainable code in Ruby while being sure that your application scales without costing a fortune to run it.">
+    <meta property="og:site_name" content="AnyCable"><script type=application/ld+json>
+  {
+    "@context": "http://schema.org/",
+    "@type": "WebSite",
+    "name": "AnyCable",
+    "url": "https://anycable.io"
+  }
+</script>
+<script type=application/ld+json>
+  {
+    "@context": "http://schema.org/",
+    "@type": "SoftwareSourceCode",
+    "image": "https://anycable.io/images/logos/anycable.png",
+    "name": "AnyCable",
+    "description": "Add real-time features to your Ruby on Rails application without ever having to switch to another platform or language. Stay productive by writing clean, maintainable code in Ruby while being sure that your application scales without costing a fortune to run it.",
+    "codeRepository": "https://github.com/anycable/anycable"
+  }
+</script>
+<script type=application/ld+json>
+  {
+    "@context": "http://schema.org/",
+    "@type": "SoftwareApplication",
+    "image": "https://anycable.io/images/logos/anycable.png",
+    "name": "AnyCable",
+    "applicationCategory": "Web",
+    "operatingSystem": "Any"
+  }
+</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/a11y-light.min.css" integrity="sha512-WDk6RzwygsN9KecRHAfm9HTN87LQjqdygDmkHSJxVkVI7ErCZ8ZWxP6T8RvBujY1n2/E4Ac+bn2ChXnp5rnnHA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body><!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPCXB7B"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="main">
+      <nav class="blog--nav"><a class="btn outline" href="/blog"><span class="btn--icon blog--nav--arrow"><svg fill="none" height="16" viewBox="0 0 10 16" width="10" xmlns="http://www.w3.org/2000/svg">
+  <path d="m9 1-7 7 7 7" stroke="#f32b2b" stroke-width="2" />
+</svg>
+</span><strong class="btn--text blog--nav--text">Other Posts</strong></a>
+        <div class="blog--nav--section"><a class="btn small topnav--btn gtm-link" href="/#getting-started" data-gtm-category="blogMenu" data-gtm-action="tryIt"><span class="btn--icon"><svg height="20" viewBox="0 0 18 20" width="18" 
+  xmlns="http://www.w3.org/2000/svg">
+  <path d="m2.991069.296055 13.963956 7.966519c.959416.547352 1.293459 1.768829.746107 2.728245-.177431.311007-.435101.568677-.746107.746107l-13.963956 7.96652c-.959416.547352-2.180893.213309-2.728245-.746107-.172239-.301906-.262824-.643488-.262824-.99107v-15.933038c0-1.10457.895431-2 2-2 .347582 0 .689164.090585.991069.262824z" fill="currentColor" fill-rule="evenodd"/>
+</svg>
+</span><span class="btn--text">Try it now</span></a><a class="btn small topnav--btn secondary gtm-link" href="https://docs.anycable.io" target="_blank" data-gtm-category="blogButton" data-gtm-action="docs"><span class="btn--icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 0H14V2.8C14 3.9201 14 4.48016 14.218 4.90798C14.4097 5.28431 14.7157 5.59027 15.092 5.78201C15.5198 6 16.0799 6 17.2 6H20V16.8C20 17.9201 20 18.4802 19.782 18.908C19.5903 19.2843 19.2843 19.5903 18.908 19.782C18.4802 20 17.9201 20 16.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V3.2C4 2.0799 4 1.51984 4.21799 1.09202C4.40973 0.715695 4.71569 0.409734 5.09202 0.217987C5.51984 0 6.0799 0 7.2 0ZM0 3.2C0 2.0799 0 1.51984 0.217987 1.09202C0.409734 0.715695 0.715695 0.409734 1.09202 0.217987C1.51984 0 2.0799 0 3.2 0H4.2C3.0799 0 2.51984 0 2.09202 0.217987C1.71569 0.409734 1.40973 0.715695 1.21799 1.09202C1 1.51984 1 2.0799 1 3.2V16.8C1 17.9201 1 18.4802 1.21799 18.908C1.40973 19.2843 1.71569 19.5903 2.09202 19.782C2.51984 20 3.0799 20 4.2 20H3.2C2.0799 20 1.51984 20 1.09202 19.782C0.715695 19.5903 0.409734 19.2843 0.217987 18.908C0 18.4802 0 17.9201 0 16.8V3.2ZM2.21799 1.09202C2 1.51984 2 2.0799 2 3.2V16.8C2 17.9201 2 18.4802 2.21799 18.908C2.40973 19.2843 2.71569 19.5903 3.09202 19.782C3.51984 20 4.0799 20 5.2 20H6.2C5.0799 20 4.51984 20 4.09202 19.782C3.71569 19.5903 3.40973 19.2843 3.21799 18.908C3 18.4802 3 17.9201 3 16.8V3.2C3 2.0799 3 1.51984 3.21799 1.09202C3.40973 0.715695 3.71569 0.409734 4.09202 0.217987C4.51984 0 5.0799 0 6.2 0H5.2C4.0799 0 3.51984 0 3.09202 0.217987C2.71569 0.409734 2.40973 0.715695 2.21799 1.09202ZM15.7071 0C15.3166 0 15 0.316582 15 0.707107V3.4C15 3.96005 15 4.24008 15.109 4.45399C15.2049 4.64215 15.3578 4.79513 15.546 4.89101C15.7599 5 16.0399 5 16.6 5H19.2929C19.6834 5 20 4.68342 20 4.29289C20 4.10536 19.9255 3.9255 19.7929 3.79289L16.2071 0.207107C16.0745 0.0744985 15.8946 0 15.7071 0Z" fill="currentColor"/>
+</svg>
+</span><span class="btn--text">Docs</span></a></div>
+      </nav>
+      <div class="blog--content"><h1>AnyCable PRO:<br>JWT identification and “hot streams”</h1>
+<p class="date">September 27, 2021</p>
+<p class="intro">We’ve just launched the final <a href="https://anycable.io/#pro">AnyCable PRO</a> release, bringing advanced features and a 40% lower memory footprint to AnyCable—the product for building real-time features for Ruby on Rails apps. The two brand-new PRO features we’re presenting in the post, <a href="https://docs.anycable.io/anycable-go/jwt_identification">JWT identification</a> and <a href="https://docs.anycable.io/anycable-go/signed_streams">signed streams support</a>, arrived from the Early Access program. We asked its adopters to share how they use <em>cables</em> and which features they would like us to provide out of the box. They might seem unrelated to each other at first glance, but when used together, they have the potential to bring about a huge performance boost.</p>
+<div class="divider"></div>
+<h2>Dealing with authentication</h2>
+<p>Amongst all the requested features, one of the leading requests was a “token-based authentication”. AnyCable relies on the Action Cable API (although it can work outside of Rails), and most Action Cable applications utilize cookies as an authentication mechanism (either directly or via sessions). The main benefit of cookie-based authentication is simplicity—it just works. However, there are some drawbacks:</p>
+<ul>
+<li>Authenticating non-web clients (e.g., mobile apps) is cumbersome.</li>
+<li>Rails API-only apps usually do not use cookies for web clients authentication (they use tokens).</li>
+<li>WebSockets do not offer CORS support and, thus, are <strong>vulnerable to cross-site request forgery</strong> (or <a href="https://portswigger.net/web-security/websockets/cross-site-websocket-hijacking">cross-site WebSocket hijacking</a>).</li>
+</ul>
+<p>Using tokens could certainly help us solve these problems—but what’s the catch? Well, we’d have to build everything ourselves, both the server, and the client side (and good luck actually finding a library or gem which makes this process easier instead of harder).</p>
+<p>While I was thinking about how to incorporate tokens into AnyCable, I realized that we could also leverage this feature to improve performance. Tokens could also be made to carry <strong>identification</strong> information, and therefore could be used instead of calling an RPC server (<code>Authenticate</code> method).</p>
+<p>Let’s recall how Action Cable (and AnyCable) work in the context of authentication and identification.</p>
+<p>Whenever a new connection opens, the <code>ApplicationCable::Connection#connect</code> method is called. This is the place where you can reject the connection (<a href="https://api.rubyonrails.org/classes/ActionCable/Connection/Authorization.html#method-i-reject_unauthorized_connection"><code>#reject_unathorized_connection</code></a>) and where you configure the so-called <em>connection identifiers</em> (<a href="https://api.rubyonrails.org/v6.1.4/classes/ActionCable/Connection/Identification/ClassMethods.html#method-i-identified_by"><code>.identifed_by</code></a>). The identifiers represent the client state which could be used by channels (e.g., <code>current_user</code> or <code>current_tenant</code>). AnyCable obtains the identifiers during the <code>Authenticate</code> call and passes along all subsequent requests (in a <a href="https://github.com/anycable/anycable-rails/blob/master/lib/anycable/rails/actioncable/connection/serializable_identification.rb">serialized form</a>).</p>
+<p>To sum everything up, all we need from the <code>#connect</code> method is to accept or reject the connection and populate the identifiers. And we can encapsulate all this logic within a single <a href="https://jwt.io">JWT</a> token!</p>
+<p>This is how it might look written in pure Ruby. First, let’s create a helper to build a connection URL with a token:</p>
+<pre><code class="hljs language-ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ApplicationHelper</span></span>
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">action_cable_with_jwt_meta_tag</span><span class="hljs-params">(**identifiers)</span></span>
+    <span class="hljs-comment"># Token TTL (5 minutes)</span>
+    exp = Time.now.to_i + <span class="hljs-number">60</span>*<span class="hljs-number">5</span>
+    <span class="hljs-comment"># JWT payload.</span>
+    <span class="hljs-comment"># The #serialize_identifiers is responsible for serializing objects into strings</span>
+    <span class="hljs-comment"># (AnyCable uses GlobalID for that)</span>
+    payload = {<span class="hljs-symbol">ext:</span> serialize_identifiers(identifiers), <span class="hljs-symbol">exp:</span> exp}
+
+    token = JWT.encode payload, JWT_ENCRYPTION_KEY, <span class="hljs-string">&quot;HS256&quot;</span>
+
+    base_url = ActionCable.server.config.url <span class="hljs-params">||</span> ActionCable.server.config.mount_path
+    tag <span class="hljs-string">&quot;meta&quot;</span>, <span class="hljs-symbol">name:</span> <span class="hljs-string">&quot;action-cable-url&quot;</span>, <span class="hljs-symbol">content:</span> <span class="hljs-string">&quot;<span class="hljs-subst">#{base_url}</span>?token=<span class="hljs-subst">#{token}</span>&quot;</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>Now we can add it to our layout:</p>
+<pre><code class="hljs language-erb"><span class="xml">&lt;%=</span><span class="ruby"> action_cable_with_jwt_meta_tag(<span class="hljs-symbol">current_user:</span> current_user) </span><span class="xml">%&gt; would render:
+# =&gt; <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;action-cable-url&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;ws://demo.anycable.io/cable?token=eyJhbGciOiJIUzI1NiJ9....EWCEzziOx3sKyMoNzBt20a3QvhEdxJXCXaZsA-f-UzU&quot;</span> /&gt;</span>
+</span></code></pre>
+<p>Finally, we need to verify the token and extract the identifiers in the <code>#connect</code> method:</p>
+<pre><code class="hljs language-ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">ApplicationCable</span></span>
+  <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Connection</span> &lt; ActionCable::Connection::<span class="hljs-title">Base</span></span>
+    identified_by <span class="hljs-symbol">:current_user</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">connect</span></span>
+      token = request.params[<span class="hljs-symbol">:token</span>]
+
+      decoded_token = JWT.decode token, JWT_ENCRYPTION_KEY, <span class="hljs-literal">true</span>, { <span class="hljs-symbol">algorithm:</span> <span class="hljs-string">&quot;HS256&quot;</span> }
+      <span class="hljs-comment"># The #deserialize_identifiers method is a counterpart to #serialize_identifiers</span>
+      <span class="hljs-comment"># and is responsible for converting strings back to objects</span>
+      identifiers = deserialize_identifiers(JSON.parse(decoded_token[<span class="hljs-string">&quot;ext&quot;</span>]))
+
+      <span class="hljs-comment"># Populate identifiers</span>
+      identifiers.each <span class="hljs-keyword">do</span> <span class="hljs-params">|k, v|</span>
+        <span class="hljs-keyword">self</span>.public_send(<span class="hljs-string">&quot;<span class="hljs-subst">#{k}</span>=&quot;</span>, v)
+      <span class="hljs-keyword">end</span>
+    <span class="hljs-keyword">rescue</span> JWT::DecodeError
+      reject_unauthorized_connection
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>This doesn’t look like such a simple solution, after all 😕 If you continue staring at this piece of code for a bit longer, you might notice that this implementation contains nothing specific to a particular application: we retrieve a token, verify it, and extract the identifiers. If this is the case, why can’t we just re-implement this in Go? Well, we can!</p>
+<p>This is how AnyCable Go PRO JWT identification works:</p>
+<ul>
+<li>A client passes a token along with the connection request (via a query string or a header).</li>
+<li>A Go server retrieves a header, verifies its signature and TTL, and rejects the connection if token is invalid.</li>
+<li>If the token is valid, we extract the identifiers, store them in the connection metadata and finalize the handshake (by sending a <code>{&quot;type&quot;:&quot;welcome&quot;}</code> message).</li>
+</ul>
+<p>And we don’t have to perform any RPC calls! Let’s see how it affects the connection time:</p>
+<figure class="blog--figure">
+<video loop="loop" muted="muted" autoplay="autoplay" playsinline="true" width="1221" height="800" class="blog--media">
+  <source src="./connect-benchmark.h264.mp4" ttype="video/mp4; codecs=avc1.4D401E,mp4a.40.2">
+</video>
+</figure>
+<p>It’s more than 2x faster now! And even more importantly, we’ve reduced the stress on the RPC server. This could be especially useful during <em>connection avalanches</em>.</p>
+<blockquote>
+<p>JWT identification allows you to standardize the authentication flow for WebSockets, protects from cross-site WebSocket hijacking and results in a performance boost!</p>
+</blockquote>
+<p>Luckily, you don’t need to write any of the code above yourself, even the token generation part is done for you via a little companion gem called <a href="https://github.com/anycable/anycable-rails-jwt">anycable-rails-jwt</a>.</p>
+<p>The only question left: how can we gracefully handle token expiration? AnyCable Go uses a specific disconnect message to distinguish expiration from unauthorized access (sends a <code>{&quot;type&quot;:&quot;disconnect&quot;,&quot;reason&quot;:&quot;token_expired&quot;}</code> message). You can use it to refresh the token. Again, we’re glad to provide an out-of-the-box solution for this in our brand new <a href="https://github.com/anycable/anycable-client#refreshing-authentication-tokens">anycable-client-refresh-tokens</a>!</p>
+<h2>“Hot-wiring” Action Cable subscriptions</h2>
+<p>We’ve collected more than a hundred responses from Action Cable and AnyCable users around the world, and we found that a good portion of them build applications on top of <a href="https://hotwired.dev">Hotwire</a> or <a href="https://docs.stimulusreflex.com">Stimulus Reflex</a> (+ <a href="https://cableready.stimulusreflex.com">CableReady</a>). This is pretty cool: <a href="https://noti.st/palkan/eVl0xO/frontendless-rails-frontend"><em>frontendless</em> Rails frontend</a> is gaining more and more traction!</p>
+<p>What can AnyCable do for these users? Let’s take a look at how Turbo Streams work with Rails.</p>
+<p>Let’s start with the <a href="https://github.com/hotwired/turbo-rails">turbo-rails</a> gem, which integrates Action Cable with Hotwire. You just need to drop a helper into your template to start consuming streams:</p>
+<pre><code class="hljs language-erb"><span class="xml">&lt;%=</span><span class="ruby"> turbo_stream_from some_model </span><span class="xml">%&gt;
+</span></code></pre>
+<p>The helper adds a <a href="https://github.com/hotwired/turbo/blob/main/src/elements/stream_element.ts"><code>&lt;turbo-cable-stream-source&gt;</code> element</a>, which initiates an Action Cable subscription. The corresponding server-side code is as follows:</p>
+<pre><code class="hljs language-ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Turbo::StreamsChannel</span> &lt; ActionCable::Channel::<span class="hljs-title">Base</span></span>
+  extend Turbo::Streams::Broadcasts, Turbo::Streams::StreamName
+
+  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">subscribed</span></span>
+    <span class="hljs-keyword">if</span> verified_stream_name = <span class="hljs-keyword">self</span>.<span class="hljs-keyword">class</span>.verified_stream_name(params[<span class="hljs-symbol">:signed_stream_name</span>])
+      stream_from verified_stream_name
+    <span class="hljs-keyword">else</span>
+      reject
+    <span class="hljs-keyword">end</span>
+  <span class="hljs-keyword">end</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>The <code>#verified_stream_name</code> method uses an <a href="https://api.rubyonrails.org/v6.1.4/classes/ActiveSupport/MessageVerifier.html"><code>ActiveSupport::MessageVerifier</code></a> to decode and verify the stream name. The subscription is rejected if the signed stream name is invalid.</p>
+<p>Structurally speaking, the code above is the same as the example we wrote for JWT identification. What does this mean? It means that, <strong>once again</strong>, we can “move” the implementation to an AnyCable Go server and <strong>create subscriptions without touching RPC</strong>.</p>
+<p>This is exactly what we did as a part of the <a href="https://docs.anycable.io/anycable-go/signed_streams">signed streams</a> feature. Further, we did it not only for Turbo Streams, but for CableReady as well (since its <a href="https://github.com/stimulusreflex/cable_ready/blob/master/app/channels/cable_ready/stream.rb"><code>#stream_from</code> implementation</a> is nearly the same).</p>
+<blockquote>
+<p>By combining JWT identification with signed streams, it’s possible to completely avoid running an RPC server, in case you only need to use Hotwire or CableReady functionality.</p>
+</blockquote>
+<p>Below is a visualization of RPC server metrics during Hotwire benchmarks with four different configurations (denoted by blue markers), from left to right: baseline (AnyCable PRO without any features enabled), with JWT identification, with signed streams, and with both features enabled at the same time.</p>
+<figure class="blog--figure">
+  <img class="blog--media" title="AnyCable metrics when running with and without JWT and 'hot' streams" src="./grafana.png" width="1364" height="624">
+</figure>
+<p>It shouldn’t come as any surprise that the last one shows zeros for RPC metrics—it wasn’t impacted at all. We can also note that CPU usage with AnyCable Go is the lowest in the fourth scenario—<strong>dealing with tokens and signatures is “cheaper” than performing gRPC calls</strong>.</p>
+<div class="divider"></div>
+<p>We’ve added these features in response to your needs. We believe that, thanks to user feedback, we’re able to build a much better product together. Who knows? Maybe your request will be the next feature we add! Ready to get started? Give <a href="/">AnyCable a try today</a>!</p>
+
+      </div>
+      <div class="footer">
+        <div class="footer--block">
+          <h3>Project</h3>
+          <p class="footer--list--item"><a href="/">Website</a></p>
+          <p class="footer--list--item"><a href="/blog">Blog</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://github.com/anycable/anycable" rel="noreferrer noopener">GitHub</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://rubygems.org/gems/anycable" rel="noreferrer noopener">RubyGems</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://hub.docker.com/u/anycable" rel="noreferrer noopener">DockerHub</a></p>
+        </div>
+        <div class="footer--block">
+          <h3>Case Studies</h3>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="/case-studies/callbell">A call for Pro: Callbell</a></p>
+        </div>
+        <div class="footer--block">
+          <h3>Community</h3>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://gitter.im/anycable/Lobby" rel="noreferrer noopener">Gitter</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://twitter.com/any_cable" rel="noreferrer noopener">Twitter</a></p>
+        </div>
+        <div class="footer--block">
+          <h3>Resources</h3>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://docs.anycable.io" rel="noreferrer noopener">Documentation</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://docs.anycable.io/?id=talks" rel="noreferrer noopener">Talks</a></p>
+          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://docs.anycable.io/?id=blog-posts" rel="noreferrer noopener">Blog Posts</a></p>
+        </div>
+        <div class="footer--block legals">
+          <p><span class="copyright">2017–2021 </span><a class="gtm-footer-link desktop-only" href="https://twitter.com/palkan_tula">Vladimir Dementyev </a><a class="gtm-footer-link no-desktop" href="https://twitter.com/palkan_tula">Vlad Dem </a>& <a class="gtm-footer-link" href="https://evilmartians.com">Evil Martians</a></p>
+          <p>Open-source version released under the <a class="gtm-footer-link" href="https://opensource.org/licenses/MIT">MIT license</a></p>
+          <p>Pro version released under the <a class="gtm-footer-link" href="/eula">Commercial License</a></p>
+          <p>Website by <a href="https://twitter.com/antiflasher">Anton Lovchikov</a></p>
+          <div class="footer--humanoids">
+            <div class="humanoids">
+              <div class="humanoids__martian"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 92"><path fill="#f64242" d="M26 88L8 78l18-10"/><path fill="#f64242" d="M94 92v-6H44c-5.5 0-10-4.5-10-10s4.5-10 10-10h50V32c0-14-7.9-22-22-22H48c-14.1 0-22 8-22 22v60h68z"/><circle fill="#FFF" cx="48" cy="50" r="8"/><circle fill="#FFF" cx="72" cy="50" r="8"/><circle fill="#BF6C35" cx="48" cy="50" r="4"/><circle fill="#BF6C35" cx="72" cy="50" r="4"/><g fill="#663F4C"><path d="M48 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM82 50c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10 10 4.5 10 10zm-16 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z"/><path d="M102 8c-3.8 0-6-2.2-6-6 0-1.1-.9-2-2-2s-2 .9-2 2c0 2.2.5 4.1 1.5 5.7L88.2 13c-4-3.3-9.5-5-16.2-5H48c-6.7 0-12.2 1.7-16.2 4.9l-5.3-5.3C27.5 6.1 28 4.2 28 2c0-1.1-.9-2-2-2s-2 .9-2 2c0 3.8-2.2 6-6 6-1.1 0-2 .9-2 2s.9 2 2 2c2.2 0 4.1-.5 5.7-1.5l5.3 5.3c-3.2 4-4.9 9.5-4.9 16.2v34.8L3.9 78 24 89v3h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H44c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8h-2l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-3.1 6.2C37.1 80.7 36 78.5 36 76c0-4.4 3.6-8 8-8l4 8 4-8h4l4 8 4-8h4l4 8 4-8h4l4 8 4-8h8V32c0-6.7-1.7-12.2-4.9-16.2l5.3-5.3c1.6 1 3.5 1.5 5.7 1.5 1.1 0 2-.9 2-2s-1-2-2.1-2zM24 84.4L12.1 78 24 71.4v13z"/></g></svg></div>
+              <div class="humanoids__human"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 92"><path fill="#FFFFFF" d="M14 62v30h68v-6H32c-5.5 0-10-4.5-10-10s4.5-10 10-10h50v-4c4 0 8-3.6 8-8s-4-8-8-8V32c0-14-7.9-22-22-22H36c-14.1 0-22 8-22 22v14c-4 0-8 3.6-8 8s4 8 8 8z"/><circle fill="#FFF" cx="36" cy="50" r="8"/><circle fill="#FFF" cx="60" cy="50" r="8"/><circle fill="#f64242" cx="36" cy="50" r="4"/><circle fill="#f64242" cx="60" cy="50" r="4"/><path fill="#f64242" d="M60 10H36c-14.1 0-22 8-22 22v2l4-4 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 4 4v-2c0-14-7.9-22-22-22z"/><g fill="#663F4C"><path d="M36 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM60 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/><path d="M12 63.8V92h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H32c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8H74v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1c-4 0-8-3.6-8-8s3.6-8 8-8h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h4v-4.2c5-.9 8-5 8-9.8s-3-8.9-8-9.8V32c0-15.3-8.7-24-24-24H36c-15.3 0-24 8.7-24 24v12.2c-5 .9-8 5-8 9.8s3 8.9 8 9.8zm72-15.5c2 .8 4 3 4 5.7s-2 4.8-4 5.7V48.3zm-72 0v11.3c-2-.8-4-3-4-5.7s2-4.7 4-5.6z"/></g></svg></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.min.js" type="text/javascript"></script>
+  </body>
+</html>
