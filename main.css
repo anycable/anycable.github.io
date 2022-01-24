@@ -2947,8 +2947,6 @@ h4{
 
     object-fit: contain;
 
-    width: auto;
-
     height: auto;
 
     max-width: 100%;
@@ -3060,6 +3058,8 @@ h4{
     background: #f3f3f3;
 
     border-radius: 1em;
+
+    align-items: center;
 }
 @media(max-width: 800px){
 
@@ -3085,6 +3085,14 @@ h4{
 .blog--toc--item.callbell{
 
     background: #69bfa8;
+}
+.blog--toc--item.vito{
+
+    background: #272F3E;
+}
+.blog--toc--item.vito a{
+
+    color: #F4B4B4;
 }
 .blog--toc--item--logo{
 
