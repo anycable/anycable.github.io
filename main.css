@@ -1777,10 +1777,14 @@ h4{
 .main-slide--btn-cta{
 
     padding: 18px;
-    /* background-color: $grey-bg; */
 }
-.main-slide--btn-cta .btn{
-    /* margin-top: 18px; */
+.main-slide--btn-cta.with-promo{
+
+    background-color: #f3f3f3;
+}
+.main-slide--btn-cta.with-promo .btn{
+
+    margin-top: 18px;
 }
 .main-slide--btn-cta.is-inverted{}
 .main-slide--btn-cta.is-inverted .topnav--btn{
