@@ -1968,7 +1968,7 @@ h4{
 
     display: flex;
 
-    transition: top 200ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: all 200ms ease-in-out;
 
     justify-content: space-between;
 
@@ -1979,6 +1979,8 @@ h4{
     box-sizing: border-box;
 }
 .is-bubbling .topnav{
+
+    animation: bubble 200ms backwards ease-in-out;
 
     top: 0;
 
@@ -2011,6 +2013,22 @@ h4{
     .topnav{
 
         left: 0;
+    }
+}
+@keyframes bubble{
+
+    from{
+
+        opacity: 0;
+
+        top: -200px;
+    }
+
+    to{
+
+        opacity: 1;
+
+        top: 0;
     }
 }
 .slide--chart{
