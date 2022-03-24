@@ -746,14 +746,24 @@ h4{
 }
 @keyframes cog-spin{
 
-    100%{
+    from{
+
+        transform: rotate(0deg);
+    }
+
+    to{
 
         transform: rotate(360deg);
     }
 }
 @keyframes cog-spin-back{
 
-    100%{
+    from{
+
+        transform: rotate(0deg);
+    }
+
+    to{
 
         transform: rotate(-360deg);
     }
