@@ -3442,6 +3442,18 @@ h4{
 
     color: #F4B4B4;
 }
+.blog--toc--item.healthie{
+
+    background: #E1E9F8;
+}
+.blog--toc--item.healthie span{
+
+    color: #0e172b;
+}
+.blog--toc--item.healthie a{
+
+    color: #6246ed;
+}
 .blog--toc--item--logo{
 
     flex-grow: 0;
