@@ -86,7 +86,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="blog--content"><h1>Multi-tenancy vs. Cables:<br>Introducing Action Cable command callbacks</h1>
 <p class="date">July 5, 2022</p>
 <br/>
-<p class="intro">Introducing multi-tenancy to a web application usually comes at a price: we need to (re-)design a database schema, make sure all kinds of “requests” are bound to the right tenants, and so on. Luckily, for Rails applications we have <a href="https://www.ruby-toolbox.com/categories/Multitenancy">battle-tested tools</a> to make developers' lives easier. However, all of them focus on classic Rails <em>components</em>, controllers, and background jobs. Who will take care of the channels?</p>
+<p class="intro">Introducing multi-tenancy to a web application usually comes at a price: we need to (re–)design a database schema, make sure all kinds of “requests” are bound to the right tenants, and so on. Luckily, for Rails applications we have <a href="https://www.ruby-toolbox.com/categories/Multitenancy">battle-tested tools</a> to make developers' lives easier. However, all of them focus on classic Rails <em>components</em>, controllers, and background jobs. Who will take care of the channels?</p>
 <div class="divider"></div>
 <h2>Execution context, or how tenant scoping is usually implemented</h2>
 <p>Multi-tenancy could be implemented in many different ways, but most of them include the following phases: 1) retrieving a tenant (e.g., from request properties), and 2) storing the current tenant within the current <em>execution context</em>.</p>
