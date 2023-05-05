@@ -2,18 +2,28 @@
 <html lang="en">
   <head>
     <title>AnyCable blog: tutorials, screencasts, case-studies</title>
-    <meta name="viewport" content="width=device-width"/>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
-  
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WPCXB7B');</script>
-    <!-- End Google Tag Manager -->
-    <meta name="description" content="Learn more about AnyCable: how you can use it and how others benefit from already using it!"/>
+    <meta name='viewport' content='width=device-width viewport-fit=cover' />
+    <meta charset='UTF-8' />
+    <meta http-equiv='Permissions-Policy' content='interest-cohort=()' />
+      <meta
+      name='theme-color'
+      content='#fff'
+      media='(prefers-color-scheme: light)'
+    />
+    <meta
+      name='theme-color'
+      content='#fff'
+      media='(prefers-color-scheme: dark)'
+    />
+      <!-- Google Tag Manager -->
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new
+        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-WPCXB7B');</script>
+      <!-- End Google Tag Manager -->
+    <meta name="description" content="Learn more about AnyCable: how you can use it and how others
+      benefit from already using it!"/>
     <meta name="keywords" content="anycable, ruby on rails, rails, actioncable, websocket, grpc, ruby, erlang, golang"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
@@ -22,13 +32,15 @@
     <meta name="theme-color" content="#000000"/>
     <!-- Schema.org markup for Google+ -->
     <meta itemprop="name" content="AnyCable blog: tutorials, screencasts, case-studies"/>
-    <meta itemprop="description" content="Learn more about AnyCable: how you can use it and how others benefit from already using it!"/>
+    <meta itemprop="description" content="Learn more about AnyCable: how you can use it and how others
+      benefit from already using it!"/>
     <meta itemprop="image" content="https://anycable.io/images/share.png"/>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@any_cable"/>
     <meta name="twitter:title" content="AnyCable blog: tutorials, screencasts, case-studies"/>
-    <meta name="twitter:description" content="Learn more about AnyCable: how you can use it and how others benefit from already using it!"/>
+    <meta name="twitter:description" content="Learn more about AnyCable: how you can use it and how others
+      benefit from already using it!"/>
     <meta name="twitter:creator" content="@any_cable"/>
     <meta name="twitter:image" content="https://anycable.io/images/share.png"/>
     <!-- Open Graph data -->
@@ -36,7 +48,8 @@
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://anycable.io/"/>
     <meta property="og:image" content="https://anycable.io/images/share.png"/>
-    <meta property="og:description" content="Learn more about AnyCable: how you can use it and how others benefit from already using it!"/>
+    <meta property="og:description" content="Learn more about AnyCable: how you can use it and how others
+      benefit from already using it!"/>
     <meta property="og:site_name" content="AnyCable"/>
     <script type=application/ld+json>
       {
@@ -66,201 +79,471 @@
         "operatingSystem": "Any"
       }
     </script>
-    <script type="module" crossorigin src="/assets/gtm-form-9de9d792.js"></script>
-    <link rel="stylesheet" href="/assets/gtm-form-98dfc184.css">
-  </head>
-  <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WPCXB7B"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <nav class="blog--nav">
-      <a class="btn outline" href="/">
-        <span class="btn--icon blog--nav--arrow">
-          <svg fill="none" height="16" viewBox="0 0 10 16" width="10" xmlns="http://www.w3.org/2000/svg">
-      <path d="m9 1-7 7 7 7" stroke="#f32b2b" stroke-width="2" />
-    </svg>
-    
-        </span>
-        <strong class="btn--text blog--nav--text">AnyCable</strong>
-      </a>
-      <div class="blog--nav--section">
-        <a class="btn small topnav--btn gtm-link" href="/#getting-started" data-gtm-category="blogMenu" data-gtm-action="tryIt">
-          <span class="btn--icon">
-            <svg height="20" viewBox="0 0 18 20" width="18" 
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="m2.991069.296055 13.963956 7.966519c.959416.547352 1.293459 1.768829.746107 2.728245-.177431.311007-.435101.568677-.746107.746107l-13.963956 7.96652c-.959416.547352-2.180893.213309-2.728245-.746107-.172239-.301906-.262824-.643488-.262824-.99107v-15.933038c0-1.10457.895431-2 2-2 .347582 0 .689164.090585.991069.262824z" fill="currentColor" fill-rule="evenodd"/>
-    </svg>
-    
-          </span>
-          <span class="btn--text">Try it now</span>
-        </a>
-        <a class="btn small topnav--btn secondary gtm-link" href="https://docs.anycable.io" target="_blank" data-gtm-category="blogButton" data-gtm-action="docs">
-          <span class="btn--icon">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M7.2 0H14V2.8C14 3.9201 14 4.48016 14.218 4.90798C14.4097 5.28431 14.7157 5.59027 15.092 5.78201C15.5198 6 16.0799 6 17.2 6H20V16.8C20 17.9201 20 18.4802 19.782 18.908C19.5903 19.2843 19.2843 19.5903 18.908 19.782C18.4802 20 17.9201 20 16.8 20H7.2C6.0799 20 5.51984 20 5.09202 19.782C4.71569 19.5903 4.40973 19.2843 4.21799 18.908C4 18.4802 4 17.9201 4 16.8V3.2C4 2.0799 4 1.51984 4.21799 1.09202C4.40973 0.715695 4.71569 0.409734 5.09202 0.217987C5.51984 0 6.0799 0 7.2 0ZM0 3.2C0 2.0799 0 1.51984 0.217987 1.09202C0.409734 0.715695 0.715695 0.409734 1.09202 0.217987C1.51984 0 2.0799 0 3.2 0H4.2C3.0799 0 2.51984 0 2.09202 0.217987C1.71569 0.409734 1.40973 0.715695 1.21799 1.09202C1 1.51984 1 2.0799 1 3.2V16.8C1 17.9201 1 18.4802 1.21799 18.908C1.40973 19.2843 1.71569 19.5903 2.09202 19.782C2.51984 20 3.0799 20 4.2 20H3.2C2.0799 20 1.51984 20 1.09202 19.782C0.715695 19.5903 0.409734 19.2843 0.217987 18.908C0 18.4802 0 17.9201 0 16.8V3.2ZM2.21799 1.09202C2 1.51984 2 2.0799 2 3.2V16.8C2 17.9201 2 18.4802 2.21799 18.908C2.40973 19.2843 2.71569 19.5903 3.09202 19.782C3.51984 20 4.0799 20 5.2 20H6.2C5.0799 20 4.51984 20 4.09202 19.782C3.71569 19.5903 3.40973 19.2843 3.21799 18.908C3 18.4802 3 17.9201 3 16.8V3.2C3 2.0799 3 1.51984 3.21799 1.09202C3.40973 0.715695 3.71569 0.409734 4.09202 0.217987C4.51984 0 5.0799 0 6.2 0H5.2C4.0799 0 3.51984 0 3.09202 0.217987C2.71569 0.409734 2.40973 0.715695 2.21799 1.09202ZM15.7071 0C15.3166 0 15 0.316582 15 0.707107V3.4C15 3.96005 15 4.24008 15.109 4.45399C15.2049 4.64215 15.3578 4.79513 15.546 4.89101C15.7599 5 16.0399 5 16.6 5H19.2929C19.6834 5 20 4.68342 20 4.29289C20 4.10536 19.9255 3.9255 19.7929 3.79289L16.2071 0.207107C16.0745 0.0744985 15.8946 0 15.7071 0Z" fill="currentColor"/>
-    </svg>
-    
-          </span>
-          <span class="btn--text">Docs</span>
-        </a>
+    <script type="module" crossorigin src="/assets/popups-show-hide-87ce41b1.js"></script>
+    <link rel="stylesheet" href="/assets/index-blog-5eac215c.css">
+  </head>  <body>
+      <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe
+      src='https://www.googletagmanager.com/ns.html?id=GTM-WPCXB7B'
+      height='0'
+      width='0'
+      style='display:none;visibility:hidden'
+    ></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+ <header class='blog-header'>
+  <nav class='blog-header__content'>
+    <a class='link blog-header__link' href='/'>
+      <span class='blog-header__link-icon'>
+        <svg fill="none" height="16" viewBox="0 0 10 16" width="10" xmlns="http://www.w3.org/2000/svg">
+  <path d="m9 1-7 7 7 7" stroke="#f32b2b" stroke-width="2" />
+</svg>
+
+      </span>AnyCable</a>
+    <button class='button try-now-btn'>Try it now</button>
+  </nav>
+</header> <main class='content content_type_blog'>
+  <section class='blog'>
+    <h1 class='blog__title'>Articles</h1>
+    <div class='blog__content'>
+      <div class='blog__section'>
+        <h2 class='blog__section-title'>Engineering</h2>
+        <ul class='blog__articles'>
+          <li class='blog__article'>
+            <p class='blog__article-date'>March 24, 2023</p>
+            <a
+              class='link blog__article-title'
+              href='/anycasts/flying-multi-regionally-with-nats'
+              target="_self"
+            >Flying multi-regionally with NATS
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>March 21, 2023</p>
+            <a
+              class='link blog__article-title'
+              href='https://evilmartians.com/chronicles/anycable-goes-off-rails-connecting-twilio-streams-with-hanami'
+              target="_blanc"
+            >AnyCable off Rails: connecting Twilio streams with Hanami
+              <span
+                  class='blog__article-icon blog__article-icon_type_em'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>September 6, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/anycasts/learn-to-fly-io-with-anycable'
+              target="_self"
+            >Learn to Fly.io with AnyCable
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>July 19, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/anycasts/railsconf-2022-turbo-streams-consistency'
+              target="_self"
+            >Turbo Streams vs. consistency
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>July 5, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/multi-tenancy-vs-cables'
+              target="_self"
+            >Multi-tenancy vs. Cables: Introducing Action Cable command callbacks
+              <span
+                  class='blog__article-icon '
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>May 10, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/anycasts-using-anycable-client'
+              target="_self"
+            >Using anycable-client to auto-refresh tokens
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>April 5, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/anycasts-direct-messaging-part-2'
+              target="_self"
+            >Of users and direct messaging (pt. 2)
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>February 16, 2022</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/anycasts-direct-messaging-part-1'
+              target="_self"
+            >Of users and direct messaging (pt. 1)
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>December 22, 2021</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/anycasts-rails-7-hotwire-and-anycable'
+              target="_self"
+            >Exploring Rails 7, Hotwire and AnyCable speedy streams
+              <span
+                  class='blog__article-icon blog__article-icon_type_video'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>September 29, 2021</p>
+            <a
+              class='link blog__article-title'
+              href='/blog/jwt-identification-and-hot-streams'
+              target="_self"
+            >AnyCable v1.2: JWT identification and "hot streams"
+              <span
+                  class='blog__article-icon '
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>September 07, 2021</p>
+            <a
+              class='link blog__article-title'
+              href='https://evilmartians.com/chronicles/real-time-stress-anycable-k6-websockets-and-yabeda'
+              target="_blanc"
+            >Real-time stress: AnyCable, k6, WebSockets, and Yabeda
+              <span
+                  class='blog__article-icon blog__article-icon_type_em'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>July 28, 2021</p>
+            <a
+              class='link blog__article-title'
+              href='https://evilmartians.com/chronicles/introducing-anycable-javascript-and-typescript-client'
+              target="_blanc"
+            >Introducing JavaScript and TypeScript client for AnyCable
+              <span
+                  class='blog__article-icon blog__article-icon_type_em'
+                ></span>
+            </a>
+          </li>          <li class='blog__article'>
+            <p class='blog__article-date'>June 16, 2021</p>
+            <a
+              class='link blog__article-title'
+              href='https://evilmartians.com/chronicles/anycable-goes-pro-fast-websockets-for-ruby-at-scale'
+              target="_blanc"
+            >AnyCable Goes Pro: Fast WebSockets for Ruby, at scale
+              <span
+                  class='blog__article-icon blog__article-icon_type_em'
+                ></span>
+            </a>
+          </li>        </ul>
       </div>
-    </nav>
-    <div class="blog--wrap">
-      
-<div class="blog--content">
-  <h1>Articles</h1>
-  <div class="blog--toc">
-    <div class="blog--toc--section">
-      <h3>Engineering</h3>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">March 24, 2023</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/anycasts/flying-multi-regionally-with-nats">Flying multi-regionally with NATS</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">March 21, 2023</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="https://evilmartians.com/chronicles/anycable-goes-off-rails-connecting-twilio-streams-with-hanami" target="_blank">AnyCable off Rails: connecting Twilio streams with Hanami</a><i class="blog--toc--item--em"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">September 6, 2022</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/anycasts/learn-to-fly-io-with-anycable">Learn to Fly.io with AnyCable</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">July 19, 2022</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/anycasts/railsconf-2022-turbo-streams-consistency">Turbo Streams vs. consistency</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">July 5, 2022</span><a class="blog--toc--item--title" href="/blog/multi-tenancy-vs-cables">Multi-tenancy vs. Cables: Introducing Action Cable command callbacks</a></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">May 10, 2022</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/blog/anycasts-using-anycable-client">Using anycable-client to auto-refresh tokens</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">April 5, 2022</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/blog/anycasts-direct-messaging-part-2">Of users and direct messaging (pt. 2)</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">February 16, 2022</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/blog/anycasts-direct-messaging-part-1">Of users and direct messaging (pt. 1)</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">December 22, 2021</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="/blog/anycasts-rails-7-hotwire-and-anycable">Exploring Rails 7, Hotwire and AnyCable speedy streams</a><i class="blog--toc--item--video"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">September 29, 2021</span><a class="blog--toc--item--title" href="/blog/jwt-identification-and-hot-streams">AnyCable v1.2: JWT identification and "hot streams"</a></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">September 07, 2021</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="https://evilmartians.com/chronicles/real-time-stress-anycable-k6-websockets-and-yabeda" target="_blank">Real-time stress: AnyCable, k6, WebSockets, and Yabeda</a><i class="blog--toc--item--em"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">July 28, 2021</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="https://evilmartians.com/chronicles/introducing-anycable-javascript-and-typescript-client" target="_blank">Introducing JavaScript and TypeScript client for AnyCable</a><i class="blog--toc--item--em"></i></span></div>
-      </div>
-      <div class="blog--toc--item dev">
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">June 16, 2021</span><span class="blog--toc--item--title-with-icon"><a class="blog--toc--item--title" href="https://evilmartians.com/chronicles/anycable-goes-pro-fast-websockets-for-ruby-at-scale" target="_blank">AnyCable Goes Pro: Fast WebSockets for Ruby, at scale</a><i class="blog--toc--item--em"></i></span></div>
+      <div class='blog__section'>
+        <h2 class='blog__section-title'>Use Cases</h2>
+        <ul class='case-studies'>
+          <li class='case-studies__study case-studies__study_color_royal-blue'>
+            <a
+              class='link case-studies__study-link'
+              href=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
+              target='_blank'
+            >
+              <img
+                src=/assets/sera-logo-73e66b4a.png
+                class='case-studies__study-logo'
+                alt=Sera logo
+              />
+              <div class='case-studies__study-content'>
+                <p class='case-studies__study-date case-studies__study-date_color_white'>
+                  March 1, 2023
+                </p>
+                <p
+                  class='case-studies__study-title case-studies__study-title_color_white'
+                >
+                 Real-time magic, no elixirs: optimizing Sera with AnyCable
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class='case-studies__study case-studies__study_color_blue'>
+            <a
+              class='link case-studies__study-link'
+              href=/case-studies/healthie
+              target='_blank'
+            >
+              <img
+                src=/assets/healthie-r-logo-07f18cf4.svg
+                class='case-studies__study-logo'
+                alt=Healthie-r logo
+              />
+              <div class='case-studies__study-content'>
+                <p class='case-studies__study-date case-studies__study-date_color_dark'>
+                  January 20, 2022
+                </p>
+                <p
+                  class='case-studies__study-title case-studies__study-title_color_purple'
+                >
+                 Making a chat’s real-time functionality Healthie-r with AnyCable&nbsp;Pro
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class='case-studies__study case-studies__study_color_midnight'>
+            <a
+              class='link case-studies__study-link'
+              href=/case-studies/vito
+              target='_blank'
+            >
+              <img
+                src=/assets/revitalizing-vito-logo-f4183c80.svg
+                class='case-studies__study-logo'
+                alt=Revitalizing Vito logo
+              />
+              <div class='case-studies__study-content'>
+                <p class='case-studies__study-date case-studies__study-date_color_pink'>
+                  January 20, 2022
+                </p>
+                <p
+                  class='case-studies__study-title case-studies__study-title_color_pink'
+                >
+                 Revitalizing Vito with AnyCable&nbsp;Pro
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class='case-studies__study case-studies__study_color_mint'>
+            <a
+              class='link case-studies__study-link'
+              href=/case-studies/callbell
+              target='_blank'
+            >
+              <img
+                src=/assets/a-call-for-pro-logo-9d7b400d.svg
+                class='case-studies__study-logo'
+                alt=A call for Pro logo
+              />
+              <div class='case-studies__study-content'>
+                <p class='case-studies__study-date case-studies__study-date_color_[object Object]'>
+                  August 3, 2021
+                </p>
+                <p
+                  class='case-studies__study-title case-studies__study-title_color_'
+                >
+                 A call for Pro: Callbell
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="blog--toc--section">
-      <h3>Use Cases</h3>
-      <div class="blog--toc--item case-study sera invert">
-        <div class="blog--toc--item--logo"><img src="/images/logos/sera.png" alt="Sera logo"/></div>
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">March 1, 2023</span><a class="blog--toc--item--title" href="https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable" target="_blank">Real-time magic, no elixirs: optimizing Sera with AnyCable</a></div>
-      </div>
-      <div class="blog--toc--item case-study healthie">
-        <div class="blog--toc--item--logo"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_801_209" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="12" width="58" height="52">
-<path d="M32.004 62.6066C32.004 62.6066 29.6781 64.0015 25.5291 63.9999C11.079 63.9999 -2.58423 32.1326 7.21615 19.1847C17.0163 6.23668 32.004 14.964 32.004 14.964C32.004 14.964 46.9914 6.23668 56.7918 19.1847C66.5922 32.1326 52.9289 63.9999 38.4787 63.9999C34.3297 64.0015 32.004 62.6066 32.004 62.6066Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_801_209)">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.6851 61.9554L40.06 54.8677L53.3214 56.1408L45.6406 65.0348L31.2598 66.0152L29.6851 61.9554Z" fill="#BF2D2E"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M40.0601 54.8676L50.1357 38.777L58.3753 47.8758L53.3214 56.1408L40.0601 54.8676Z" fill="#DD453E"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M50.1358 38.7771L34.6578 47.458L33.2598 41.7233L34.8551 29.9456L46.9482 32.216L51.0601 34.8512L50.1358 38.7771Z" fill="#EA8A3D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M51.06 34.8511L57.454 12.5883C57.454 12.5883 64.434 28.8948 64.7607 29.3973C65.0876 29.8997 58.3753 47.8759 58.3753 47.8759L50.1357 38.777L51.06 34.8511Z" fill="#F1AA4D"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M57.4538 12.5883L53.3213 4.07959L33.1069 21.0334L34.8548 29.9455L46.9479 32.2159L51.0597 34.8511L57.4538 12.5883Z" fill="#FAD34A"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7095 35.6046L22.5985 49.1832L35.1817 50.9808L34.6575 47.4579L33.2595 41.7232L34.8549 29.9455L33.107 21.0333L22.6592 21.047L19.7095 35.6046Z" fill="#92BE3F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1403 -0.117565L33.1072 21.0333L22.6594 21.0471L10.8755 7.02115L33.2597 -9.15747L29.1403 -0.117565Z" fill="#57A445"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22.6591 21.0472L9.95287 35.9894L-4.85596 15.6823L10.8752 7.02124L22.6591 21.0472Z" fill="#3A7F3F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M20.0175 37.0533L10.0977 36.545L10.8751 39.5305L22.5984 49.1832L20.0175 37.0533Z" fill="#3A7F3F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8755 39.5305L8.01511 50.167L0.210449 38.7018L2.70336 25.9204L9.95323 35.9893L10.8755 39.5305Z" fill="#262E5C"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.8755 39.5305L22.5988 49.1832L11.2952 60.4415L8.01514 50.167L10.8755 39.5305Z" fill="#327194"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22.5985 49.1832L24.8863 65.0348L11.2949 60.4415L22.5985 49.1832Z" fill="#24A8BD"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M24.8864 65.0348L29.6851 61.9553L40.0601 54.8677L35.1819 50.9808L22.5986 49.1832L24.8864 65.0348Z" fill="#DE4477"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.32031 36.7334L22.659 21.0471L19.991 36.9288L9.32031 36.7334Z" fill="#57A445"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M24.8862 65.0347L33.6953 64.1879L30.6803 61.2753L24.8862 65.0347Z" fill="#E680A9"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M40.0599 54.8676L50.1356 38.777L40.7124 40.1039L33.5474 43.1092L35.1818 50.9808L40.0599 54.8676Z" fill="#922C55"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M29.1401 -0.117554L53.3214 4.07957L40.06 20.2501L33.107 21.0334L29.1401 -0.117554Z" fill="#F1AA4D"/>
-</g>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25.1641 12.5144C25.1641 12.5144 31.0194 19.1136 31.0194 21.0333C32.43 21.3956 31.7547 14.4676 31.7547 14.4676L29.6713 13.773L25.1641 12.5144Z" fill="#3A7F3F"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M33.1069 21.0334C33.1069 21.0334 33.7912 5.73645 25.997 0C22.9328 0.367674 21.0508 3.06917 21.0508 3.06917C21.0508 3.06917 32.2898 12.59 31.0193 21.0334C32.531 21.0334 33.1069 21.0334 33.1069 21.0334Z" fill="#57A445"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M60.0964 31.4065C59.8839 31.9057 59.5584 32.3578 59.107 32.7786C55.1272 36.49 43.8118 36.2503 39.7889 35.8488C38.8217 35.7483 37.895 36.3033 37.525 37.2093L35.5181 42.1213L30.6842 25.7385C30.431 24.8773 29.6803 24.256 28.7867 24.1671C27.9005 24.0772 27.0366 24.5388 26.6172 25.3335L20.6197 36.7028C16.6631 36.974 8.71075 36.8403 5.3783 33.849C4.39087 32.9635 3.92809 31.9169 3.91379 30.5672C3.8904 33.2088 4.21284 35.9851 4.83432 38.7681C11.1615 42.0745 21.0083 41.1253 22.2503 40.9898C22.9787 40.9098 23.6197 40.4743 23.9611 39.8259L27.9885 32.1914L33.0665 49.4028C33.3314 50.3017 34.1351 50.9348 35.0708 50.9826C35.1085 50.9843 35.1454 50.9853 35.1831 50.9853C36.0748 50.9853 36.8848 50.4456 37.2242 49.613L40.9992 40.3711C44.7747 40.6104 53.5975 40.7774 59.3608 37.864C59.799 35.6781 60.0567 33.5047 60.0964 31.4065Z" fill="#FFFFFE"/>
-</svg>
-
-        </div>
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">June 29, 2022</span><a class="blog--toc--item--title" href="/case-studies/healthie">Making a chat’s real-time functionality Healthie-r with AnyCable Pro</a></div>
-      </div>
-      <div class="blog--toc--item case-study vito invert">
-        <div class="blog--toc--item--logo"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M31.9282 16C36.3465 16 39.9282 12.4183 39.9282 8C39.9282 3.58172 36.3465 0 31.9282 0C27.5099 0 23.9282 3.58172 23.9282 8C23.9282 12.4183 27.5099 16 31.9282 16Z" fill="#FFB795"/>
-<path d="M31.9282 64C36.3465 64 39.9282 60.4183 39.9282 56C39.9282 51.5817 36.3465 48 31.9282 48C27.5099 48 23.9282 51.5817 23.9282 56C23.9282 60.4183 27.5099 64 31.9282 64Z" fill="#7477F1"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M38.7897 20.1155C37.4736 22.4907 37.3999 25.4772 38.8565 28C40.3117 30.5205 42.9314 31.9496 45.6436 32.0001C42.9314 32.0505 40.3117 33.4795 38.8565 36C37.3999 38.5229 37.4736 41.5093 38.7897 43.8845L38.7701 43.8517C37.367 41.5425 34.8278 40 31.9283 40C29.0288 40 26.4895 41.5425 25.0865 43.8517L25.0669 43.8845C26.3829 41.5093 26.4566 38.5229 25.0001 36C23.5448 33.4795 20.9252 32.0505 18.2129 32C20.9252 31.9496 23.5448 30.5205 25.0001 28C26.4566 25.4772 26.3829 22.4907 25.0669 20.1155L25.0865 20.1483C26.4895 22.4575 29.0288 24 31.9283 24C34.8278 24 37.367 22.4575 38.7701 20.1483L38.7897 20.1155Z" fill="#828683"/>
-<path d="M45 24C47.2092 27.8263 52.1019 29.1373 55.9282 26.9282C59.7546 24.719 61.0656 19.8263 58.8564 16C56.6473 12.1736 51.7546 10.8626 47.9282 13.0718C44.1019 15.2809 42.7909 20.1736 45 24Z" fill="#FFB1B1"/>
-<path d="M5.00004 48C7.20918 51.8263 12.1019 53.1373 15.9282 50.9282C19.7546 48.719 21.0656 43.8263 18.8564 40C16.6473 36.1736 11.7546 34.8626 7.92824 37.0718C4.1019 39.2809 2.7909 44.1736 5.00004 48Z" fill="#5473EF"/>
-<path d="M18.8564 24C21.0655 20.1737 19.7545 15.281 15.9282 13.0718C12.1019 10.8627 7.20914 12.1737 5 16C2.79086 19.8264 4.10186 24.7191 7.9282 26.9282C11.7545 29.1374 16.6473 27.8264 18.8564 24Z" fill="#3365FF"/>
-<path d="M58.8564 48C61.0655 44.1736 59.7545 39.2809 55.9282 37.0718C52.1019 34.8626 47.2091 36.1736 45 40C42.7909 43.8263 44.1019 48.7191 47.9282 50.9282C51.7545 53.1373 56.6473 51.8263 58.8564 48Z" fill="#B38ECB"/>
-</svg>
-
-        </div>
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">January 25, 2022</span><a class="blog--toc--item--title" href="/case-studies/vito">Revitalizing Vito with AnyCable Pro</a></div>
-      </div>
-      <div class="blog--toc--item case-study callbell invert">
-        <div class="blog--toc--item--logo"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<rect width="64" height="64" fill="url(#pattern0)"/>
-<defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-<use xlink:href="#image0" transform="scale(0.00529101)"/>
-</pattern>
-<image id="image0" width="189" height="189" xlink:href="data:image/png;base64,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"/>
-</defs>
-</svg>
-
-        </div>
-        <div class="blog--toc--item--desc"><span class="blog--toc--item--date">August 3, 2021</span><a class="blog--toc--item--title" href="/case-studies/callbell">A call for Pro: Callbell</a></div>
-      </div>
+  </section>
+</main><footer class='footer'>
+  <div class='footer__columns'>
+    <div class='footer__column footer__column_content_downloads'>
+      <h3 class='footer__column-heading'>Downloads</h3>
+      <nav class='footer__navigation'>
+        <ul class='footer__column-links'>
+          <li class='footer__list-item'>
+            <a
+              href='https://github.com/anycable/anycable'
+              class='link'
+              target='_blank'
+            >GitHub</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://rubygems.org/gems/anycable'
+              class='link'
+              target='_blank'
+            >RubyGems</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://hub.docker.com/u/anycable'
+              class='link'
+              target='_blank'
+            >DockerHub</a>
+          </li>
+        </ul>
+      </nav>
     </div>
+    <div class='footer__column footer__column_content_resources'>
+      <h3 class='footer__column-heading'>Resources</h3>
+      <nav class='footer__navigation'>
+        <ul class='footer__column-links'>
+          <li class='footer__list-item'>
+            <a
+              href='https://docs.anycable.io/'
+              class='link'
+              target='_blank'
+            >Documentation</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://github.com/anycable/anycable_rails_demo'
+              class='link'
+              target='_blank'
+            >Demo App</a>
+          </li>
+          <li class='footer__list-item'>
+            <a href='/blog' class='link'>Blog</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://www.youtube.com/playlist?list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
+              class='link'
+              target='_blank'
+            >Screencasts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class='footer__column footer__column_content_community'>
+      <h3 class='footer__column-heading'>Community</h3>
+      <nav class='footer__navigation'>
+        <ul class='footer__column-links'>
+          <li class='footer__list-item'>
+            <a
+              href='https://discord.gg/stimulus-reflex'
+              class='link'
+              target='_blank'
+            >Discord</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://anycable.substack.com/'
+              class='link'
+              target='_blank'
+            >Newsletter</a>
+          </li>
+          <li class='footer__list-item'>
+            <a
+              href='https://twitter.com/any_cable'
+              class='link'
+              target='_blank'
+            >Twitter</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class='footer__column footer__column_content_legals'>
+      <p class='footer__legal footer__legal_type_copyright'>
+        2023
+        <a
+          class='link'
+          href='https://twitter.com/palkan_tula'
+          target='_blank'
+        >Vladimir Dementyev&nbsp;</a>&amp;&nbsp;<a
+          class='link'
+          href='https://evilmartians.com/'
+        >Evil Martians</a>
+      </p>
+      <p class='footer__legal'>
+        Released under the
+        <a
+          class='link'
+          href='https://opensource.org/licenses/MIT'
+          target='_blank'
+        >MIT License</a>
+      </p>
+      <p class='footer__legal'>
+        Website by
+        <a
+          class='link'
+          href='https://twitter.com/antiflasher'
+          target='_blank'
+        >Anton Lovchikov</a>
+      </p>
+      <p class='footer__legal'>
+        Drop us a line:
+        <a
+          class='link'
+          href='mailto:anycable@evilmartians.com'
+          target='_blank'
+        >anycable@evilmartians.com</a>
+      </p>
+      <p class='footer__legal'>
+        By using this site, you agree with our
+          <a href="https://www.iubenda.com/privacy-policy/14230174" class="link iubenda-nostyle iubenda-embed iub-legal-only iubenda-noiframe" title="Privacy policy ">Privacy policy</a><script type="text/javascript">(function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0]; s.src="https://cdn.iubenda.com/iubenda.js"; tag.parentNode.insertBefore(s,tag);}; if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}else{w.onload = loader;}})(window, document);</script>
+      </p>
+      <div class='footer__humanoids'>
+        <div class='footer__humanoid footer__humanoid_type_martian'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 92' width='54'>
+            <path fill='#f64242' d='M26 88L8 78l18-10'></path>
+            <path
+              fill='#f64242'
+              d='M94 92v-6H44c-5.5 0-10-4.5-10-10s4.5-10 10-10h50V32c0-14-7.9-22-22-22H48c-14.1 0-22 8-22 22v60h68z'
+            ></path>
+            <circle fill='#FFF' cx='48' cy='50' r='8'></circle>
+            <circle fill='#FFF' cx='72' cy='50' r='8'></circle>
+            <circle fill='#BF6C35' cx='48' cy='50' r='4'></circle>
+            <circle fill='#BF6C35' cx='72' cy='50' r='4'></circle>
+            <g fill='#663F4C'>
+              <path
+                d='M48 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM82 50c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10 10 4.5 10 10zm-16 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z'
+              ></path>
+              <path
+                d='M102 8c-3.8 0-6-2.2-6-6 0-1.1-.9-2-2-2s-2 .9-2 2c0 2.2.5 4.1 1.5 5.7L88.2 13c-4-3.3-9.5-5-16.2-5H48c-6.7 0-12.2 1.7-16.2 4.9l-5.3-5.3C27.5 6.1 28 4.2 28 2c0-1.1-.9-2-2-2s-2 .9-2 2c0 3.8-2.2 6-6 6-1.1 0-2 .9-2 2s.9 2 2 2c2.2 0 4.1-.5 5.7-1.5l5.3 5.3c-3.2 4-4.9 9.5-4.9 16.2v34.8L3.9 78 24 89v3h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H44c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8h-2l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-3.1 6.2C37.1 80.7 36 78.5 36 76c0-4.4 3.6-8 8-8l4 8 4-8h4l4 8 4-8h4l4 8 4-8h4l4 8 4-8h8V32c0-6.7-1.7-12.2-4.9-16.2l5.3-5.3c1.6 1 3.5 1.5 5.7 1.5 1.1 0 2-.9 2-2s-1-2-2.1-2zM24 84.4L12.1 78 24 71.4v13z'
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class='footer__humanoid footer__humanoid_type_human'>
+          <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 108 92' width='54'>
+            <path
+              fill='#FFFFFF'
+              d='M14 62v30h68v-6H32c-5.5 0-10-4.5-10-10s4.5-10 10-10h50v-4c4 0 8-3.6 8-8s-4-8-8-8V32c0-14-7.9-22-22-22H36c-14.1 0-22 8-22 22v14c-4 0-8 3.6-8 8s4 8 8 8z'
+            ></path>
+            <circle fill='#FFF' cx='36' cy='50' r='8'></circle>
+            <circle fill='#FFF' cx='60' cy='50' r='8'></circle>
+            <circle fill='#f64242' cx='36' cy='50' r='4'></circle>
+            <circle fill='#f64242' cx='60' cy='50' r='4'></circle>
+            <path
+              fill='#f64242'
+              d='M60 10H36c-14.1 0-22 8-22 22v2l4-4 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 4 4v-2c0-14-7.9-22-22-22z'
+            ></path>
+            <g fill='#663F4C'>
+              <path
+                d='M36 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM60 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z'
+              ></path>
+              <path
+                d='M12 63.8V92h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H32c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8H74v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1c-4 0-8-3.6-8-8s3.6-8 8-8h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h4v-4.2c5-.9 8-5 8-9.8s-3-8.9-8-9.8V32c0-15.3-8.7-24-24-24H36c-15.3 0-24 8.7-24 24v12.2c-5 .9-8 5-8 9.8s3 8.9 8 9.8zm72-15.5c2 .8 4 3 4 5.7s-2 4.8-4 5.7V48.3zm-72 0v11.3c-2-.8-4-3-4-5.7s2-4.7 4-5.6z'
+              ></path>
+            </g>
+          </svg>
+        </div>
+      </div>    </div>
+  </div>
+</footer>
+ <div class='popup try-now-popup'>
+  <div class='popup__container'>
+    <button
+      class='popup__close-btn'
+      type='button'
+      aria-label='Закрыть'
+    ></button>
+    <iframe
+      class='popup__iframe'
+      src='https://form.typeform.com/c/BwBcZmdQ'
+    ></iframe>
   </div>
 </div>
-      <div class="footer">
-        <div class="footer--block">
-          <h3>Project</h3>
-          <p class="footer--list--item"><a href="/">Website</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://github.com/anycable/anycable" rel="noreferrer noopener">GitHub</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://rubygems.org/gems/anycable" rel="noreferrer noopener">RubyGems</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://hub.docker.com/u/anycable" rel="noreferrer noopener">DockerHub</a></p>
-        </div>
-        <div class="footer--block">
-          <h3>Case Studies</h3>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="/case-studies/healthie">Making a chat’s real-time functionality<br>Healthie-r with AnyCable Pro</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="/case-studies/vito">Revitalizing Vito with AnyCable Pro</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="/case-studies/callbell">A call for Pro: Callbell</a></p>
-        </div>
-        <div class="footer--block">
-          <h3>Community</h3>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://github.com/anycable/anycable/discussions" rel="noreferrer noopener">GitHub Discussions</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://twitter.com/any_cable" rel="noreferrer noopener">Twitter</a></p>
-        </div>
-        <div class="footer--block">
-          <h3>Resources</h3>
-          <p class="footer--list--item"><a href="/blog">Blog</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://docs.anycable.io" rel="noreferrer noopener">Documentation</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://www.youtube.com/playlist?list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A" rel="noreferrer noopener">Screencast</a></p>
-          <p class="footer--list--item"><a class="gtm-footer-link" target="_blank" href="https://docs.anycable.io/?id=talks" rel="noreferrer noopener">Talks</a></p>
-        </div>
-        <div class="footer--block legals">
-          <p><span class="copyright">2017&ndash;2023&nbsp;</span><a class="gtm-footer-link desktop-only" href="https://twitter.com/palkan_tula">Vladimir Dementyev&nbsp;</a><a class="gtm-footer-link no-desktop" href="https://twitter.com/palkan_tula">Vlad Dem&nbsp;</a>&&nbsp;<a class="gtm-footer-link" href="https://evilmartians.com">Evil Martians</a></p>
-          <p>Open-source version released under the&nbsp;<a class="gtm-footer-link" href="https://opensource.org/licenses/MIT">MIT license</a></p>
-          <p>Pro version released under the&nbsp;<a class="gtm-footer-link" href="/eula">Commercial License</a></p>
-          <p>Website by&nbsp;<a href="https://twitter.com/antiflasher">Anton Lovchikov</a></p>
-          <div class="footer--humanoids">
-            <div class="humanoids">
-              <div class="humanoids__martian"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 92"><path fill="#f64242" d="M26 88L8 78l18-10"/><path fill="#f64242" d="M94 92v-6H44c-5.5 0-10-4.5-10-10s4.5-10 10-10h50V32c0-14-7.9-22-22-22H48c-14.1 0-22 8-22 22v60h68z"/><circle fill="#FFF" cx="48" cy="50" r="8"/><circle fill="#FFF" cx="72" cy="50" r="8"/><circle fill="#BF6C35" cx="48" cy="50" r="4"/><circle fill="#BF6C35" cx="72" cy="50" r="4"/><g fill="#663F4C"><path d="M48 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM82 50c0 5.5-4.5 10-10 10s-10-4.5-10-10 4.5-10 10-10 10 4.5 10 10zm-16 0c0 3.3 2.7 6 6 6s6-2.7 6-6-2.7-6-6-6-6 2.7-6 6z"/><path d="M102 8c-3.8 0-6-2.2-6-6 0-1.1-.9-2-2-2s-2 .9-2 2c0 2.2.5 4.1 1.5 5.7L88.2 13c-4-3.3-9.5-5-16.2-5H48c-6.7 0-12.2 1.7-16.2 4.9l-5.3-5.3C27.5 6.1 28 4.2 28 2c0-1.1-.9-2-2-2s-2 .9-2 2c0 3.8-2.2 6-6 6-1.1 0-2 .9-2 2s.9 2 2 2c2.2 0 4.1-.5 5.7-1.5l5.3 5.3c-3.2 4-4.9 9.5-4.9 16.2v34.8L3.9 78 24 89v3h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H44c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8h-2l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-4 8h-4l-4-8-3.1 6.2C37.1 80.7 36 78.5 36 76c0-4.4 3.6-8 8-8l4 8 4-8h4l4 8 4-8h4l4 8 4-8h4l4 8 4-8h8V32c0-6.7-1.7-12.2-4.9-16.2l5.3-5.3c1.6 1 3.5 1.5 5.7 1.5 1.1 0 2-.9 2-2s-1-2-2.1-2zM24 84.4L12.1 78 24 71.4v13z"/></g></svg></div>
-              <div class="humanoids__human"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 92"><path fill="#FFFFFF" d="M14 62v30h68v-6H32c-5.5 0-10-4.5-10-10s4.5-10 10-10h50v-4c4 0 8-3.6 8-8s-4-8-8-8V32c0-14-7.9-22-22-22H36c-14.1 0-22 8-22 22v14c-4 0-8 3.6-8 8s4 8 8 8z"/><circle fill="#FFF" cx="36" cy="50" r="8"/><circle fill="#FFF" cx="60" cy="50" r="8"/><circle fill="#f64242" cx="36" cy="50" r="4"/><circle fill="#f64242" cx="60" cy="50" r="4"/><path fill="#f64242" d="M60 10H36c-14.1 0-22 8-22 22v2l4-4 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 6 6 6-6 4 4v-2c0-14-7.9-22-22-22z"/><g fill="#663F4C"><path d="M36 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6zM60 60c-5.5 0-10-4.5-10-10s4.5-10 10-10 10 4.5 10 10-4.5 10-10 10zm0-16c-3.3 0-6 2.7-6 6s2.7 6 6 6 6-2.7 6-6-2.7-6-6-6z"/><path d="M12 63.8V92h4V32c0-12.9 7.1-20 20-20h24c12.9 0 20 7.1 20 20v32H32c-6.6 0-12 5.4-12 12s5.4 12 12 12h48v4h4v-8H74v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1h-6v-1c0-1.7-1.3-3-3-3s-3 1.3-3 3v1c-4 0-8-3.6-8-8s3.6-8 8-8h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h6v1c0 1.7 1.3 3 3 3s3-1.3 3-3v-1h4v-4.2c5-.9 8-5 8-9.8s-3-8.9-8-9.8V32c0-15.3-8.7-24-24-24H36c-15.3 0-24 8.7-24 24v12.2c-5 .9-8 5-8 9.8s3 8.9 8 9.8zm72-15.5c2 .8 4 3 4 5.7s-2 4.8-4 5.7V48.3zm-72 0v11.3c-2-.8-4-3-4-5.7s2-4.7 4-5.6z"/></g></svg></div>
-            </div>    </div>
-        </div>
-      </div>
-    </div>
     
   </body>
 </html>
