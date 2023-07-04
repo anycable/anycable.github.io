@@ -15,13 +15,10 @@
       content='#fff'
       media='(prefers-color-scheme: dark)'
     />
-      <!-- Google Tag Manager -->
-      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new
-        Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-WPCXB7B');</script>
-      <!-- End Google Tag Manager -->
+      <!-- Posthog -->
+      <script> !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_fc9VFWdFAAm5gSlCodHq93iaxxnTTKbjOwsWgAS1FMP',{api_host:'https://app.posthog.com'})</script>
+      <!-- End Posthog -->
     <meta name="description" content="Learn how Poll Everywhere leveraged Hotwire and AnyCable to build an instant feedback live audience engagement platform"/>
     <meta name="keywords" content="anycable, ruby on rails, rails, actioncable, websocket, grpc, ruby, erlang, golang"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
@@ -75,9 +72,10 @@
         "operatingSystem": "Any"
       }
     </script>
-    <script type="module" crossorigin src="/assets/popups-show-hide-87ce41b1.js"></script>
+    <script type="module" crossorigin src="/assets/popups-show-hide-1b1b9665.js"></script>
     <link rel="stylesheet" href="/assets/index-blog-0be3fbfb.css">
-  </head>  <link
+  </head>
+  <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/a11y-light.min.css"
     integrity="sha512-WDk6RzwygsN9KecRHAfm9HTN87LQjqdygDmkHSJxVkVI7ErCZ8ZWxP6T8RvBujY1n2/E4Ac+bn2ChXnp5rnnHA=="
@@ -85,27 +83,18 @@
     referrerpolicy="no-referrer"
   />
   <body>
-      <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe
-      src='https://www.googletagmanager.com/ns.html?id=GTM-WPCXB7B'
-      height='0'
-      width='0'
-      style='display:none;visibility:hidden'
-    ></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
- <header class='blog-header'>
-  <nav class='blog-header__content'>
-    <a class='link blog-header__link' href='/blog'>
-      <span class='blog-header__link-icon'>
-        <svg fill="none" height="16" viewBox="0 0 10 16" width="10" xmlns="http://www.w3.org/2000/svg">
-  <path d="m9 1-7 7 7 7" stroke="#f32b2b" stroke-width="2" />
-</svg>
-
-      </span>Other Posts</a>
-    <button class='button try-now-btn'>Try it now</button>
-  </nav>
-</header>
-    <div class="blog--content">
+    <header class='blog-header'>
+      <nav class='blog-header__content'>
+        <a class='link blog-header__link' href='/blog'>
+          <span class='blog-header__link-icon'>
+            <svg fill="none" height="16" viewBox="0 0 10 16" width="10" xmlns="http://www.w3.org/2000/svg">
+      <path d="m9 1-7 7 7 7" stroke="#f32b2b" stroke-width="2" />
+    </svg>
+    
+          </span>Other Posts</a>
+        <button class='button try-now-btn'>Try it now</button>
+      </nav>
+    </header>    <div class="blog--content">
       <div class="blog--cover"><svg width="255" height="102" viewBox="0 0 255 102" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M110.845 57.12H118.405V64.8H121.565V57.12H129.205V54.08H121.565V46.48H118.405V54.08H110.845V57.12Z" fill="black"/>
 <path fill-rule="evenodd" clip-rule="evenodd" d="M29.7954 69.8978L34.2046 72.1024C35.1962 72.5982 36 73.9 36 74.9913V99.0089C36 100.108 35.2037 100.602 34.2046 100.102L29.7954 97.8978C28.8038 97.402 28 96.1002 28 95.0089V70.9913C28 69.8916 28.7963 69.3983 29.7954 69.8978ZM30.9544 90.9958C29.7701 91.4268 29.2759 93.0563 29.8506 94.6354C30.4254 96.2144 31.8513 97.1451 33.0356 96.714C34.2199 96.283 34.7141 94.6535 34.1394 93.0744C33.5646 91.4954 32.1387 90.5647 30.9544 90.9958Z" fill="#4A4A4A"/>
