@@ -196,6 +196,7 @@
     <div class='main-slide__right-content'>
       <a
         class='main-slide__github-link'
+        data-ph-capture-attribute-link-id='github'
         href='https://github.com/anycable/anycable'
         target='_blank'
       >
@@ -233,11 +234,11 @@
             trial</span>
           of AnyCable Pro today
         </p>
-        <button class='button button_size_big try-now__button try-now-btn'>
+        <button class='button button_size_big try-now__button try-now-btn' data-ph-capture-attribute-link-id='try-pro-now'>
           Try PRO now
         </button>
       </div>
-      <button class='main-slide__learn-more-btn'></button>
+      <button class='main-slide__learn-more-btn' data-ph-capture-attribute-link-id='learn-more'></button>
     </div>
   </div>
 </section> <section class='slide about-slide'>
@@ -542,6 +543,7 @@
           class='video-tip about-slide__video-tip link'
           href='https://www.youtube.com/watch?v=0XTfL-iVLw4&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
           target='_blank'
+          data-ph-capture-attribute-link-id='anycasts-1'
         >
           <div class='video-tip__play-icon'></div>
           <img
@@ -870,6 +872,7 @@
               class='link button button_variant_outlined'
               href='https://github.com/anycable/anycable'
               target='_blank'
+              data-ph-capture-attribute-link-id='plan-free'
             >
               Learn more
             </a>
@@ -897,7 +900,7 @@
               >$590</span>
               per year Unlimited&nbsp;instances
             </p>
-            <button class='button try-now-btn'>
+            <button class='button try-now-btn' data-ph-capture-attribute-link-id='plan-basic'>
               Try now
             </button>
           </div>
@@ -920,7 +923,7 @@
               >$1,490</span>
               per year Unlimited&nbsp;instances
             </p>
-            <button class='button button_inverted try-now-btn'>
+            <button class='button button_inverted try-now-btn' data-ph-capture-attribute-link-id='plan-standard'>
               Try now
             </button>
           </div>
@@ -942,7 +945,7 @@
                 class='plan-card__contact-text'
               >anycable@evilmartians.com</span>
             </p>
-            <button class='button contact-us-btn'>
+            <button class='button contact-us-btn' data-ph-capture-attribute-link-id='plan-custom'>
               Contact us
             </button>
           </div>
@@ -971,6 +974,8 @@
             class='link case-studies__study-link'
             href=/case-studies/polleverywhere
             target='_blank'
+            data-ph-capture-attribute-link-id='use-case'
+            data-ph-capture-attribute-use-case=/case-studies/polleverywhere
           >
             <img
               src=/assets/polleverywhere-130e3cfd.svg
@@ -994,6 +999,8 @@
             class='link case-studies__study-link'
             href=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
             target='_blank'
+            data-ph-capture-attribute-link-id='use-case'
+            data-ph-capture-attribute-use-case=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
           >
             <img
               src=/assets/sera-logo-73e66b4a.png
@@ -1017,6 +1024,8 @@
             class='link case-studies__study-link'
             href=/case-studies/healthie
             target='_blank'
+            data-ph-capture-attribute-link-id='use-case'
+            data-ph-capture-attribute-use-case=/case-studies/healthie
           >
             <img
               src=/assets/healthie-r-logo-07f18cf4.svg
@@ -1045,6 +1054,7 @@
             class='link docs__link'
             href='https://docs.anycable.io/pro?id=installation'
             target='_blank'
+            data-ph-capture-attribute-link-id='docs-install'
           >
             <img
               src='/assets/Installation-icon-005cfad5.svg'
@@ -1059,6 +1069,7 @@
             class='link docs__link'
             href='https://docs.anycable.io/rails/getting_started'
             target='_blank'
+            data-ph-capture-attribute-link-id='docs-rails'
           >
             <img
               src='/assets/rails-icon-2542515c.svg'
@@ -1071,8 +1082,9 @@
         <li class='docs__item'>
           <a
             class='link docs__link'
-            href='https://docs.anycable.io/rails/hotwire'
+            href='https://docs.anycable.io/guides/hotwire'
             target='_blank'
+            data-ph-capture-attribute-link-id='docs-hotwire'
           >
             <img
               src='/assets/hotwire-icon-43d9953a.svg'
@@ -1087,6 +1099,7 @@
             class='link docs__link'
             href='https://docs.anycable.io'
             target='_blank'
+            data-ph-capture-attribute-link-id='docs-all'
           >
             <p class='docs__title docs__title_type_with-arrow'>
               All docs
@@ -1102,7 +1115,7 @@
       <ul class='list-box'>
         <li class='list-box__item'>
           Check
-          <a class='link list-box__link' href='/blog'>our blog</a>
+          <a class='link list-box__link' href='/blog' data-ph-capture-attribute-link-id='blog'>our blog</a>
           for new posts on building real-time functionality.
         </li>
         <li class='list-box__item'>
@@ -1111,10 +1124,12 @@
             class='link list-box__link'
             href='https://demo.anycable.io/'
             target='_blank'
+            data-ph-capture-attribute-link-id='demo-web'
           >demo app</a>, and its
           <a
             class='link list-box__link'
             href='https://github.com/anycable/anycable_rails_demo'
+            data-ph-capture-attribute-link-id='demo-source'
             target='_blank'
           >repo</a>.
         </li>
@@ -1124,6 +1139,7 @@
             class='link list-box__link'
             href='https://www.youtube.com/playlist?list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
             target='_blank'
+            data-ph-capture-attribute-link-id='anycasts-playlist'
           >screencast</a>
           on YouTube.
         </li>
@@ -1133,6 +1149,7 @@
             class='link list-box__link'
             href='https://www.youtube.com/watch?v=TgpSs2ffJL0'
             target='_blank'
+            data-ph-capture-attribute-link-id='railsconf-2022'
           >“The pitfalls of realtime-ification”</a>.
         </li>
       </ul>
@@ -1143,6 +1160,7 @@
           class='link videos__item'
           href="https://youtube.com/watch?v=TUHL5jb9jBo"
           target='_blank'
+          data-ph-capture-attribute-link-id='anycasts-7-video'
         >
           <img
             class='videos__image'
@@ -1155,7 +1173,9 @@
           <a
             class="link button"
             href="https://www.youtube.com/watch?v=TUHL5jb9jBo&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A"
-            target="_blank">
+            target="_blank"
+            data-ph-capture-attribute-link-id='anycasts-previous-episodes'
+            >
             Watch previous episodes
           </a>
         </a>
@@ -1163,6 +1183,7 @@
           class='link videos__item'
           href='https://www.youtube.com/watch?v=TgpSs2ffJL0'
           target='_blank'
+          data-ph-capture-attribute-link-id='railsconf-2022-video'
         >
           <img
             class='videos__image'
@@ -1188,6 +1209,7 @@
             class='link list-box__icon-link list-box__icon-link_type_discord'
             href='https://discord.gg/stimulus-reflex'
             target='_blank'
+            data-ph-capture-attribute-link-id='discord'
           >Discord</a>
         </li>
         <li class='list-box__item'>
@@ -1196,6 +1218,7 @@
             class='link list-box__icon-link list-box__icon-link_type_newsletter'
             href='https://anycable.substack.com/'
             target='_blank'
+            data-ph-capture-attribute-link-id='substack'
           >Any Cables newsletter</a>
         </li>
         <li class='list-box__item'>
@@ -1203,6 +1226,7 @@
           <a
             class='link list-box__icon-link list-box__icon-link_type_github'
             href='https://github.com/anycable/anycable'
+            data-ph-capture-attribute-link-id='github-2'
             target='_blank'
           >GitHub</a>
         </li>
@@ -1211,6 +1235,7 @@
           <a
             class='link list-box__icon-link list-box__icon-link_type_twitter'
             href='https://twitter.com/any_cable'
+            data-ph-capture-attribute-link-id='twitter'
             target='_blank'
           >Twitter</a>
         </li>
@@ -1231,6 +1256,7 @@
                     href='https://github.com/anycable/anycable'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-github'
                   >GitHub</a>
                 </li>
                 <li class='footer__list-item'>
@@ -1238,6 +1264,7 @@
                     href='https://rubygems.org/gems/anycable'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-rubygems'
                   >RubyGems</a>
                 </li>
                 <li class='footer__list-item'>
@@ -1245,6 +1272,7 @@
                     href='https://hub.docker.com/u/anycable'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-docker'
                   >DockerHub</a>
                 </li>
               </ul>
@@ -1259,6 +1287,7 @@
                     href='https://docs.anycable.io/'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-docs'
                   >Documentation</a>
                 </li>
                 <li class='footer__list-item'>
@@ -1266,16 +1295,18 @@
                     href='https://github.com/anycable/anycable_rails_demo'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-demo'
                   >Demo App</a>
                 </li>
                 <li class='footer__list-item'>
-                  <a href='/blog' class='link'>Blog</a>
+                  <a href='/blog' class='link' data-ph-capture-attribute-link-id='footer-blog'>Blog</a>
                 </li>
                 <li class='footer__list-item'>
                   <a
                     href='https://www.youtube.com/playlist?list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-screencasts'
                   >Screencasts
                   </a>
                 </li>
@@ -1291,6 +1322,7 @@
                     href='https://discord.gg/stimulus-reflex'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-discord'
                   >Discord</a>
                 </li>
                 <li class='footer__list-item'>
@@ -1298,6 +1330,7 @@
                     href='https://anycable.substack.com/'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-substack'
                   >Newsletter</a>
                 </li>
                 <li class='footer__list-item'>
@@ -1305,6 +1338,7 @@
                     href='https://twitter.com/any_cable'
                     class='link'
                     target='_blank'
+                    data-ph-capture-attribute-link-id='footer-twitter'
                   >Twitter</a>
                 </li>
               </ul>
@@ -1317,9 +1351,11 @@
                 class='link'
                 href='https://twitter.com/palkan_tula'
                 target='_blank'
+                data-ph-capture-attribute-link-id='footer-twitter-palkan'
               >Vladimir Dementyev&nbsp;</a>&amp;&nbsp;<a
                 class='link'
                 href='https://evilmartians.com/'
+                data-ph-capture-attribute-link-id='footer-evlms'
               >Evil Martians</a>
             </p>
             <p class='footer__legal'>
@@ -1328,6 +1364,7 @@
                 class='link'
                 href='https://opensource.org/licenses/MIT'
                 target='_blank'
+                data-ph-capture-attribute-link-id='footer-mit'
               >MIT License</a>
             </p>
             <p class='footer__legal'>
@@ -1335,6 +1372,7 @@
               <a
                 class='link'
                 href='https://twitter.com/antiflasher'
+                data-ph-capture-attribute-link-id='footer-twitter-antiflasher'
                 target='_blank'
               >Anton Lovchikov</a>
             </p>
