@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AnyCasts, ep.7: Flying multi-regionally with NATS</title>
+    <title>AnyCasts, ep.8: AnyCable v1.4: Reliable real-time for all</title>
     <meta name='viewport' content='width=device-width viewport-fit=cover' />
     <meta charset='UTF-8' />
     <meta http-equiv='Permissions-Policy' content='interest-cohort=()' />
@@ -19,8 +19,7 @@
       <script> !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_fc9VFWdFAAm5gSlCodHq93iaxxnTTKbjOwsWgAS1FMP',{api_host:'https://app.posthog.com'})</script>
       <!-- End Posthog -->
-    <meta name="description" content="This episode demonstrates how to use the embedded NATS
-      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
+    <meta name="description" content="This is a recording of the AnyCable v1.4 release meetup discussing and demonstrating newly released features and future plans."/>
     <meta name="keywords" content="anycable, ruby on rails, rails, actioncable, websocket, grpc, ruby, erlang, golang"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
@@ -28,25 +27,22 @@
     <link rel="manifest" href="/manifest.json"/>
     <meta name="theme-color" content="#000000"/>
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
-    <meta itemprop="description" content="This episode demonstrates how to use the embedded NATS
-      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
+    <meta itemprop="name" content="AnyCasts, ep.8: AnyCable v1.4: Reliable real-time for all"/>
+    <meta itemprop="description" content="This is a recording of the AnyCable v1.4 release meetup discussing and demonstrating newly released features and future plans."/>
     <meta itemprop="image" content="https://anycable.io/images/share.png"/>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@any_cable"/>
-    <meta name="twitter:title" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
-    <meta name="twitter:description" content="This episode demonstrates how to use the embedded NATS
-      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
+    <meta name="twitter:title" content="AnyCasts, ep.8: AnyCable v1.4: Reliable real-time for all"/>
+    <meta name="twitter:description" content="This is a recording of the AnyCable v1.4 release meetup discussing and demonstrating newly released features and future plans."/>
     <meta name="twitter:creator" content="@any_cable"/>
     <meta name="twitter:image" content="https://anycable.io/images/share.png"/>
     <!-- Open Graph data -->
-    <meta property="og:title" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
+    <meta property="og:title" content="AnyCasts, ep.8: AnyCable v1.4: Reliable real-time for all"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://anycable.io/"/>
     <meta property="og:image" content="https://anycable.io/images/share.png"/>
-    <meta property="og:description" content="This episode demonstrates how to use the embedded NATS
-      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
+    <meta property="og:description" content="This is a recording of the AnyCable v1.4 release meetup discussing and demonstrating newly released features and future plans."/>
     <meta property="og:site_name" content="AnyCable"/>
     <script type=application/ld+json>
       {
@@ -98,14 +94,11 @@
           </span>Other Posts</a>
         <button class='button try-now-btn'>Try it now</button>
       </nav>
-    </header>    <div class="blog--content"><h1><img src="/images/demo.svg" class="blog--title-icon"> AnyCasts, Ep. 7:<br>Flying multi-regionally with NATS</h1>
+    </header>    <div class="blog--content"><h1><img src="/images/demo.svg" class="blog--title-icon"> Flying multi-regionally with NATS</h1>
 <p class="date">March 24, 2023</p>
 <br/>
 <div class="divider"></div>
 <p>In this episode, we explore the recently released <a href="https://docs.anycable.io/anycable-go/embedded_nats">embedded NATS support</a> in AnyCable-Go and see how it can be used to simplify building multi-regional Rails/AnyCable applications on <a href="https://fly.io">Fly.io</a>.</p>
-<blockquote>
-<p>You can support us on <a href="https://github.com/sponsors/anycable">GitHub Sponsors</a> (and get access to the source code) ❤️</p>
-</blockquote>
 <figure class="blog--figure">
   <iframe class="blog--youtube" src="https://youtube.com/embed/TUHL5jb9jBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>

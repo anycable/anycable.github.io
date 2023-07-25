@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AnyCasts, ep.3: Of users and direct messaging (pt. 2)</title>
+    <title>AnyCasts, ep.7: Flying multi-regionally with NATS</title>
     <meta name='viewport' content='width=device-width viewport-fit=cover' />
     <meta charset='UTF-8' />
     <meta http-equiv='Permissions-Policy' content='interest-cohort=()' />
@@ -19,8 +19,8 @@
       <script> !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_fc9VFWdFAAm5gSlCodHq93iaxxnTTKbjOwsWgAS1FMP',{api_host:'https://app.posthog.com'})</script>
       <!-- End Posthog -->
-    <meta name="description" content="This episode continues development of the direct messaging
-      feature for the AnyCasts demo application."/>
+    <meta name="description" content="This episode demonstrates how to use the embedded NATS
+      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
     <meta name="keywords" content="anycable, ruby on rails, rails, actioncable, websocket, grpc, ruby, erlang, golang"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
@@ -28,25 +28,25 @@
     <link rel="manifest" href="/manifest.json"/>
     <meta name="theme-color" content="#000000"/>
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="AnyCasts, ep.3: Of users and direct messaging (pt. 2)"/>
-    <meta itemprop="description" content="This episode continues development of the direct messaging
-      feature for the AnyCasts demo application."/>
+    <meta itemprop="name" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
+    <meta itemprop="description" content="This episode demonstrates how to use the embedded NATS
+      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
     <meta itemprop="image" content="https://anycable.io/images/share.png"/>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@any_cable"/>
-    <meta name="twitter:title" content="AnyCasts, ep.3: Of users and direct messaging (pt. 2)"/>
-    <meta name="twitter:description" content="This episode continues development of the direct messaging
-      feature for the AnyCasts demo application."/>
+    <meta name="twitter:title" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
+    <meta name="twitter:description" content="This episode demonstrates how to use the embedded NATS
+      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
     <meta name="twitter:creator" content="@any_cable"/>
     <meta name="twitter:image" content="https://anycable.io/images/share.png"/>
     <!-- Open Graph data -->
-    <meta property="og:title" content="AnyCasts, ep.3: Of users and direct messaging (pt. 2)"/>
+    <meta property="og:title" content="AnyCasts, ep.7: Flying multi-regionally with NATS"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://anycable.io/"/>
     <meta property="og:image" content="https://anycable.io/images/share.png"/>
-    <meta property="og:description" content="This episode continues development of the direct messaging
-      feature for the AnyCasts demo application."/>
+    <meta property="og:description" content="This episode demonstrates how to use the embedded NATS
+      feature of AnyCable to build multi-regional Rails/AnyCable clusters on Fly.io"/>
     <meta property="og:site_name" content="AnyCable"/>
     <script type=application/ld+json>
       {
@@ -79,7 +79,6 @@
     <script type="module" crossorigin src="/assets/popups-show-hide-c6eef21e.js"></script>
     <link rel="stylesheet" href="/assets/index-blog-0be3fbfb.css">
   </head>
-
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/a11y-light.min.css"
@@ -99,23 +98,22 @@
           </span>Other Posts</a>
         <button class='button try-now-btn'>Try it now</button>
       </nav>
-    </header>    <div class="blog--content"><h1><img src="/images/demo.svg" class="blog--title-icon"> Of users and direct messaging (pt. 2)</h1>
-<p class="date">April 5, 2022</p>
+    </header>    <div class="blog--content"><h1><img src="/images/demo.svg" class="blog--title-icon"> AnyCable v1.4: reliable real-time for all: Ruby, Rails, Hotwire and beyond</h1>
+<p class="date">July 25, 2023</p>
 <br/>
 <div class="divider"></div>
-<p>In this episode, we continue working on the <a href="https://github.com/anycable/anycasts/issues/1">direct messaging feature</a>: adding channel memberships, <a href="https://edgeapi.rubyonrails.org/classes/ActiveSupport/CurrentAttributes.html"><code>Current</code> attributes</a> and more <a href="https://turbo.hotwired.dev/reference/streams">Turbo Streams</a>.</p>
+<p>This episode is a recording of the AnyCable Meetup dedicated to v1.4 release. We talked a bit about AnyCable history, demonstrated new features, such as <a href="https://docs.anycable.io/anycable-go/reliable_streams">Reliable Streams</a> and <a href="https://docs.anycable.io/anycable-go/long_polling">Long polling support</a>, and also revealed our plans for the future.</p>
 <figure class="blog--figure">
-  <iframe class="blog--youtube" src="https://www.youtube.com/embed/fZqQbgj_y8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe class="blog--youtube" src="https://youtube.com/embed/4n1SxfK0Uqg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </figure>
 <div class="divider"></div>
-<p><strong>Links</strong>:</p>
+<p>The topics covered in this video:</p>
 <ul>
-<li><a href="https://github.com/bibendi/activerecord-postgres_enum">activerecord-postgres_enum</a></li>
-<li><a href="https://edgeapi.rubyonrails.org/classes/ActiveRecord/Relation.html#method-i-create_or_find_by"><code>.create_or_find_by</code></a></li>
-<li><a href="https://edgeapi.rubyonrails.org/classes/ActiveRecord/QueryMethods.html#method-i-create_with"><code>.create_with</code></a></li>
-<li><a href="https://www.nomnoml.com">Nomnoml</a></li>
-<li><a href="https://turbo.hotwired.dev/reference/streams">Turbo Streams</a></li>
-<li><a href="https://edgeapi.rubyonrails.org/classes/ActiveSupport/CurrentAttributes.html">Current Attributes</a></li>
+<li><a href="https://docs.anycable.io/anycable-go/reliable_streams">Reliable streams</a></li>
+<li><a href="https://docs.anycable.io/guides/hotwire">Upgrade AnyCable for Hotwire applications guide</a></li>
+<li><a href="https://docs.anycable.io/anycable-go/long_polling">Long polling support</a></li>
+<li><a href="https://anycable.substack.com/p/any-cables-monthly-11">Any Cables Monthly #11</a> (on real-time transports)</li>
+<li><a href="https://github.com/anycable/anycable-go/pull/43">mRuby channels experiment</a></li>
 </ul>
 </div>
     <footer class='footer'>
