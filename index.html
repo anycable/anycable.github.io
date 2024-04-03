@@ -72,9 +72,9 @@
         "operatingSystem": "Any"
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-fba65e9d.js"></script>
+    <script type="module" crossorigin src="/assets/main-8e2751ac.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/popups-show-hide-c6eef21e.js">
-    <link rel="stylesheet" href="/assets/index-4a65dd55.css">
+    <link rel="stylesheet" href="/assets/index-73a7ac9a.css">
   </head>
   <body>
     <div class="page">
@@ -219,428 +219,109 @@
       </a>
       <h1 class='main-slide__title' id='pro'>AnyCable</h1>
       <p class='main-slide__subtitle'>
-        A real-time server for Rails, JavaScript, and Hotwire applications that runs on your servers and scales.
+        Realtime server for reliable two-way communication.
       </p>
-      <p class='main-slide__text'>
-        Build chats, real-time updates, GPS trackers, collaborative text editors, and other real-time features. Own the data, scale efficiently, and write maintainable code.
-      </p>
-      <div class='main-slide__text main-slide__banner'>
-        <p class="main-slide__banner_title">New</p>
-        <p>Check out <a href="https://plus.anycable.io" target="_blank">AnyCable+</a>, our software-as-a-<strong>quick</strong>-service offering for those who want to get started quickly and don't want to manage infrastructure.</p>
-      </div>
-      <div class='try-now'>
-        <p class='try-now__caption'>
-          Start your
-          <span class='try-now__caption try-now__caption_bolded'>free 2-month
-            trial</span>
-          of AnyCable Pro today
+      <div class='main-slide__text'>
+        <p>
+          Comes in different flavors: open source, managed, on-premise Pro.
         </p>
-        <button class='button button_size_big try-now__button try-now-btn' data-ph-capture-attribute-link-id='try-pro-now'>
-          Try PRO now
-        </button>
+        <p>
+          Plays nice with Rails, JavaScript/TypeScript, and <strong>any</strong> backend.
+        </p>
+      </p>
+      <div class='main-slide__footer'>
+        <div class='try-now'>
+          <p class='try-now__caption'>
+            Start a 
+            <span class='try-now__caption try-now__caption_bolded'>free trial</span>
+            of SaaS, or on premise Pro
+          </p>
+          <button class='button button_size_big try-now__button try-now-btn' data-ph-capture-attribute-link-id='try-pro-now'>
+            Sign up
+          </button>
+        </div>
+        <button class='main-slide__learn-more-btn' data-ph-capture-attribute-link-id='learn-more'></button>
       </div>
-      <button class='main-slide__learn-more-btn' data-ph-capture-attribute-link-id='learn-more'></button>
     </div>
   </div>
 </section>
  <section class='slide about-slide'>
   <div class='about-slide__wrapper'>
-    <div class='about-slide__content'>
-      <h2 class='about-slide__title about-slide__title_type_with-padding'>
-        Why AnyCable?
-      </h2>
-      <div class='about-slide__section'>
-        <h3 class='about-slide__subtitle anim-trigger'>
-          Better performance, lower costs
+    <div class='about-slide__section'>
+      <div class='about-slide__content'>
+        <h2 class='about-slide__title'>
+          Why AnyCable?
+        </h2>
+        <h3 class='about-slide__subtitle'>
+          Low-latency of realtime at scale
         </h3>
         <p class='about-slide__text'>
-          Written in Go, AnyCable scales efficiently while keeping RAM and CPU usage low. For Ruby on Rails, AnyCable the difference compared to Action Cable is hard to underestimate both in terms of resources required and quality of service.
+          If your product needs low latency interactivity, communication, or collaboration, AnyCable can be the perfect solution at any stage: start building with a managed (SaaS) version, and move on to the cost efficient Pro version, or move off to open source. AnyCable has been around for 7+ years, and it is powering large-scale applications around the world (see use cases).
         </p>
-        <div class='chart mobile-only'>
+        <h3 class='about-slide__subtitle'>
+          Reliable realtime delivery
+        </h3>
+        <p class='about-slide__text'>
+          Most WebSocket solutions do not have delivery guarantees, but AnyCable automatically recovers any messages missed during micro connectivity issues, common even for stable connections, as well as longer ones that happen when users commute, ride a subway, etc. We solve all realtime-specific problems, so that you don’t have!
+        </p>
+      </div>
+      <div class='about-slide__media about-slide__media-top demo__slide'>
+        <div class='chart' data-controller='demo'>
           <p class='chart__heading'>
-            AnyCable Pro uses 4X less RAM compared to Action Cable while handling 20K
-            connections
+            The emulation below demonstrates how AnyCable handles connection failures and restores missed messages.
+            You can try this feature yourself in our <a href='https://demo.anycable.io' target='_blank'
+              rel='nofollow'>Demo application</a>.
           </p>
-          <div class='chart__columns'>
-            <div class='chart__column'>
-              <div class='chart__figure chart__figure_color_red'>
-                <p class='chart__column-text chart__column-text_type_heading'>
-                  AnyCable PRO
-                </p>
+          <div class='demo'>
+            <div class='demo__chat' data-demo-target='any'>
+              <div class='demo__chat__header demo__chat__header_online'>
+                <div class='demo__chat__user_details'>
+                  <span class='demo__chat__username'>Alice</span>
+                  <span class='demo__chat__via'>via AnyCable</span>
+                </div>
+                <a class='demo__chat__status' role='status' href='javascript:void();'>Online</a>
               </div>
-              <p class='chart__column-text chart__column-text_type_caption'>
-                470 MB
-              </p>
+              <div class='demo__chat__messages'>
+                <form class='demo__chat__form'>
+                  <input class='demo__chat__input' type='text' />
+                </form>
+              </div>
             </div>
-            <div class='chart__column'>
-              <div class='chart__figure chart__figure_color_orange'>
-                <p class='chart__column-text chart__column-text_type_heading'>
-                  AnyCable
-                </p>
+            <div class='demo__chat' data-demo-target='action'>
+              <div class='demo__chat__header demo__chat__header_online'>
+                <div class='demo__chat__user_details'>
+                  <span class='demo__chat__username'>Bob</span>
+                  <span class='demo__chat__via' data-demo-target='another-pubsub'></span>
+                </div>
+                <a class='demo__chat__status' role='status' href='javascript:void();'>Online</a>
               </div>
-              <p class='chart__column-text chart__column-text_type_caption'>
-                720 MB
-              </p>
-            </div>
-            <div class='chart__column'>
-              <div class='chart__figure chart__figure_color_grey'>
-                <p class='chart__column-text chart__column-text_type_heading'>
-                  Action Cable
-                </p>
+              <div class='demo__chat__messages'>
+                <form class='demo__chat__form'>
+                  <input class='demo__chat__input' type='text' />
+                </form>
               </div>
-              <p class='chart__column-text chart__column-text_type_caption'>
-                1.8 GB
-              </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class='about-slide__section'>
-        <h3 class='about-slide__subtitle anim-trigger'>Better real-time UX</h3>
-        <p class='about-slide__text'>
-          AnyCable brings consistency and reliability to real-time communication and collaboration. When users go offline and re-connect, AnyCable will make sure that they receive all the updates they missed. 
-        </p>
-        <div class='chart mobile-only'>
-          <p class='chart__heading'>
-            One instance of AnyCable guarantees low broadcast latency for up to
-            10K simultaneous connections
-          </p>
-          <img
-            class='chart__img-chart'
-            src='/assets/real-time-chart-6e198f74.svg'
-            alt='Real time chart'
-          />
-        </div>
-      </div>
-      <div class='about-slide__section about-slide__section_type_no-padding'>
-        <h3
-          class='about-slide__subtitle about-slide__subtitle_type_with-padding anim-trigger'
-        >
-          Control PaaS expenses
-        </h3>
-        <p class='about-slide__text about-slide__text_type_with-padding'>
-          As your business grows and serves more customers, expenses on PaaS tend to explode and limit your options. With AnyCable, you get the best of both worlds from the beginning: start with a simple setup (or <a href="https://plus.anycable.io" target="_blank">AnyCable+</a>) and move on to a more complex one as you grow and scale. The cost is always under your control as you only purchase a license to run AnyCable Pro.
-        </p>
-        <div class='about-slide__section-image'><svg
-  class='illustration'
-  width='360px'
-  height='204px'
-  version='1.1'
-  xmlns='http://www.w3.org/2000/svg'
-  xmlns:xlink='http://www.w3.org/1999/xlink'
->
-  <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
-  <title>Artboard</title>
-  <desc>Created with Sketch.</desc>
-  <defs>
-    <linearGradient
-      x1='0%'
-      y1='10.2291666%'
-      x2='100%'
-      y2='10.2291666%'
-      id='linearGradient-1'
-    >
-      <stop stop-color='#F22B2B' offset='0%'></stop>
-      <stop stop-color='#FF5E5E' offset='100%'></stop>
-    </linearGradient>
-  </defs>
-  <g
-    id='Artboard'
-    stroke='none'
-    stroke-width='1'
-    fill='none'
-    fill-rule='evenodd'
-  >
-  <path fill-rule="evenodd" clip-rule="evenodd" d="M78 159V112L40 131L2 112V159L40 178L78 159Z" fill="#fff"/>
-    <g class='sprite--rails' id='Rails' transform='translate(0.0, 90.0)'>
-      <path
-        d='M78,22.118034 L41,40.618034 L41,87.263932 L78,68.763932 L78,22.118034 Z M76.645898,20.559017 L40,2.23606798 L3.35410197,20.559017 L40,38.881966 L76.645898,20.559017 Z M2,22.118034 L2,68.763932 L39,87.263932 L39,40.618034 L2,22.118034 Z M0,20 L40,0 L80,20 L80,70 L40,90 L0,70 L0,20 Z M23,20 L27,18 L41,25 L37,27 L23,20 Z M37,13 L41,11 L55,18 L51,20 L37,13 Z'
-        id='Rectangle-9'
-        fill='#363636'
-        fill-rule='nonzero'
-      ></path>
-      <path
-        d='M49.3628731,72.0903377 L49.3628731,78.4295315 L50.6895796,77.7693176 L50.6895796,76.1182692 L51.8970039,76.9888759 L53.932665,75.9758622 L52.3179738,74.8115979 C52.3179738,74.8115979 53.4795721,74.2105516 53.5674052,72.1196632 C53.5674052,70.2413937 52.404459,70.576742 51.061354,71.2451163 L49.3628731,72.0903377 Z M50.7527027,73.1182002 L51.8970039,72.5487573 L51.8970039,73.6780186 L50.7527027,74.2474615 L50.7527027,73.1182002 Z M56.4951001,68.5668345 C55.7686238,68.9231522 54.7611266,69.5066449 54.7611266,71.1749402 L54.7611266,75.5808388 L56.1228765,74.9031861 L56.1228765,73.825118 L57.4426193,73.1683695 L57.4426193,74.2207041 L58.8115576,73.5394743 L58.8115576,68.9197689 C58.8115576,67.4707556 57.490467,68.0715064 56.7828602,68.4236354 C56.6943532,68.4676795 56.5988824,68.5160102 56.4951001,68.5668345 Z M56.1439924,70.3326525 L57.421728,69.6968082 L57.421728,71.4335436 L56.1439924,72.069388 L56.1439924,70.3326525 Z M60.1760031,66.7391995 L61.5849269,66.0380716 L61.5849269,72.1024101 L60.1760031,72.803538 L60.1760031,66.7391995 Z M63.0605678,65.3842284 L63.0605678,71.4485669 L66.4512397,69.7612543 L66.4512397,68.1512698 L64.4477017,69.1482979 L64.4477017,64.6671153 L63.0605678,65.3842284 Z M70.9430826,61.4079663 L70.9430826,63.0447792 L68.6751467,64.1733805 L68.6751467,64.7636078 L69.6437818,64.2815823 C70.1498891,64.0297263 71.2070311,63.4768282 71.2070311,65.4090285 C71.2070311,67.3409551 70.4805549,67.8097882 69.0053632,68.5438933 L67.2219695,69.4313701 L67.2219695,67.9552545 L69.2695364,66.9363162 C69.8859405,66.6295727 69.9200854,66.3678394 69.9200854,66.1548539 C69.9200854,65.9418683 69.6049196,65.9993305 68.9638054,66.3183705 C68.3226912,66.6374106 67.1339118,66.8451753 67.1339118,65.3425049 C67.1339118,63.8398345 67.7503159,62.9694186 68.9833488,62.3558199 C70.2163817,61.7422211 70.9430826,61.4079663 70.9430826,61.4079663 Z M50.5979277,69.6809602 L62.3118524,63.8517164 C62.3118524,63.8517164 59.7137001,57.9532349 60.374133,51.0236724 C61.0347907,44.0939982 65.3062646,38.9627542 67.7283015,37.4355249 C70.1501137,35.9081336 71.471429,37.0754888 71.471429,37.0754888 L72,35.8463539 C72,35.8463539 68.5210457,33.2842158 64.1172606,35.9588747 C59.7134754,38.6332599 56.6750344,43.6872015 54.7815685,48.922837 C52.887878,54.1588581 51.7869317,57.711793 51.038441,62.5922784 C50.2899503,67.4727637 50.5979277,69.6809602 50.5979277,69.6809602 Z M48.2641732,63.6509054 L50.5541235,62.725977 L50.1576391,65.71372 L48,66.4654918 L48.2641732,63.6509054 Z M51.8752141,55.9505623 L52.4918429,53.5508094 L50.4660658,53.5928042 L49.8056328,56.1753266 L51.8752141,55.9505623 Z M54.7375397,47.3347629 L55.9265437,45.0260497 L54.3853087,44.5586349 L53.1522759,46.8356013 L54.7375397,47.3347629 Z M57.8640384,39.1243459 L58.9209558,40.1547156 L60.374133,38.4118084 L59.3172156,37.4887528 L57.8640384,39.1243459 Z M63.0165389,34.7893325 L63.2807121,36.2144721 L65.0863449,35.2622714 L64.9100048,33.9546678 L63.0165389,34.7893325 Z M69.1376744,33.4068905 L69.0936456,34.3946271 L70.3266785,34.5858837 L70.5908517,33.9715091 L69.1376744,33.4068905 Z M68.8732766,37.6708757 L68.8732766,38.4757311 L70.0622806,38.0450137 L70.0622806,37.4008556 L68.8732766,37.6708757 Z M65.0863449,40.2529219 L65.6587201,41.2558572 L66.4954932,40.0345954 L66.3193778,39.2634503 L65.0863449,40.2529219 Z M63.2804875,42.8154927 L64.1612894,43.9871603 L63.6327184,45.3769926 L62.3556566,44.2954768 L63.2804875,42.8154927 Z M61.5193328,48.1459829 L60.9467329,49.8262843 L62.443939,50.6378252 L62.7961699,48.691314 L61.5193328,48.1459829 Z M60.9027041,53.3364484 L60.8146463,55.2585385 L62.6640833,55.3042964 L62.5760256,53.5768877 L60.9027041,53.3364484 Z M61.4310505,59.728365 L61.8715638,61.441351 L64.2053183,60.4409672 L63.3685452,58.7642023 L61.4310505,59.728365 Z'
-        id='Combined-Shape'
-        fill='#F64343'
-      ></path>
-      <text
-        class='sprite--rails--cluster'
-        id='Rails-on-Cluster'
-        font-family='Stem Text'
-        font-size='13'
-        font-weight='normal'
-        line-spacing='16'
-        fill='#9E9E9E'
-      >
-        <tspan x='5' y='110'>Your cluster</tspan>
-      </text>
-    </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M200 40L280 0L360 40V140L280 180L200 140V40Z" fill="#fff"/>
-    <g class='illustration__cloud' id='Cloud' transform='translate(200.0, 0.0)'>
-      <path
-        d='M123.708777,24.0904567 L109.941583,17.2068593 L33.4823229,55.6231275 L47.2495176,62.5067248 L123.708777,24.0904567 Z M125.941583,25.2068593 L49.4823229,63.6231275 L80,78.881966 L156.645898,40.559017 L125.941583,25.2068593 Z M107.708777,16.0904567 L80,2.23606798 L3.35410197,40.559017 L31.2495176,54.5067248 L107.708777,16.0904567 Z M48.456396,65.346232 L48.456396,106.111771 L30.5,97.1090385 L30.5,56.368034 L2,42.118034 L2,138.763932 L79,177.263932 L79,80.618034 L48.456396,65.346232 Z M46.456396,64.346232 L32.5,57.368034 L32.5,95.8744797 L46.456396,102.871747 L46.456396,64.346232 Z M158,42.118034 L81,80.618034 L81,177.263932 L158,138.763932 L158,42.118034 Z M0,40 L80,0 L160,40 L160,140 L80,180 L0,140 L0,40 Z M49.310447,57.0392037 L42.802383,53.8018478 L44.9480777,52.7320439 C47.847665,51.286363 50.312153,51.52073 52.0135469,52.3670673 C53.8729937,53.2920262 54.1527579,54.6249166 51.3111623,56.0416839 L49.310447,57.0392037 Z M46.2768461,53.4122769 L45.6486021,53.7255078 L49.4604682,55.6216734 L50.0887121,55.3084425 C51.780138,54.4651287 51.6757407,53.7393204 50.4671003,53.1380972 C49.3700266,52.5923714 48.035929,52.5352305 46.2768461,53.4122769 Z M52.6771394,52.1195543 C50.7990981,51.1853459 50.8386566,49.6839869 52.8007107,48.7057428 C54.7337689,47.7419555 57.7119896,47.683144 59.6458143,48.6451012 C61.5610446,49.5978088 61.4649665,51.0903065 59.5319083,52.0540938 C57.5988501,53.017881 54.6109642,53.0815115 52.6771394,52.1195543 Z M54.2332513,51.3437055 C55.4418918,51.9449288 57.1128023,51.8711819 58.1373232,51.3603746 C59.2005052,50.8302916 59.2983429,50.0221732 58.0897025,49.4209499 C56.881062,48.8197267 55.1811556,48.9079304 54.1952959,49.3994619 C53.170775,49.9102692 53.0246108,50.7424823 54.2332513,51.3437055 Z M71.9948852,45.72916 L70.8350503,46.3074324 L63.7001644,46.0217622 L67.5585166,47.9410518 L66.0990577,48.6687112 L59.5909937,45.4313553 L60.7411633,44.8579018 L67.8950118,45.1433778 L64.0273623,43.2194635 L65.4868213,42.4918041 L71.9948852,45.72916 Z M69.6590559,43.6526831 C67.7810146,42.7184747 67.8205731,41.2171156 69.7826272,40.2388715 C71.7156854,39.2750843 74.6939061,39.2162728 76.6277308,40.1782299 C78.542961,41.1309375 78.446883,42.6234353 76.5138248,43.5872225 C74.5807666,44.5510098 71.5928806,44.6146403 69.6590559,43.6526831 Z M71.2151678,42.8768343 C72.4238082,43.4780576 74.0947188,43.4043107 75.1192397,42.8935034 C76.1824217,42.3634204 76.2802594,41.5553019 75.0716189,40.9540787 C73.8629785,40.3528555 72.163072,40.4410592 71.1772123,40.9325907 C70.1526915,41.4433979 70.0065273,42.2756111 71.2151678,42.8768343 Z M75.0117565,39.085579 L73.6636575,38.4149839 L79.5014934,35.5043463 L80.8495923,36.1749415 L78.6749018,37.2592022 L83.8348668,39.8259629 L82.3367467,40.5728981 L77.1767817,38.0061373 L75.0117565,39.085579 Z M85.3264928,35.8411872 C83.4484515,34.9069788 83.48801,33.4056198 85.4500641,32.4273757 C87.3831223,31.4635884 90.361343,31.4047769 92.2951677,32.3667341 C94.2103979,33.3194417 94.1143199,34.8119394 92.1812617,35.7757267 C90.2482034,36.7395139 87.2603175,36.8031444 85.3264928,35.8411872 Z M86.8826047,35.0653384 C88.0912451,35.6665617 89.7621557,35.5928148 90.7866765,35.0820075 C91.8498586,34.5519245 91.9476963,33.7438061 90.7390558,33.1425828 C89.5304154,32.5413596 87.8305089,32.6295633 86.8446492,33.1210948 C85.8201284,33.6319021 85.6739642,34.4641152 86.8826047,35.0653384 Z M97.9655224,32.7806779 L96.4674023,33.5276131 L89.9593383,30.2902571 L92.7622728,28.8927656 C95.062612,27.7458587 96.8043157,28.0442656 97.8734977,28.5761169 C98.9705713,29.1218426 99.3609745,30.0476819 97.2249452,31.1126668 L95.9201309,31.7632232 L97.9655224,32.7806779 Z M94.1490329,29.544085 L92.8055574,30.2139172 L94.5720319,31.0926281 L95.8575157,30.4517095 C96.7950489,29.9842727 96.8566254,29.6202037 96.3080886,29.3473409 C95.7967407,29.0929772 95.0962314,29.0718292 94.1490329,29.544085 Z M103.010804,30.2651931 L96.5027404,27.0278372 L101.673671,24.4497063 L103.02177,25.1203014 L99.3489595,26.9514972 L100.5576,27.5527205 L103.988778,25.8419981 L105.290391,26.4894693 L101.859213,28.2001917 L103.160826,28.8476629 L106.920624,26.9730966 L108.268723,27.6436918 L103.010804,30.2651931 Z M115.179406,24.1981522 L114.019571,24.7764246 L106.884685,24.4907545 L110.743037,26.410044 L109.283578,27.1377034 L102.775514,23.9003475 L103.925684,23.3268941 L111.079532,23.6123701 L107.211883,21.6884557 L108.671342,20.9607963 L115.179406,24.1981522 Z'
-        id='Rectangle-9'
-        fill='#363636'
-        fill-rule='nonzero'
-      ></path>
-      <g id='Hole' transform='translate(80.158459, 81.658670)'>
-        <path
-          d='M23.0713352,6.1287653 C24.7675868,5.27901441 26.1426705,6.84976505 26.1426705,9.63713506 L26.1426705,33.8250545 C26.1426705,36.6124245 24.7675868,39.5608936 23.0713352,40.4106445 C21.3750836,41.2603954 20,39.6896447 20,36.9022747 L20,12.7143553 C20,9.92698526 21.3750836,6.9785162 23.0713352,6.1287653 Z'
-          id='Path'
-          fill='#363636'
-          fill-rule='nonzero'
-        ></path>
-      </g>
-      <g class='sprite--cloud--palm' id='Palm' transform='translate(112, 80)'>
-        <path
-          d='M9.43332246,22.8690482 C9.48024054,22.7475839 9.53465041,22.5869113 9.59357489,22.3881214 C9.82511867,21.6069763 10.0653624,20.4461279 10.3024145,18.9306144 L9.52010715,16.0723088 C8.19198952,15.7220604 6.885798,15.4721066 5.60159045,15.3222908 C2.8576226,14.8787096 1.27943674,13.4565038 0.867032885,11.0556735 C-0.199663886,4.84584323 2.24012137,4.43671791 5.31485324,2.45945815 C11.0183162,-0.701586562 15.0490765,-0.847309639 17.3614422,2.20641435 C18.5217865,3.73877195 19.0636847,5.80938504 19.6864349,10.0855677 C19.7537656,10.5479007 19.9886246,12.2053962 20.0022817,12.3008006 C20.1331085,13.2147197 20.241137,13.937914 20.3561104,14.656919 C20.6513412,16.5031935 20.966398,18.1396892 21.3530581,19.7570927 C22.3244268,23.8203399 23.7100338,27.5583661 25.7326658,31.2083837 L26.0848897,31.8440026 L25.8204127,32.8740337 C23.3907956,42.3364103 18.4281964,49.763295 13.2263207,52.3692165 L12.6201229,52.6728962 L12.3286514,51.9454792 C12.1009401,51.3771865 11.7808122,50.8044848 11.3709015,50.2282861 C10.4806324,48.9768626 9.26071715,47.8054806 7.47468378,46.3863195 C7.01630826,46.0220997 9.36911028,22.8389774 9.43332246,22.8690482 Z'
-          id='Path'
-          fill='#363636'
-          fill-rule='nonzero'
-        ></path>
-        <path
-          d='M13.794538,48.6967556 C17.8307686,46.3458134 21.6383914,40.6207348 23.7060768,33.3354882 C21.7625088,29.6870127 20.3962514,25.9185338 19.4209518,21.838844 C19.0101567,20.1204833 18.6767935,18.3888988 18.3665818,16.4489385 C18.2474176,15.7037261 18.136188,14.9591018 18.002333,14.0240288 C17.9876363,13.9213618 17.7538897,12.2717175 17.6879826,11.8191592 C17.1378915,8.0418986 16.6949426,6.34937448 15.841102,5.22178741 C14.0840944,2.90147261 10.8184226,2.92452036 6.00389516,5.45289086 C3.78857172,7 2.91192444,7.21124995 2.91192444,9.05352894 C2.91192444,10.8958079 3.78857172,11.618842 6.05817386,11.7824201 C7.59832418,11.9466428 9.16579195,12.2495169 10.7606668,12.6907995 L11.1260726,12.7919029 L12.4544989,17.6455554 L12.3697223,18.2206029 C11.6749082,22.9335952 10.8828025,25.605874 9.50513281,26.2960287 C8.00783798,27.0461106 8.27096612,42.7344435 8.7423804,43.1090237 C10.6237394,44.6039295 11.9250989,45.8535155 12.9218988,47.2546861 C13.2563726,47.7248455 13.5476283,48.2038691 13.794538,48.6967556 Z'
-          id='Path'
-          fill='#FFDBBC'
-        ></path>
-      </g>
-      <g
-        class='illustration__coin'
-        id='Coin'
-        transform='translate(100.000000, 83.000000)'
-      >
-        <path
-          d='M4.02775776,30.5283995 C-0.340820344,27.2947603 -1.305684,18.091718 1.87267447,9.97282913 C5.05103294,1.85394029 11.1690338,-2.10633701 15.5376119,1.12730222 C19.9061901,4.36094144 20.8710537,13.5639838 17.6926952,21.6828726 C14.5143368,29.8017615 8.39633587,33.7620388 4.02775776,30.5283995 Z'
-          id='Oval'
-          fill='#363636'
-        ></path>
-        <path
-          d='M5.32438246,27.7371043 C1.85692808,25.0309599 1.04205089,17.5052419 3.50430331,10.9279429 C5.96655573,4.3506438 10.7735329,1.21245295 14.2409872,3.91859742 C17.7084416,6.62474189 18.5233188,14.1504598 16.0610664,20.7277589 C13.598814,27.305058 8.79183685,30.4432488 5.32438246,27.7371043 Z'
-          id='Oval'
-          fill='#FFD100'
-        ></path>
-      </g>
-      <g id='Mask' transform='translate(80.158459, 81.658670)'>
-        <path
-          d='M24.0015409,5.89839173 C23.708117,5.8923372 23.3955943,5.9663251 23.0713352,6.1287653 C21.3750836,6.9785162 20,9.92698526 20,12.7143553 L20,36.9022747 C20,39.6896447 21.3750836,41.2603954 23.0713352,40.4106445 C23.3955943,40.2482043 23.708117,40.0090707 24.0015409,39.70903 L24.0015409,57.3413303 L0.841540937,57.3413303 L0.841540937,0.341330302 L24.0015409,0.341330302 L24.0015409,5.89839173 Z'
-          id='Combined-Shape'
-          fill='#fff'
-        ></path>
-      </g>
-      <g class='sprite--cloud--thumb' id='Thumb' transform='translate(108, 87)'>
-        <path
-          d='M9.60159045,8.32229078 C9.99185459,9.37963521 10.2920025,10.2845953 10.6385695,11.3915232 C10.9721853,12.4570854 11.6119306,13.7438615 12.2833096,14.6917338 C12.6173865,15.1633931 12.9392595,15.522525 13.2119687,15.7299913 C13.2944626,15.7927494 13.3691103,15.8389774 13.4333225,15.8690482 C13.4646012,15.788072 18.9269646,19.1230672 29.8204127,25.8740337 C27.3907956,35.3364103 22.4281964,42.763295 17.2263207,45.3692165 L16.6201229,45.6728962 L16.3286514,44.9454792 C16.1009401,44.3771865 15.7808122,43.8044848 15.3709015,43.2282861 C14.4806324,41.9768626 13.2607171,40.8054806 11.4746838,39.3863195 C11.0163083,39.0220997 9.00245472,37.4800481 8.51004826,37.0833132 C7.43687133,36.2186478 6.72950216,35.5426796 6.24012137,34.8583554 C5.11514185,33.2852435 4.88521944,31.6032885 4.86703288,27.8462101 C4.86594217,27.6208844 4.86540699,27.5214549 4.86454171,27.3980651 C4.85132391,25.5131997 4.76342332,24.5403858 4.47421149,23.6772245 C4.35113543,23.3099003 3.60066708,21.4263737 3.01219038,19.9313912 L2.04748215,17.3464556 L1.98504426,17.3329425 C1.9960959,17.324912 2.00713979,17.3168441 2.01817559,17.3087389 C1.74112062,16.5300872 1.4919414,15.7818809 1.26777423,15.0487374 C0.562833103,12.7432127 0.131800697,10.6756607 0.0253479003,8.78289784 C-0.117579743,6.24160123 0.338164391,3.94523332 1.53923832,2.21102213 C2.67445424,0.571902243 3.90216926,0.171248809 5.07097142,0.812031463 C5.839157,1.23318058 6.58436651,2.09384529 7.32163908,3.32441931 C7.63476679,3.9053809 7.87519573,4.45995376 8.04571795,4.80351251 L9.60159045,8.32229078 Z'
-          id='Path'
-          fill='#363636'
-          fill-rule='nonzero'
-        ></path>
-        <path
-          d='M17.794538,41.6967556 C21.8307686,39.3458134 25.6383914,33.6207348 27.7060768,26.3354882 C25.7625088,22.6870127 24.3962514,18.9185338 23.4209518,14.838844 C23.1470884,13.6932702 20.7966786,12.4871898 16.3697223,11.2206029 C15.6749082,15.9335952 14.8828025,18.605874 13.5051328,19.2960287 C12.007838,20.0461106 9.76399213,16.8781844 8.7676873,13.696007 C7.8993575,10.9225792 7.04644758,8.62621804 5.98411447,6.68849791 C4.56285866,4.0960945 3.37237321,3.44342422 2.55830649,4.61884198 C1.73271412,5.81090144 1.89363645,8.67214906 3.14489352,12.7644116 C3.4466516,13.7513177 3.80072213,14.7789322 4.21445809,15.8865215 C4.60902178,16.9427857 6.11621127,20.6877096 6.32625986,21.3146059 C6.77328134,22.6487548 6.89561652,24.0026634 6.91196355,26.3337585 C6.91286592,26.4624364 6.91341531,26.5645069 6.91452525,26.7938043 C6.92910262,29.8052791 7.07682511,30.8859157 7.78857172,31.8811846 C8.17198799,32.4173336 8.80492129,33.0221702 9.78442076,33.8113591 C10.2616678,34.19588 12.2709661,35.7344435 12.7423804,36.1090237 C14.6237394,37.6039295 15.9250989,38.8535155 16.9218988,40.2546861 C17.2563726,40.7248455 17.5476283,41.2038691 17.794538,41.6967556 Z'
-          id='Path'
-          fill='#FFDBBC'
-        ></path>
-      </g>
-      <text
-        id='Cloud-Text'
-        font-family='Stem Text'
-        font-size='13'
-        font-weight='normal'
-        line-spacing='14'
-        fill='#9E9E9E'
-      >
-        <tspan x='26' y='200'>Commercial SaaS</tspan>
-      </text>
-    </g>
-    <g class='sprite--vs' id='VS' transform='translate(112, 126)'>
-      <text
-        class='sprite--vs--text'
-        id='VS'
-        font-family='Stem Text'
-        font-size='50'
-        font-weight='bold'
-        line-spacing='16'
-        fill='#f64343'
-      >
-        <tspan x='0' y='0'>VS</tspan>
-      </text>
-    </g>
-    <path fill-rule="evenodd" clip-rule="evenodd" d="M4 61L40 43L76 61L40 79L4 61Z" fill="#fff"/>
-    <g class='sprite--logo' id='Logo' transform='scale(1) translate(0.0, 39.0)'>
-      <g id='Final'>
-        <g id='Normal'>
-          <g id='Group'>
-            <polygon
-              id='Combined-Shape'
-              fill='#F32B2B'
-              points='0 20 40 39.9980297 40 89.9999964 0 70'
-            ></polygon>
-            <polygon
-              id='Combined-Shape'
-              fill='#FF5E5E'
-              transform='translate(60.000000, 54.999998) scale(-1, 1) translate(-60.000000, -54.999998) '
-              points='40 20 80 39.9980297 80 89.9999964 40 70'
-            ></polygon>
-            <path
-              d='M58,65 C58,65 58,67.5 61,69 C64,70.5 64,68 64,68 L64,64 L58,61 L58,65 Z M51.1809221,45.0260604 C51.9364922,47.101972 53.8111469,48.325448 55.3680806,47.7587705 C56.9250143,47.192093 57.5746479,45.0498512 56.8190779,42.9739396 C56.0635078,40.898028 54.1888531,39.674552 52.6319194,40.2412295 C51.0749857,40.807907 50.4253521,42.9501488 51.1809221,45.0260604 Z M67.1809221,53.0260604 C67.9364922,55.101972 69.8111469,56.325448 71.3680806,55.7587705 C72.9250143,55.192093 73.5746479,53.0498512 72.8190779,50.9739396 C72.0635078,48.898028 70.1888531,47.674552 68.6319194,48.2412295 C67.0749857,48.807907 66.4253521,50.9501488 67.1809221,53.0260604 Z'
-              id='Combined-Shape'
-              fill='#000000'
-              transform='translate(62.000000, 54.791006) scale(-1, 1) translate(-62.000000, -54.791006) '
-            ></path>
-            <path
-              d='M24,40.5024733 C24,39.9488226 24.398159,39.3009205 24.8877296,39.0561352 L27.1122704,37.9438648 C27.6025499,37.6987251 28,37.955761 28,38.5024733 L28,48.4975267 C28,49.0511774 27.601841,49.6990795 27.1122704,49.9438648 L24.8877296,51.0561352 C24.3974501,51.3012749 24,51.044239 24,50.4975267 L24,40.5024733 Z M10,47.5024733 C10,46.9488226 10.398159,46.3009205 10.8877296,46.0561352 L13.1122704,44.9438648 C13.6025499,44.6987251 14,44.955761 14,45.5024733 L14,55.4975267 C14,56.0511774 13.601841,56.6990795 13.1122704,56.9438648 L10.8877296,58.0561352 C10.3974501,58.3012749 10,58.044239 10,57.4975267 L10,47.5024733 Z M16,65.4792899 C16,65.4792899 16,62.9792899 19,61.4792899 C22,59.9792899 22,62.4792899 22,62.4792899 L22,66.4792899 L16,69.4792899 L16,65.4792899 Z'
-              id='Combined-Shape'
-              fill='#000000'
-              transform='translate(19.000000, 53.665024) scale(-1, 1) translate(-19.000000, -53.665024) '
-            ></path>
-            <polygon
-              id='Rectangle-2'
-              fill='url(#linearGradient-1)'
-              transform='translate(40.000000, 12.000000) scale(1, -1) translate(-40.000000, -12.000000) '
-              points='0 0 40 19.9994016 80 0 80 4 39.9981059 24 0 4'
-            ></polygon>
-            <path
-              d='M32,29 C34.209139,29 36,27.6568542 36,26 C36,24.3431458 34.209139,23 32,23 C29.790861,23 28,24.3431458 28,26 C28,27.6568542 29.790861,29 32,29 Z M48,21 C50.209139,21 52,19.6568542 52,18 C52,16.3431458 50.209139,15 48,15 C45.790861,15 44,16.3431458 44,18 C44,19.6568542 45.790861,21 48,21 Z'
-              id='Combined-Shape'
-              fill='#000000'
-            ></path>
-          </g>
-        </g>
-      </g>
-    </g>
-  </g>
-</svg></div>
-      </div>
-      <div class='about-slide__section'>
-        <h3 class='about-slide__subtitle'>Own your data</h3>
-        <p class='about-slide__text'>
-          Finally, with AnyCable, all data is stored on your servers and is never sent to a 3rd-party. Simple and secure, always in your control. Perfect for secure on-premise installations of your software. Proven efficiency in Healthcare, Legal, Security, and other industries.
-        </p>
-      </div>
-      <div class='about-slide__section about-slide__section_type_no-padding'>
-        <h3
-          class='about-slide__subtitle about-slide__subtitle_type_with-padding anim-trigger'
-        >
-          <span class='about-slide__tabs'>
-          <span>And it’s still</span>
-          <button id="btn-rb" class='button about-slide__btn about-slide__btn-ruby' onclick="document.getElementById('code-rb').style.display = 'block'; document.getElementById('code-js').style.display = 'none'; document.getElementById('btn-rb').classList.remove('about-slide__btn-inactive'); document.getElementById('btn-js').classList.add('about-slide__btn-inactive')">Ruby</button>
-          <button id="btn-js" class='button about-slide__btn about-slide__btn-inactive about-slide__btn-js' onclick="document.getElementById('code-rb').style.display = 'none'; document.getElementById('code-js').style.display = 'block'; document.getElementById('btn-js').classList.remove('about-slide__btn-inactive'); document.getElementById('btn-rb').classList.add('about-slide__btn-inactive')">JavaScript</button>
-          </span>
-        </h3>
-        <p class='about-slide__text about-slide__text_type_with-padding'>
-          Write clean and maintainable code in your favorite language instead of piling up yet another 3rd-party integration. AnyCable plays nice with Rails, Next.js, and Hotwire applications, so you focus on shipping features without worrying about scaling issues.
-        </p>
-        <a
-          class='video-tip about-slide__video-tip link'
-          href='https://www.youtube.com/watch?v=0XTfL-iVLw4&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
-          target='_blank'
-          data-ph-capture-attribute-link-id='anycasts-1'
-        >
-          <div class='video-tip__play-icon'></div>
-          <img
-            class='video-tip__preview'
-            src='/assets/video-tip-preview-3c3a8347.jpg'
-            alt='video tip preview image'
-          />
-          <p class='video-tip__description'>
-            Build reactive Ruby on Rails applications with Hotwire,
-            and scale them efficiently with AnyCable
-          </p>
-        </a>
       </div>
     </div>
-    <div class='about-slide__content about-slide__content_type_slide-show'>
-      <div class='slide-show__header'></div>
-      <div class='slide-show'>
-        <div class='slide-show__frame anim-frame'>
-          <div class='chart'>
-            <p class='chart__heading'>
-              AnyCable Pro uses 4X less RAM compared to Rails Action Cable while handling
-              20K connections
-            </p>
-            <div class='chart__columns'>
-              <div class='chart__column'>
-                <div class='chart__figure chart__figure_color_red'>
-                  <p class='chart__column-text chart__column-text_type_heading'>
-                    AnyCable PRO
-                  </p>
-                </div>
-                <p class='chart__column-text chart__column-text_type_caption'>
-                  470 MB
-                </p>
-              </div>
-              <div class='chart__column'>
-                <div class='chart__figure chart__figure_color_orange'>
-                  <p class='chart__column-text chart__column-text_type_heading'>
-                    AnyCable
-                  </p>
-                </div>
-                <p class='chart__column-text chart__column-text_type_caption'>
-                  720 MB
-                </p>
-              </div>
-              <div class='chart__column'>
-                <div class='chart__figure chart__figure_color_grey'>
-                  <p class='chart__column-text chart__column-text_type_heading'>
-                    Action Cable
-                  </p>
-                </div>
-                <p class='chart__column-text chart__column-text_type_caption'>
-                  1.8 GB
-                </p>
-              </div>
-            </div>
-            <br/>
-            <p class='chart__heading'>
-              One instance of AnyCable guarantees low broadcast latency for up
-              to 10K simultaneous connections
-            </p>
-            <img
-              class='chart__img-chart'
-              src='/assets/real-time-chart-wide-440d2f2e.svg'
-              alt='Real time chart'
-            />
-          </div>
-        </div>
-        <div class='slide-show__frame anim-frame'>
-          <div class='chart' data-controller='demo'>
-            <p class='chart__heading'>
-              The emulation below demonstrates how AnyCable handles connection failures and restores missed messages.
-              You can try this feature yourself in our <a href='https://demo.anycable.io' target='_blank' rel='nofollow'>Demo application</a>.
-            </p>
-            <div class='demo'>
-              <div class='demo__chat' data-demo-target='any'>
-                <div class='demo__chat__header demo__chat__header_online'>
-                  <div class='demo__chat__user_details'>
-                    <h3 class='demo__chat__username'>Alice</h3>
-                    <span class='demo__chat__via'>via AnyCable</span>
-                  </div>
-                  <a class='demo__chat__status' href='javascript:void();'>online</a>
-                </div>
-                <div class='demo__chat__messages'>
-                  <form class='demo__chat__form'>
-                    <input class='demo__chat__input' type='text' />
-                  </form>
-                </div>
-              </div>
-              <div class='demo__chat' data-demo-target='action'>
-                <div class='demo__chat__header demo__chat__header_online'>
-                  <div class='demo__chat__user_details'>
-                    <h3 class='demo__chat__username'>Bob</h3>
-                    <span class='demo__chat__via'>via Action Cable</span>
-                  </div>
-                  <a class='demo__chat__status' href='javascript:void();'>online</a>
-                </div>
-                <div class='demo__chat__messages'>
-                  <form class='demo__chat__form'>
-                    <input class='demo__chat__input' type='text' />
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class='slide-show__frame anim-frame'><svg
+    <div class='about-slide__section'>
+      <div class='about-slide__content'>
+        <h3
+          class='about-slide__subtitle'
+        >
+          Managed, open source, or on-premise Pro
+        </h3>
+        <p class='about-slide__text'>
+          We recommend to start tinkering with AnyCable in its SaaS form, but consider switching to the on premise Pro version later one. You can always switch to open source, which is, of course, free. In any case, no changes in code are needed to make a switch. Choose what’s best for you today.
+        </p>
+        <h3 class='about-slide__subtitle'>Secure and HIPAA compliant messaging</h3>
+        <p class='about-slide__text'>
+          Using on premise AnyCable, Pro and open source, you store all realtime data, such as chat messages, on your servers and never have to send it to a 3rd-party. Simple, secure and compliant with HIPAA.
+        </p>
+      </div>
+      <div class='about-slide__media'>
+        <div class='slide-show__frame'><svg
   class='illustration'
   width='360px'
   height='204px'
@@ -829,473 +510,500 @@
     </g>
   </g>
 </svg></div>
-        <div class='slide-show__frame anim-frame'>
-          <img
-            class='slide-show__img'
-            id="code-rb"
-            src='/assets/ruby-img-wide-27863310.svg'
-            alt='Ruby code demo'
-          />
-          <img
-            class='slide-show__img'
-            id="code-js"
-            style="display:none"
-            src='/assets/js-img-wide-41a16371.svg'
-            alt='JS code demo'
-          />
+      </div>
+    </div>
+    <div class='about-slide__section'>
+      <div class='about-slide__content'>
+        <h3 class='about-slide__subtitle'>Time-tested abstractions</h3>
+        <p class='about-slide__text'>
+          Write clean and maintainable code, leveraging clear abstractions: channels and subscriptions. Higher-level APIs like presence, collaboration: coming soon!
+        </p>
+        <div class='about-slide__arrow'>
+          <svg width="171" height="20" viewBox="0 0 171 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M168 1H159C160.351 2.00994 161.217 2.84532 161.805 3.72314C162.441 4.67378 162.752 5.67419 163 7L168 1Z" fill="#F64343"/>
+            <path d="M1 1C73.0118 31.8187 139.167 14.5697 168 1M168 1H159C161.814 3.10366 162.523 4.44994 163 7L168 1Z" stroke="#F64343" stroke-width="2"/>
+          </svg>
+        </div>
+        <h3 class='about-slide__subtitle'>Reuse your existing infra components</h3>
+        <p class='about-slide__text'>
+          AnyCable doesn't require any additional infrastructure components for its operation and scalability: good old HTTP API and embedded NATS pub/sub server got you covered. And if you already have Redis or NATS, you can use it as well.
+        </p>
+      </div>
+      <div class='about-slide__media about-slide__media-align-top' data-controller="tabs">
+        <div class='about-slide__tabs'>
+          <button data-tabs-target="code-pubsub" class='button about-slide__btn about-slide__btn-pubsub active-tab'>Pub/Sub</button>
+          <button data-tabs-target="code-rb" class='button about-slide__btn about-slide__btn-ruby'>Ruby Channels</button>
+          <button data-tabs-target="code-js" class='button about-slide__btn about-slide__btn-js'>JS Channels</button>
+        </div>
+        <div class='slide-show__frame' id="codes">
+          <div data-tabs-id="code-pubsub" class='slide-show__code-wrapper'>
+            <img
+              class='slide-show__img'
+              src='/assets/pubsub-8f6defde.png'
+              alt='Pub/Sub demo'
+            />
+          </div>
+          <div data-tabs-id="code-rb" style="display:none" class='slide-show__code-wrapper'>
+            <img
+              class='slide-show__img'
+              src='/assets/ruby-channels-b551153f.png'
+              alt='Ruby channels code demo'
+            />
+          </div>
+          <div data-tabs-id="code-js" style="display:none" class='slide-show__code-wrapper'>
+            <img
+              class='slide-show__img'
+              src='/assets/js-channels-3e2c33e9.png'
+              alt='JS channels code demo'
+            />
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-        <section class='slide trusted-slide'>
-  <div class='slide__title-wrapper'>
-    <h2 class='slide__title about-slide__title_type_with-padding'>Trusted by</h2>
-  </div>
-  <div class="trusted-slide__list">
-    <img
-      class='trusted-slide__logo'
-      src='/assets/live-voice-edb96913.png'
-      alt='LiveVoice'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='/assets/sera-e8806acd.png'
-      alt='Sera'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='/assets/poll-everywhere-20219e77.png'
-      alt='Poll Everywhere'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='/assets/welcome-2ad4f33c.png'
-      alt='Welcome'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='/assets/callbell-c0ea0458.png'
-      alt='Callbell'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='data:image/png;base64,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'
-      alt='Circle'
-    />
-    <img
-      class='trusted-slide__logo'
-      src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFIAAACgCAYAAACfdjuJAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAvlSURBVHgB7Z1bbxvHFcfPmV3ZCho4FND2NfQnsJKmQfuU1aNTOCKR5Nk0kBRo2sK6VLnYtbWy4Nwc2zSCXpCmMPWcBJLitgb6QuYpQW6mP4HZ9xRinLp1bO5Mz1lKsi2L5F5mOIQxP0CWRe3Ocv97ZubMf4YjAIfD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOByOBwuEEUOtXizAQzcqoMQ0/VSkl4rxL1C16bUmoFwH5a3hwV+1YIQYGSFjAcdvVOktHU54Sg1ALI2KoCMhpLr8pwAwWgWFBUhHi86ZxadfWgPLWBdSXf4jRaCqQS6wggdfWgGLWBVS/fMPkxDBFdCCnMKDv22AJQRYIm4TI1gFbYiLavV82qZB39XBFuP/PQpbPbIeijC+ZwYsYU9IgAroBuEoWMKKkOryuwHojcbNgqGwWfbQsRSRIgBjmCy7z1XBCmoSjCEeBQvYishHwBjxsHLoWBJSfgvGUAbL7o0dIRW2wBSKho0WsCMkQhNMYbLsPtgR8uYtgyaDaIAFrAiJ5dk2/dsA/dRs2Wr+oAOCiiq0xyh5juBOyiKgNd6B1me1PG1dtKQ/5xNLkAO1uloA3w9Aqe6YHZEeOLTx0KHGoHN7uj+TL6jA8+AwCViio3qZAU0FcOHrv2ANMqD+8W4VUOga1pHJ++sQUhKL53kV+u80CRj0OKxNoq5BFC1hudza7YD7hOQI/M4HukFI6lQzLVRw5Mv301dX8iPr9G8AucAG+ZFTkBJ16VIAUl6ENMNVpKDZRdB72sifVVTxuzHyB9OJyBQVQv3xX6pFSMvN78vx084KwhrcfKgMKSERF0lEeogpx/xKVUCIOkVy8d63sQmLeHsM0he88zoI4dfvYeq2isyGkJ5r8gfBk2GSqvPTv6lCSjZFDCEfLSpjaisytyNSh4gMVfHwiRfSV1Vyt0N6O/vpNlfiN9n7AtQByCX43w/2ZxQx0CAiU6TI3Dam44h8/AW1iBRJoI9WdBsea9biXi8T8TRERxapM7qroxONvOmNWl+/BnotvCWcng5jIX/yotJdODUlMPv1+5g6YkxC7Rq3bxdBL9TEyP3i8Rep8TRgslKET8OoIYQJB53Tp5KgNq0EZggmK8raZNRONntZUz7oU4Iix5gR6u2BAEYF3y+CKSiRF8rcUwLVgZGJSOh0imCOos1ZxAcKFjJzipKXMAyLoIlweTkAe7QFgjlHWYgBZe8FOPX6qfTDyh3EZURRa8BhBs1kbAop4RMwQ3uQiRG+Fraoja7kEZPOPc+LqCi6WwMO5d+bqX1KXRWCB/1mSFQuKnGV/g1Pvb58LVwOA0gIH0siUpThjEJ1deB1ymUWcR1MIOWaz1FDI5sG/RiARiIPEhkXCqM2dof8ReF59aXTyw2k8ba8LRs7o4zbVLHHLymlpiltC7ZeR8CNJNeiG65Re5PW2eoPkoVXLjdih5yS8iWFWoWsNf+czT3vCoSB2ONRtV1uK1BxdSSxOJUq8DQhZlyMyDdMY202RfSJGUVH+FscChyVLCboAMmw8JKXhcrrl2sWSMAifwFoykml5BVrLdCBlEv32WgkZkj+3gXIA4soYCpNNFI1zj2yIoMk8aAibivJR4S8Ykq5QmWFWz/ek5B/9VecyRyZCFfTihi+EbKznntkRTV9ktrPxBEbR1EeMbuRWLn7pftGNhyZVDX3U1PUgGS0Wfyv3sPJtO2ikCIATYg9opLmeBaTfMT9LAokFZQ6lk1XPLzvV/3OY6ebIqZEoh6AbuTET13xZBdAQ0XwidwHa81qNgOX0hfyQbEIemidPHZiP2Qk9io9j2cSi3DHf+D7atHXJ5zicGfV63xri/G7STi1y1pRsyePnbRiJlsRkttGobxroJ+2VGIqPH586Ot/hu7+dEUUdTBDQaBc1WmGJGWoQi6/vlyiSLyisV3cDRr9eFdOnT5VgSEylKrN42IU3iLikB1zhJr8PlpKYGhouJQhSLyS8PziznGxDShhbyDiuow6TYigScJqd4GMRmR4+vQkza4FCuTRzWGeDdok5AUFYs1kJzS0XjukNosic3GIgvIazKWTx34/lHRoqOkP99govVVEcxNuDDlGV9UtWRpG27jF0PNIHhPjmFc3JeamiIGJdrAfdhJyFnOPuGKgmrfkrWhqmJG4RSIhSzMbhTG4XVR+9xP+2FHtD6o/ztVw86yf8EBrYi4jKIcnTuSaOrn8xqfFjn9nCU/nxnizHD42MLp7Csni+QKOkmlRwd3XBpF7DWuInZUP3/lRAzJA0wp1XakRpziLx0+kXrXLXDrzKeW5Y4dp7oeX7+xmxzV5Qat/s7Ny8LWft3YrY9eRzXNzG4u+B9fo5BB7L7Ai9xoqoPz6c/MbdRK+13E9UVKTKw/xAtfUpvQqRd+lc1/UwfPrJGIFervwk9T4hp29/rVL57/YdcbznohkMTxPrVHbdQDSQxHqzXx0dt9K0hO4raThHJsXeacR2mShTaQ54W/nvjxMHVM107URmhSd5bujczsiuyJCPaOIDEVoVHt2/nriiSXuWalK5k6S05axKWINsj5AmtqI9o7VV89f2T5/W0iqyhdRx9JniKrPL2wkT21Q/gtygiL5lAFXZ5V7V5c4zSr60Nle+hwL+fzcNxXQN69doLbvPOSE3miLTYftL+rYdETv2F5PX6agIPj47Gc8K9n95JdEcmZAK8Gz89+UPjr7w7SpSHdcfDuq9kqoeXQENNeTZbj58dnPKyrlOYNA0o6+VX2+YR1V+r4LgMfLjAcLqcSj3OVtChgOGpHweiGIt/OCGqVPIQtKNaAISd4TJt4uLA2FS2e+CKhqYwnMEJTCjcGNOaqiBChTDjiTdlhH54SchJOYxUHHbnYMARgAfTwsEEXWXnog3nf93zgbvirCI+Gx7KMRHsmQmEcGrY/0OzfNGSXUVgpQ5pwYoaL+ERlBi4RoQE64jDEh+kazEl4RDEEdY8Hq0med5sJxCzOHd1GwuvT5AaIteOETGIKqUwtGBJQGNyQhDakZk6aWPkPnYbBZ3e6h4/v8XozUPspnmwI9kcu/64lS62vhxMg0G+VZ8hQN7cCiOmpFfPjORANMrPgXo/WBzpiOPttuC0ryW4cWftpd+kxPapb6cG1jUBqorH3QfUCZWFj4z2SEEQ0D8YDgsXv3q0Vz5Fc95TXOnHk404PnGyY/scF5H2hCdpcF3vEjn53/dxUh/6dHUUHrtoSptepEC1Iy//L1EsZ7QPb/4HwsqsSlc2f21SAlq+c/LfrK5+1o83qgBF44NPdEbFpsCxlPLXTnUPIk6G2MYOqD6kSqiJl5dYNuzrsIqTcJwUYHoyPVN9M9tL+//fmk9JHvNbOYPFv5zNyT21ptJ+QUQe0OiaBAZlpHzpGYVUQvXp2WZacVFfC5XEaas37x8pNN0VFTiGTVZUKtRDgW3P3Kru7Z83MbFTISFpOYAXGxABeiCEJ+GJCCLRHzuk9c1SOUU2kjs1vNvTDxJvJINp9Us8/MP1m7/1d9YEHpiGnVdU12VgOeWVvvdKCaVsAtfvfKdQ17/myBjXfe2pdpFrEr6Bi1deop2Nm0IW+1ANRB4UrH8xpxGrXb1SEh3IbCpphZOpKdzC1crwihtO4vIZQsv/32RO68mOe2+fvN8fF2L+F2Ym0N+fwr317Tbyhnj8q8WHF/ZmhyzIQrz83EwrEUE28asSKkQBGAIVTHXNn9sLN/pMl9NBCNOf79sCMkorGdXRBUqhUXurAipJQmd2ZGg1tz98ZSRJpz5ZXBPTr6YedvNRjcqAPV4G0ZTGCnaivZAEOgb67svtcFS+gdHnbhan32rUcyf0I2D/b+wpKK8u1WsFuZKLU74EmxFpHMqJgWOrC6QIBNWR29LJfBZYFFrEYkk9eTzOpF6sb6bn0sAAuR7U8OYGMURIzfCYwQc69uVFCJxcHRiQ2J0cq5NydqMCKMlJBbLJDNFiHQdKx3gEVF3mIhXs0b0XQs0HTshLGE3uFwOBwOh8PhcDgcDofD4XA4HA6Hw+FwOBwOh8PhcDgcDofD4XCMIv8H2G6bA/m7fXkAAAAASUVORK5CYII='
-      alt='Vito'
-    />
+        <section class='slide cases-slide'>
+  <div class='cases-slide__wrapper'>
+    <div class='cases-slide__section cases-slide__section-mobile-reverse'>
+      <div class='cases-slide__media'>
+        <div class='cases-slide__logos'>
+          <img class='cases-slide__logo' src='/assets/healthie-text-4f869514.png' alt='Healthie' width="200" />
+          <img class='cases-slide__logo' src='/assets/joint-academy-text-a06443a2.png' alt='Joint Academy' width="250" />
+        </div>
+      </div>
+      <div class='cases-slide__content'>
+        <h3 class='cases-slide__pretitle'>Use cases</h3>
+        <h2 class='cases-slide__title'>Secure chats for healthtech</h2>
+        <div class='cases-slide__text'>
+          <ul>
+            <li>AnyCable is a HIPAA compliant and secure solution for messaging because it runs on premise, in your
+              infrastructure.</li>
+            <li>AnyCable serves some of the largest patient-doctor communication platforms in healthtech.</li>
+            <li>AnyCable is used as a critical component in software saving lives potentially every second.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='cases-slide__section'>
+      <div class='cases-slide__content'>
+        <h3 class='cases-slide__pretitle'>Use cases</h3>
+        <h2 class='cases-slide__title'>Streaming AI responses</h2>
+        <div class='cases-slide__text'>
+          <strong>Faster AI responses, better UX, better retention</strong>
+          <br/>
+          <br/>
+          <ul>
+            <li>Applications use AnyCable to stream each syllable of the AI-generated responses in realtime.</li>
+            <li>The faster users can access AI-generated response, the better their retention in the product.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='cases-slide__media'>
+        <div class='cases-slide__logos'>
+          <img class='cases-slide__logo' src='data:image/png;base64,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VZUa4Hhqn9pTKS3trXHexJRrPe201zvhBhx+2fCnX/y3YV19522H2Ow3dq9IrUa6GIAjz35vy7bALTh0oLz54v/Nz//z64Z19Z233YpQGVrWe+imwxolwtszzoeESsZOe9gTQ14sYsh529H4fvbmk1NDfBk+8ee2rtbQTYdTlcIirqFvTiSudeh1wpHYKc8ixpwREQ3xnNMe5x5gNOQY19M1PgbGeQDZa8It00NhMVNqak0xd6irtH/mUjsMJky4dQKFRdUuWZL1+kOG6MaI61KuhaMTKCwujmHOXtIbPYp43aweULxO1jW2PTNFJDk6gcIqYlgqq8GO16nx9D/3GtsikoKEW2FSfqDs8XGNzEODHb+mnNUeP7/27JGaP8vzaxy6aqu9tmtzObWutet1p9Qye++13/2Mn1f8GWdc49Yc8T0N8eTu6bO3Db3aZaBZlD/vdr4c97Lqb/shXfMMktL1OR+FW6aHwqbU2IyYaevXB2syhwJACoECQAqBAkAKcygDZU603uoKEODYrPICIIUhLwBSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFJ8BZwSKPMPG3fkAAAAAElFTkSuQmCC' alt='Canfy' width="200" />
+        </div>
+      </div>
+    </div>
+    <div class='cases-slide__section cases-slide__section-mobile-reverse'>
+      <div class='cases-slide__media'>
+        <div class='cases-slide__logos'>
+          <img class='cases-slide__logo cases-slide__logo-desktop-only' src='data:image/png;base64,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' alt='Circle' width="148" />
+          <img class='cases-slide__logo' src='/assets/live-voice-edb96913.png' alt='LiveVoice' width="120" />
+          <img class='cases-slide__logo cases-slide__logo-desktop-only' src='/assets/welcome-2ad4f33c.png' alt='Welcome' width="200" />
+          <img class='cases-slide__logo' src='data:image/png;base64,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' alt='Vito' width="60" />
+          <img class='cases-slide__logo' src='/assets/callbell-text-c0ea0458.png' alt='Callbell' width="190" />
+        </div>
+      </div>
+      <div class='cases-slide__content'>
+        <h3 class='cases-slide__pretitle'>Use cases</h3>
+        <h2 class='cases-slide__title'>Realtime-heavy apps</h2>
+        <div class='cases-slide__text'>
+          <ul>
+            <li>Scalable chats and updates for platforms powering online events.</li>
+            <li>Scalable and cost-efficient infrastructure for real-time messaging: SaaS expenses grow uncomfortably as your product grows, but the cost of AnyCable Pro license does not.</li>
+            <li>AnyCable is both performant and cost-efficient for applications that are big on realtime: notifications, updates, communication and collaboration.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='cases-slide__section'>
+      <div class='cases-slide__content'>
+        <h3 class='cases-slide__pretitle'>Use cases</h3>
+        <h2 class='cases-slide__title'>Voice processing and IoT data</h2>
+        <div class='cases-slide__text'>
+          <ul>
+            <li>Process voice streaming APIs, like Twilio Media Streams, in Go. <a href="https://anycable.substack.com/p/anycable-off-rails-connecting-twilio" target="_blank" data-ph-capture-attribute-link-id="cases-twilio-post">Read more</a>.</li>
+            <li>Stream GPS coordinates and EV charging data. AnyCable supports OCPP protocol.</li>
+          </ul>
+        </div>
+      </div>
+      <div class='cases-slide__media'>
+        <div class='cases-slide__logos'>
+          <img class='cases-slide__logo' src='/assets/sera-text-e8806acd.png' alt='Sera' width="150" />
+        </div>
+      </div>
+    </div>
+    <div class='cases-slide__section cases-slide__section-mobile-reverse'>
+      <div class='cases-slide__media'>
+        <div class='cases-slide__logos'>
+          <img class='cases-slide__logo' src='/assets/poll-everywhere-20219e77.png' alt='Poll Everywhere' width="300" />
+          <img class='cases-slide__logo' src='/assets/clickfunnels-e846535d.png' alt='ClickFunnels' width="350" />
+        </div>
+      </div>
+      <div class='cases-slide__content'>
+        <h3 class='cases-slide__pretitle'>Use cases</h3>
+        <h2 class='cases-slide__title'>Hotwire at scale</h2>
+        <div class='cases-slide__text'>
+          <ul>
+            <li>AnyCable acts as a performance power-up for apps with HTML-over-the-wire frontends out-of-the-box.</li>
+            <li>Binary compression (Pro feature) ensures additional speed and performance benefits.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
  <section class='slide plans-slide'>
   <div class='slide__title-wrapper'>
-    <h2 class='slide__title plans-slide__title'>Plans</h2>
+    <h3 class='plans-slide__pretitle'>Pricing</h4>
+    <h2 class='slide__title plans-slide__title'>Choose option</h2>
   </div>
-  <div class='splide'>
-    <div class='splide__track'>
-      <ul class='splide__list plans-slide__content'>
-        <li class='splide__slide plan-card'>
-          <div class='plan-card__icon plan-card__icon_type_open-source'></div>
-          <h3 class='plan-card__title'>Open-<br />source</h3>
-          <p class='plan-card__text'>
-            AnyCable is open source and an important part of the Rails ecosystem. Perfect to deploy to Heroku, Fly, or with Docker or K8s.
-          </p>
-          <p class='plan-card__text'>Key features:</p>
-            <ul class='plan-card__list'>
-              <li>Hotwire support out-of-the-box</li>
-              <li>Consistency (reliable streams)</li>
-              <li>JWT authentication</li>
-              <li>Simplified setup (RPC over HTTP)</li>
-              <li>Observability with Prometheus and StatsD</li>
-            </ul>
-          <div class='plan-card__action-wrapper'>
-            <p class='plan-card__text'>
-              <span
-                class='plan-card__text-accent plan-card__text-accent_type_big'
-              >Free</span>
-            </p>
-            <a
-              class='link button button_variant_outlined'
-              href='https://github.com/anycable/anycable'
-              target='_blank'
-              data-ph-capture-attribute-link-id='plan-free'
-            >
-              Learn more
-            </a>
-          </div>
-        </li>
-        <li class='splide__slide plan-card'>
-          <div class='plan-card__icon plan-card__icon_type_pro-basic'></div>
-          <h3 class='plan-card__title'>Pro <br />Basic</h3>
-          <div>
-            <p class='plan-card__text'>
-              AnyCable Pro has all the benefits of open source and is almost twice <span class='plan-card__text-accent'>more memory efficient</span>.
-            </p>
-            <p class='plan-card__text'>Pro Basic is smooth at scale and improves DX:</p>
-            <ul class='plan-card__list'>
-              <li>Consistency (reliable streams) in cluster mode</li>
-              <li>Adaptive scaling</li>
-              <li>Slow drain on shutdown</li>
-              <li>Binary compression</li>
-              <li>Fallback transport for networks behind firewalls</li>
-              <li>Apollo GraphQL support (clients, Studio)</li>
-            </ul>
-          </div>
-          <div class='plan-card__action-wrapper'>
-            <p class='plan-card__text'>
-              <span
-                class='plan-card__text-accent plan-card__text-accent_type_big'
-              >$590</span>
-              per year Unlimited&nbsp;instances
-            </p>
-            <button class='button try-now-btn' data-ph-capture-attribute-link-id='plan-basic'>
-              Try now
-            </button>
-          </div>
-        </li>
-        <li class='splide__slide plan-card plan-card_highlighted'>
-          <div class='plan-card__icon plan-card__icon_type_pro-standard'></div>
-          <h3 class='plan-card__title plan-card__title_inverted'>
-            Pro
-            <br />Standard
-          </h3>
-          <p class='plan-card__text plan-card__text_inverted'>
-            Pro Standard has all the benefits of Pro Basic and also features dedicated <span class='plan-card__text-accent'>Slack-based support</span>.
-          </p>
-          <div class='plan-card__action-wrapper'>
-            <p class='plan-card__text plan-card__text_inverted'>
-              <span
-                class='plan-card__text-accent plan-card__text-accent_type_big'
-              >$1,490</span>
-              per year Unlimited&nbsp;instances
-            </p>
-            <button class='button button_inverted try-now-btn' data-ph-capture-attribute-link-id='plan-standard'>
-              Try now
-            </button>
-          </div>
-        </li>
-        <li class='splide__slide plan-card'>
-          <div class='plan-card__icon plan-card__icon_type_custom'></div>
-          <h3 class='plan-card__title' id="custom-solutions">Custom <br />solutions</h3>
-          <p class='plan-card__text'>
-            As part of Evil Martians, we are experts in building real-time
-            functionality for our clients. We set up infrastructure, bring tools
-            and best practices, and train your team.
-          </p>
-          <div class='plan-card__action-wrapper'>
-            <p class='plan-card__text'>
-              <span
-                class='plan-card__text-accent plan-card__text-accent_type_big'
-              >Price on request</span>
-              <span
-                class='plan-card__contact-text'
-              >anycable@evilmartians.com</span>
-            </p>
-            <button class='button contact-us-btn' data-ph-capture-attribute-link-id='plan-custom'>
-              Contact us
-            </button>
-          </div>
-        </li>
-      </ul></div>
-  </div>
-  <p class='plans-slide__action-text'>
-    Start your
-    <span class='plans-slide__highlighted-text'>free 2-month trial</span>
-    of AnyCable&nbsp;Pro today
-  </p>
+  <ul class='plans-slide__content'>
+    <li class='plan-card'>
+      <div class='plan-card__icon plan-card__icon_type_open-source'></div>
+      <h3 class='plan-card__title'>Open-<br />source</h3>
+      <p class='plan-card__text'>
+        Deploy to Heroku, Fly, AWS, and anywhere with Docker or K8s.
+      </p>
+      <p class='plan-card__text'>Key features:</p>
+        <ul class='plan-card__list'>
+          <li>Hotwire support out-of-the-box</li>
+          <li>Consistency</li>
+          <li>JWT authentication</li>
+          <li>Prometheus and StatsD instrumentation</li>
+        </ul>
+      <div class='plan-card__action-wrapper'>
+        <p class='plan-card__text'>
+          <span
+            class='plan-card__text-accent plan-card__text-accent_type_big'
+          >Free</span>
+        </p>
+        <a
+          class='link button button_variant_outlined'
+          href='https://docs.anycable.io'
+          target='_blank'
+          data-ph-capture-attribute-link-id='plan-free'
+        >
+          Learn more
+        </a>
+      </div>
+    </li>
+    <li class='plan-card plan-card_highlighted'>
+      <div class='plan-card__icon plan-card__icon_type_pro-basic'></div>
+      <h3 class='plan-card__title plan-card__title_inverted'>Pro</h3>
+      <div>
+        <p class='plan-card__text plan-card__text_inverted'>
+          <span class='plan-card__text-accent'>Twice more memory efficient</span> than open source, and:
+        </p>
+        <ul class='plan-card__list plan-card__text_inverted'>
+          <li>Consistency in cluster mode</li>
+          <li>Adaptive scaling</li>
+          <li>Slow drain on shutdown</li>
+          <li>Binary compression</li>
+          <li>Long-polling fallback</li>
+          <li>Apollo GraphQL support (clients, Studio)</li>
+          <li>Dedicated Slack-based support</li>
+        </ul>
+      </div>
+      <div class='plan-card__action-wrapper'>
+        <p class='plan-card__text plan-card__text_inverted'>
+          <span
+            class='plan-card__text-accent plan-card__text-accent_type_big'
+          >$1490</span>
+          per year
+          <br/>
+          Unlimited&nbsp;instances
+          <br/>
+          Free 2-month trial
+        </p>
+        <button class='button button_inverted try-now-btn' data-ph-capture-attribute-link-id='plan-basic'>
+          Sign up
+        </button>
+      </div>
+    </li>
+    <li class='plan-card'>
+      <div class='plan-card__icon plan-card__icon_type_pro-standard'></div>
+      <h3 class='plan-card__title'>
+        Managed
+      </h3>
+      <p class='plan-card__text'>
+        We run and support AnyCable Pro for you.
+      </p>
+      <div class='plan-card__action-wrapper'>
+        <p class='plan-card__text'>
+          <span
+            class='plan-card__text-accent plan-card__text-accent_type_big'
+          >Free for early users</span>
+        </p>
+        <a
+          class='link button'
+          href='https://plus.anycable.io'
+          target='_blank'
+          data-ph-capture-attribute-link-id='plan-plus'
+        >
+          Sign up
+        </a>
+      </div>
+    </li>
+    <li class='plan-card'>
+      <div class='plan-card__icon plan-card__icon_type_custom'></div>
+      <h3 class='plan-card__title' id="custom-solutions">Consulting</h3>
+      <ul class='plan-card__list'>
+        <li>Setup and deploy AnyCable</li>
+        <li>Load test setup to prepare for scale</li>
+      </ul>
+      <div class='plan-card__action-wrapper'>
+        <p class='plan-card__text'>
+          <span
+            class='plan-card__text-accent plan-card__text-accent_type_big'
+          >$200 per hour</span>
+          <span
+            class='plan-card__contact-text'
+          >anycable@evilmartians.com</span>
+        </p>
+        <button class='button contact-us-btn' data-ph-capture-attribute-link-id='plan-custom'>
+          Contact us
+        </button>
+      </div>
+    </li>
+  </ul>
 </section>
 
         <section class='slide resources-slide'>
-          <div class='slide__title-wrapper'>
-            <h2 class='slide__title'>Resources</h2>
-          </div>
-          <div
-            class='resources-slide__content resources-slide__content_place_resources'
-          >
-            <div
-              class='resources-slide__section resources-slide__section_type_case-studies'
-            >
-              <p class='resources-slide__heading'>Case Studies</p>
-              <ul class='case-studies'>
-                <li class='case-studies__study' style='background-color: rgba(226, 232, 240, 1);'>
-                  <a
-                    class='link case-studies__study-link'
-                    href=/case-studies/polleverywhere
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='use-case'
-                    data-ph-capture-attribute-use-case=/case-studies/polleverywhere
-                  >
-                    <img
-                      src=/assets/polleverywhere-130e3cfd.svg
-                      class='case-studies__study-logo'
-                      alt=Poll Everywhere logo
-                    />
-                    <div class='case-studies__study-content'>
-                      <p class='case-studies__study-date' style='color: rgb(71, 85, 105);'>
-                        June 9, 2023
-                      </p>
-                      <p
-                        class='case-studies__study-title' style='color: rgb(15, 23, 42);'
-                      >
-                       AnyCable everywhere: real-time visualization streaming for Poll Everywhere
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class='case-studies__study' style='background-color: rgba(50, 87, 223, 1);'>
-                  <a
-                    class='link case-studies__study-link'
-                    href=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='use-case'
-                    data-ph-capture-attribute-use-case=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
-                  >
-                    <img
-                      src=/assets/sera-logo-73e66b4a.png
-                      class='case-studies__study-logo'
-                      alt=Sera logo
-                    />
-                    <div class='case-studies__study-content'>
-                      <p class='case-studies__study-date' style='color: rgba(255, 255, 255, 1);'>
-                        March 1, 2023
-                      </p>
-                      <p
-                        class='case-studies__study-title' style='color: rgba(255, 255, 255, 1);'
-                      >
-                       Real-time magic, no elixirs: optimizing Sera with AnyCable
-                      </p>
-                    </div>
-                  </a>
-                </li>
-                <li class='case-studies__study' style='background-color: rgba(223, 233, 250, 1);'>
-                  <a
-                    class='link case-studies__study-link'
-                    href=/case-studies/healthie
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='use-case'
-                    data-ph-capture-attribute-use-case=/case-studies/healthie
-                  >
-                    <img
-                      src=/assets/healthie-r-logo-07f18cf4.svg
-                      class='case-studies__study-logo'
-                      alt=Healthie-r logo
-                    />
-                    <div class='case-studies__study-content'>
-                      <p class='case-studies__study-date' style='color: rgba(14, 23, 43, 1);'>
-                        January 20, 2022
-                      </p>
-                      <p
-                        class='case-studies__study-title' style='color: rgba(98, 70, 237, 1);'
-                      >
-                       Making a chat’s real-time functionality Healthie-r with AnyCable&nbsp;Pro
-                      </p>
-                    </div>
-                  </a>
-                </li>
-              </ul>
+          <div class='cases-slide__wrapper'>
+            <div class='resources-slide__header mobile-only'>
+              <h3 class='cases-slide__pretitle'>Read more</h3>
+              <h2 class='cases-slide__title'>Resources</h2>
             </div>
-            <div class='resources-slide__section resources-slide__section_type_docs'>
-              <p class='resources-slide__heading'>Docs</p>
-              <ul class='docs'>
-                <li class='docs__item'>
-                  <a
-                    class='link docs__link'
-                    href='https://docs.anycable.io/rails/getting_started'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='docs-rails'
-                  >
-                    <img
-                      src='/assets/rails-icon-2542515c.svg'
-                      class='docs__icon'
-                      alt='Rails icon'
-                    />
-                    <p class='docs__title'>Getting started with Rails</p>
-                  </a>
-                </li>
-                 <li class='docs__item'>
-                  <a
-                    class='link docs__link'
-                    href='https://docs.anycable.io/guides/serverless'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='docs-install'
-                  >
-                    <img
-                      src='/assets/serverless-icon-96f68e96.svg'
-                      class='docs__icon'
-                      alt='Instalation icon'
-                    />
-                    <p class='docs__title'>Using with serverless JavaScript</p>
-                  </a>
-                </li>
-                <li class='docs__item'>
-                  <a
-                    class='link docs__link'
-                    href='https://docs.anycable.io/guides/hotwire'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='docs-hotwire'
-                  >
-                    <img
-                      src='/assets/hotwire-icon-43d9953a.svg'
-                      class='docs__icon'
-                      alt='Hotwire icon'
-                    />
-                    <p class='docs__title'>Using with Hotwire</p>
-                  </a>
-                </li>
-                <li class='docs__item docs__item_all_docs'>
-                  <a
-                    class='link docs__link'
-                    href='https://docs.anycable.io'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='docs-all'
-                  >
-                    <p class='docs__title docs__title_type_with-arrow'>
-                      All docs
-                    </p>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div
-              class='resources-slide__section resources-slide__section_type_learn-more'
-            >
-              <p class='resources-slide__heading'>Learn more</p>
-              <ul class='list-box'>
-                <li class='list-box__item'>
-                  Check
-                  <a class='link list-box__link' href='/blog' data-ph-capture-attribute-link-id='blog'>our blog</a>
-                  for new posts on building real-time functionality.
-                </li>
-                <li class='list-box__item'>
-                  Check the
-                  <a
-                    class='link list-box__link'
-                    href='https://demo.anycable.io/'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='demo-web'
-                  >demo app</a>, and its
-                  <a
-                    class='link list-box__link'
-                    href='https://github.com/anycable/anycable_rails_demo'
-                    data-ph-capture-attribute-link-id='demo-source'
-                    target='_blank'
-                  >repo</a>.
-                </li>
-                <li class='list-box__item'>
-                  Watch
-                  <a
-                    class='link list-box__link'
-                    href='https://www.youtube.com/playlist?list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='anycasts-playlist'
-                  >screencast</a>
-                  on YouTube.
-                </li>
-                <li class='list-box__item'>
-                  Watch the RailsConf 2022 talk
-                  <a
-                    class='link list-box__link'
-                    href='https://www.youtube.com/watch?v=TgpSs2ffJL0'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='railsconf-2022'
-                  >“The pitfalls of realtime-ification”</a>.
-                </li>
-              </ul>
-            </div>
-            <div class='resources-slide__section resources-slide__section_type_videos'>
-              <div class='videos'>
-                <a
-                  class='link videos__item'
-                  href="https://youtube.com/watch?v=4n1SxfK0Uqg"
-                  target='_blank'
-                  data-ph-capture-attribute-link-id='anycasts-8-video'
-                >
-                  <img
-                    class='videos__image'
-                    src="https://i.ytimg.com/vi/4n1SxfK0Uqg/maxresdefault.jpg"
-                    alt='AnyCast Ep. 8 video screenshot'
-                  />
-                  <div class='videos__overlay'>
-                    <p class='videos__title'>AnyCable v1.4: reliable real-time for all: Ruby, Rails, Hotwire and beyond</p>
+            <div class='cases-slide__section resources-slide__section-wrapper'>
+              <div class='cases-slide__media resources-slide__media'>
+                <div class='resources-slide__section resources-slide__section_type_docs'>
+                  <ul class='docs'>
+                    <li class='docs__item'>
+                      <a class='link docs__link' href='https://docs.anycable.io/rails/getting_started' target='_blank'
+                        data-ph-capture-attribute-link-id='docs-rails'>
+                        <img src='/assets/rails-icon-2542515c.svg' class='docs__icon' alt='Rails icon' />
+                        <p class='docs__title'>Getting started with Rails</p>
+                      </a>
+                    </li>
+                    <li class='docs__item'>
+                      <a class='link docs__link' href='https://docs.anycable.io/guides/serverless' target='_blank'
+                        data-ph-capture-attribute-link-id='docs-install'>
+                        <img src='/assets/serverless-icon-96f68e96.svg' class='docs__icon' alt='Instalation icon' />
+                        <p class='docs__title'>Using with serverless JavaScript</p>
+                      </a>
+                    </li>
+                    <li class='docs__item'>
+                      <a class='link docs__link' href='https://docs.anycable.io/guides/hotwire' target='_blank'
+                        data-ph-capture-attribute-link-id='docs-hotwire'>
+                        <img src='/assets/hotwire-icon-43d9953a.svg' class='docs__icon' alt='Hotwire icon' />
+                        <p class='docs__title'>Using with Hotwire</p>
+                      </a>
+                    </li>
+                    <li class='docs__item docs__item_all_docs'>
+                      <a class='link docs__link' href='https://docs.anycable.io' target='_blank'
+                        data-ph-capture-attribute-link-id='docs-all'>
+                        <p class='docs__title docs__title_type_with-arrow'>
+                          All docs
+                        </p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class='resources-slide__section resources-slide__section_type_videos'>
+                  <div class='videos'>
+                    <a class='link videos__item' href="https://youtube.com/watch?v=4n1SxfK0Uqg" target='_blank'
+                      data-ph-capture-attribute-link-id='anycasts-8-video'>
+                      <img class='videos__image' src="https://i.ytimg.com/vi/4n1SxfK0Uqg/maxresdefault.jpg"
+                        alt='AnyCast Ep. 8 video screenshot' />
+                      <div class='videos__overlay'>
+                        <p class='videos__title'>AnyCable v1.4: reliable real-time for all: Ruby, Rails, Hotwire and beyond</p>
+                      </div>
+                      <a class="link button button_variant_outlined"
+                        href="https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A"
+                        target="_blank" data-ph-capture-attribute-link-id='anycasts-previous-episodes'>
+                        Screencasts on YouTube
+                      </a>
+                    </a>
                   </div>
-                  <a
-                    class="link button"
-                    href="https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A"
-                    target="_blank"
-                    data-ph-capture-attribute-link-id='anycasts-previous-episodes'
-                    >
-                    Watch previous episodes
+                </div>
+                <div class='resources-slide__section resources-slide__section_type_case-studies'>
+                  <ul class='case-studies'>
+                    <li class='case-studies__study' style='background-color: rgba(226, 232, 240, 1);'>
+                      <a
+                        class='link case-studies__study-link'
+                        href=/case-studies/polleverywhere
+                        target='_blank'
+                        data-ph-capture-attribute-link-id='use-case'
+                        data-ph-capture-attribute-use-case=/case-studies/polleverywhere
+                      >
+                        <img
+                          src=/assets/polleverywhere-130e3cfd.svg
+                          class='case-studies__study-logo'
+                          alt=Poll Everywhere logo
+                        />
+                        <div class='case-studies__study-content'>
+                          <p class='case-studies__study-date' style='color: rgb(71, 85, 105);'>
+                            June 9, 2023
+                          </p>
+                          <p
+                            class='case-studies__study-title' style='color: rgb(15, 23, 42);'
+                          >
+                           AnyCable everywhere: real-time visualization streaming for Poll Everywhere
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class='case-studies__study' style='background-color: rgba(50, 87, 223, 1);'>
+                      <a
+                        class='link case-studies__study-link'
+                        href=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
+                        target='_blank'
+                        data-ph-capture-attribute-link-id='use-case'
+                        data-ph-capture-attribute-use-case=https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable
+                      >
+                        <img
+                          src=/assets/sera-logo-73e66b4a.png
+                          class='case-studies__study-logo'
+                          alt=Sera logo
+                        />
+                        <div class='case-studies__study-content'>
+                          <p class='case-studies__study-date' style='color: rgba(255, 255, 255, 1);'>
+                            March 1, 2023
+                          </p>
+                          <p
+                            class='case-studies__study-title' style='color: rgba(255, 255, 255, 1);'
+                          >
+                           Real-time magic, no elixirs: optimizing Sera with AnyCable
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                    <li class='case-studies__study' style='background-color: rgba(223, 233, 250, 1);'>
+                      <a
+                        class='link case-studies__study-link'
+                        href=/case-studies/healthie
+                        target='_blank'
+                        data-ph-capture-attribute-link-id='use-case'
+                        data-ph-capture-attribute-use-case=/case-studies/healthie
+                      >
+                        <img
+                          src=/assets/healthie-r-logo-07f18cf4.svg
+                          class='case-studies__study-logo'
+                          alt=Healthie-r logo
+                        />
+                        <div class='case-studies__study-content'>
+                          <p class='case-studies__study-date' style='color: rgba(14, 23, 43, 1);'>
+                            January 20, 2022
+                          </p>
+                          <p
+                            class='case-studies__study-title' style='color: rgba(98, 70, 237, 1);'
+                          >
+                           Making a chat’s real-time functionality Healthie-r with AnyCable&nbsp;Pro
+                          </p>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <br />
+                  <a class="link button button_variant_outlined" href="/blog" target="_blank"
+                    data-ph-capture-attribute-link-id='case-studies'>
+                    Case studies
                   </a>
-                </a>
-                <a
-                  class='link videos__item'
-                  href='https://www.youtube.com/watch?v=TgpSs2ffJL0'
-                  target='_blank'
-                  data-ph-capture-attribute-link-id='railsconf-2022-video'
-                >
-                  <img
-                    class='videos__image'
-                    src='/assets/railsConf-video-screenshot-cd8c7316.jpg'
-                    alt='RailsConf 2022 video screenshot'
-                  />
-                  <div class='videos__overlay'>
-                    <p class='videos__title'>
-                      RailsConf 2022 - The pitfalls of realtime-ification
-                    </p>
+                </div>
+              </div>
+              <div class='cases-slide__content'>
+                <div class='desktop-only'>
+                  <h3 class='cases-slide__pretitle'>Read more</h3>
+                  <h2 class='cases-slide__title'>Resources & Support</h2>
+                </div>
+                <div class='cases-slide__text'>
+                  <div class='resources-slide__section resources-slide__section_type_learn-more'>
+                    <p class='resources-slide__heading'>Learn more</p>
+                    <ul class='list-box'>
+                      <li class='list-box_item'>
+                        Read <a class='link' href='https://docs.anycable.io' target='_blank'
+                          data-ph-capture-attribute-link-id='docs'>the docs</a>
+                      </li>
+                      <li class='list-box_item'>
+                        Check <a class='link' href='https://anycable.io/blog' target='_blank'
+                          data-ph-capture-attribute-link-id='blog'>our blog</a>
+                      </li>
+                      <li class='list-box_item'>
+                        Watch <a class='link'
+                          href='https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
+                          target='_blank' data-ph-capture-attribute-link-id='screencasts'>screencasts</a> on YouTube
+                      </li>
+                      <li class='list-box_item'>
+                        Check out our <a class='link' href='https://github.com/anycable/anycable_rails_demo' target='_blank'
+                          data-ph-capture-attribute-link-id='rails-demo'>Rails</a> and
+                        <a class='link' href='https://github.com/anycable/vercel-anycable-demo' target='_blank'
+                          data-ph-capture-attribute-link-id='vercel-demo'>Next.js</a> demos
+                      </li>
+                      <li class='list-box__item'>
+                        Watch this talk:
+                      </li>
+                      <a class='link videos__item' href='https://www.youtube.com/watch?v=TgpSs2ffJL0' target='_blank'
+                        data-ph-capture-attribute-link-id='railsconf-2022-video'>
+                        <img class='videos__image' src='/assets/railsConf-video-screenshot-cd8c7316.jpg'
+                          alt='RailsConf 2022 video screenshot' />
+                        <div class='videos__overlay'>
+                          <p class='videos__title'>
+                            RailsConf 2022 - The pitfalls of realtime-ification
+                          </p>
+                        </div>
+                      </a>
+                    </ul>
                   </div>
-                </a>
+                  <div class='resources-slide__section resources-slide__section_type_community'>
+                    <p class='resources-slide__heading'>Stay in the loop</p>
+                    <ul class='list-box'>
+                      <li class='list-box__item'>
+                        Sign up for
+                        <a class='link'
+                          href='https://anycable.substack.com/' target='_blank' data-ph-capture-attribute-link-id='substack'>our
+                          newsletter</a>
+                      </li>
+                      <li class='list-box__item'>
+                        Follow us on
+                        <a class='link'
+                          href='https://twitter.com/any_cable' data-ph-capture-attribute-link-id='twitter' target='_blank'>X (Twitter)</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class='resources-slide__section resources-slide__section_type_community'>
+                    <p class='resources-slide__heading'>Get help</p>
+                    <ul class='list-box'>
+                      <li class='list-box__item'>
+                        Ask a question on
+                        <a class='link'
+                          href='https://discord.gg/stimulus-reflex' target='_blank'
+                          data-ph-capture-attribute-link-id='discord'>Discord</a>
+                      </li>
+                      <li class='list-box__item'>
+                        Submit an issue on
+                        <a class='link'
+                          href='https://github.com/anycable/anycable' data-ph-capture-attribute-link-id='github-2'
+                          target='_blank'>GitHub</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-            <div
-              class='resources-slide__section resources-slide__section_type_community'
-            >
-              <p class='resources-slide__heading'>Community</p>
-              <ul class='list-box'>
-                <li class='list-box__item'>
-                  Join the discussion on
-                  <a
-                    class='link list-box__icon-link list-box__icon-link_type_discord'
-                    href='https://discord.gg/stimulus-reflex'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='discord'
-                  >Discord</a>
-                </li>
-                <li class='list-box__item'>
-                  Sign up for the
-                  <a
-                    class='link list-box__icon-link list-box__icon-link_type_newsletter'
-                    href='https://anycable.substack.com/'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='substack'
-                  >Any Cables newsletter</a>
-                </li>
-                <li class='list-box__item'>
-                  Add a request, report an issue, and contribute on
-                  <a
-                    class='link list-box__icon-link list-box__icon-link_type_github'
-                    href='https://github.com/anycable/anycable'
-                    data-ph-capture-attribute-link-id='github-2'
-                    target='_blank'
-                  >GitHub</a>
-                </li>
-                <li class='list-box__item'>
-                  Make sure you follow us on
-                  <a
-                    class='link list-box__icon-link list-box__icon-link_type_twitter'
-                    href='https://twitter.com/any_cable'
-                    data-ph-capture-attribute-link-id='twitter'
-                    target='_blank'
-                  >Twitter</a>
-                </li>
-              </ul>
-            </div>
           </div>
-        </section>
-      </main>
+        </section>      </main>
       <footer class='footer'>
         <div class='footer__columns'>
           <div class='footer__column footer__column_content_downloads'>
