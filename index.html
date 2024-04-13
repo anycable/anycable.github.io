@@ -72,15 +72,22 @@
         "operatingSystem": "Any"
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-355a8036.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/popups-show-hide-c6eef21e.js">
-    <link rel="stylesheet" href="/assets/index-7061a54e.css">
+    <script type="module" crossorigin src="/assets/main-bf6b63fd.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/popups-show-hide-e105f9cc.js">
+    <link rel="stylesheet" href="/assets/index-ea2b9cd9.css">
   </head>
   <body>
     <div class="page">
       <header class='header'>
         <nav class='header__content'>
-          <p class='header__logo'>AnyCable</p>
+          <div class='header__left'>
+            <p class='header__logo'>AnyCable</p>
+            <div class='header__links'>
+              <a href="https://docs.anycable.io" target="_blank" class="header__link no-mobile" data-ph-capture-attribute-link-id="nav-docs">Docs</a>
+              <a href="https://blog.anycable.io" target="_blank" class="header__link no-mobile" data-ph-capture-attribute-link-id="nav-blog">Blog</a>
+              <a href="#pricing" class="header__link" data-ph-capture-attribute-link-id="nav-pricing">Pricing</a>
+            </div>
+          </div>
           <a href="https://plus.anycable.io/pro" target="_blank" class="button" data-ph-capture-attribute-link-id='go-pro'>Sign up</a>
         </nav>
       </header>
@@ -195,34 +202,12 @@
 </svg>
     </div>
     <div class='main-slide__right-content'>
-      <a
-        class='main-slide__github-link'
-        data-ph-capture-attribute-link-id='github'
-        href='https://github.com/anycable/anycable'
-        target='_blank'
-      >
-        <svg
-  class='main-slide__github'
-  width='48'
-  height='48'
-  viewBox='0 0 48 48'
-  fill='none'
-  xmlns='http://www.w3.org/2000/svg'
->
-  <path
-    fill-rule='evenodd'
-    clip-rule='evenodd'
-    d='M48 0H0L21.9602 21.9602C22.3059 21.6114 23.827 20.0766 24.478 19.419C21.4761 17.4894 22.5376 15.3872 22.5376 15.3872C23.1589 13.9596 22.8504 13.1063 22.8504 13.1063C22.5964 11.7521 23.4498 12.6281 23.4498 12.6281C24.2773 13.5807 23.8951 14.9002 23.8951 14.9002C23.3306 17.0456 25.0053 17.9368 25.7375 18.2161C26.3241 17.6295 26.6263 17.2707 26.7368 16.831C24.9924 14.6382 24.4314 12.5715 27.8275 9.1754C28.7951 8.20779 29.932 7.76334 31.1197 7.70967C31.2509 7.39437 31.849 6.18959 33.5511 5.44999C33.5511 5.44999 34.5335 5.95603 35.0805 8.79649C35.9839 9.30698 36.8406 9.96679 37.5971 10.7167C38.347 11.4732 39.0074 12.3305 39.5193 13.2352C42.3577 13.7802 42.8627 14.7616 42.8627 14.7616C42.1243 16.4649 40.9194 17.0628 40.6041 17.194C40.5517 18.383 40.1049 19.5175 39.1372 20.4851C35.7331 23.8893 33.6754 23.3308 31.4825 21.5766C31.0432 21.6875 30.5038 22.2269 29.677 23.0537C28.6176 24.1131 26.7432 25.9711 26.3554 26.3554L48 48V0Z'
-    fill='#F64343'
-  ></path>
-</svg>
-      </a>
       <h1 class='main-slide__title' id='pro'>AnyCable</h1>
       <p class='main-slide__subtitle'>
         Realtime server for reliable two-way communication.
       </p>
       <div class='main-slide__text'>
-        <p>
+        <p class="no-mobile">
           Comes in different flavors: open source, managed, on-premise Pro.
         </p>
         <p>
@@ -666,7 +651,7 @@
 </section>
  <section class='slide plans-slide'>
   <div class='slide__title-wrapper'>
-    <h3 class='plans-slide__pretitle'>Pricing</h4>
+    <h3 class='plans-slide__pretitle' id="pricing">Pricing</h4>
     <h2 class='slide__title plans-slide__title'>Choose option</h2>
   </div>
   <ul class='plans-slide__content'>
