@@ -1,0 +1,1 @@
+const e=document.querySelector(".header"),r=document.querySelector(".main-slide"),t={rootMargin:"-50px 0px 0px 0px",threshold:0},n=s=>{s.forEach(o=>{e.style.display="inherit",o.isIntersecting?e.classList.remove("header_shown"):e.classList.add("header_shown")})},c=new IntersectionObserver(n,t);r&&c.observe(r);
