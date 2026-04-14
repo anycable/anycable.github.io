@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AnyCable: realtime server for reliable two-way communication</title>
+    <title>AnyCable: realtime server with delivery guarantees for Rails, Laravel, Node.js, Python, and any backend</title>
     <meta name='viewport' content='width=device-width viewport-fit=cover' />
     <meta charset='UTF-8' />
     <meta http-equiv='Permissions-Policy' content='interest-cohort=()' />
@@ -19,30 +19,30 @@
       <script> !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]),t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.async=!0,p.src=s.api_host+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
         posthog.init('phc_fc9VFWdFAAm5gSlCodHq93iaxxnTTKbjOwsWgAS1FMP',{api_host:'https://app.posthog.com'})</script>
       <!-- End Posthog -->
-    <meta name="description" content="We tame realtime and WebSockets, so you can be productive in building any realtime functionality: chats, notifications, typing indicators, presence, cursors, collaboration, data streaming. Built for any backend."/>
-    <meta name="keywords" content="anycable, WebSockets, realtime, real-time, chats, notifications, presence, collaboration, golang"/>
+    <meta name="description" content="Open-source WebSocket server with built-in delivery guarantees, presence tracking, and message ordering. Works with Rails, Laravel, Node.js, Python/FastAPI, and any backend via HTTP API. Used by Doximity, CoinGecko, Jobber, Circle, and 50+ companies."/>
+    <meta name="keywords" content="anycable, WebSocket server, realtime, real-time, delivery guarantees, presence tracking, message ordering, Rails, Laravel, FastAPI, Python, Node.js, TypeScript, HIPAA, self-hosted, Action Cable alternative, Pusher alternative, Socket.io alternative"/>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
     <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32"/>
     <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16"/>
     <link rel="manifest" href="/manifest.json"/>
     <meta name="theme-color" content="#000000"/>
     <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="AnyCable: an open source realtime server for reliable two-way communication."/>
-    <meta itemprop="description" content="We tame realtime and WebSockets, so you can be productive in building any realtime functionality: chats, notifications, typing indicators, presence, cursors, collaboration, data streaming. Built for any backend."/>
+    <meta itemprop="name" content="AnyCable: realtime server with delivery guarantees for Rails, Laravel, Node.js, Python, and any backend"/>
+    <meta itemprop="description" content="Open-source WebSocket server with built-in delivery guarantees, presence tracking, and message ordering. Works with Rails, Laravel, Node.js, Python/FastAPI, and any backend via HTTP API. Used by Doximity, CoinGecko, Jobber, Circle, and 50+ companies."/>
     <meta itemprop="image" content="https://anycable.io/images/share.png"/>
     <!-- Twitter Card data -->
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@any_cable"/>
-    <meta name="twitter:title" content="AnyCable: an open source realtime server for reliable two-way communication."/>
-    <meta name="twitter:description" content="We tame realtime and WebSockets, so you can be productive in building any realtime functionality: chats, notifications, typing indicators, presence, cursors, collaboration, data streaming. Built for any backend."/>
+    <meta name="twitter:title" content="AnyCable: realtime server with delivery guarantees for Rails, Laravel, Node.js, Python, and any backend"/>
+    <meta name="twitter:description" content="Open-source WebSocket server with built-in delivery guarantees, presence tracking, and message ordering. Works with Rails, Laravel, Node.js, Python/FastAPI, and any backend via HTTP API. Used by Doximity, CoinGecko, Jobber, Circle, and 50+ companies."/>
     <meta name="twitter:creator" content="@any_cable"/>
     <meta name="twitter:image" content="https://anycable.io/images/share.png"/>
     <!-- Open Graph data -->
-    <meta property="og:title" content="AnyCable: an open source realtime server for reliable two-way communication."/>
+    <meta property="og:title" content="AnyCable: realtime server with delivery guarantees for Rails, Laravel, Node.js, Python, and any backend"/>
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://anycable.io/"/>
     <meta property="og:image" content="https://anycable.io/images/share.png"/>
-    <meta property="og:description" content="We tame realtime and WebSockets, so you can be productive in building any realtime functionality: chats, notifications, typing indicators, presence, cursors, collaboration, data streaming. Built for any backend."/>
+    <meta property="og:description" content="Open-source WebSocket server with built-in delivery guarantees, presence tracking, and message ordering. Works with Rails, Laravel, Node.js, Python/FastAPI, and any backend via HTTP API. Used by Doximity, CoinGecko, Jobber, Circle, and 50+ companies."/>
     <meta property="og:site_name" content="AnyCable"/>
     <script type=application/ld+json>
       {
@@ -58,7 +58,7 @@
         "@type": "SoftwareSourceCode",
         "image": "https://anycable.io/images/logos/anycable.png",
         "name": "AnyCable",
-        "description": "Open source realtime server for reliable two-way communication. We tame realtime and WebSockets, so you can be productive in building any realtime functionality: chats, notifications, typing indicators, presence, cursors, collaboration, data streaming. ",
+        "description": "Open-source WebSocket server written in Go with built-in delivery guarantees, presence tracking, and message ordering. Works with Rails, Laravel, Node.js, Python/FastAPI, and any backend via HTTP API. In production since 2017, used by 50+ companies including Doximity, CoinGecko, Jobber, and Circle.",
         "codeRepository": "https://github.com/anycable/anycable"
       }
     </script>
@@ -68,24 +68,120 @@
         "@type": "SoftwareApplication",
         "image": "https://anycable.io/images/logos/anycable.png",
         "name": "AnyCable",
-        "applicationCategory": "Web",
-        "operatingSystem": "Any"
+        "applicationCategory": "DeveloperApplication",
+        "operatingSystem": "Any",
+        "description": "Open-source WebSocket server with delivery guarantees, presence tracking, and message ordering. Works with any backend via HTTP API.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Open Source",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free, deploy anywhere. Hotwire support, JWT authentication, Prometheus instrumentation."
+          },
+          {
+            "@type": "Offer",
+            "name": "Managed AnyCable",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free managed hosting, up to 2,000 connections."
+          },
+          {
+            "@type": "Offer",
+            "name": "AnyCable Pro",
+            "price": "1490",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "description": "$1,490 per year. Unlimited instances and connections. Cluster mode, binary compression, long-polling fallback, adaptive scaling, dedicated support."
+          },
+          {
+            "@type": "Offer",
+            "name": "Enterprise",
+            "description": "Custom pricing for enterprise deployments."
+          },
+          {
+            "@type": "Offer",
+            "name": "Consulting",
+            "price": "200",
+            "priceCurrency": "USD",
+            "description": "$200 per hour. Setup, deployment, load testing, and architecture consulting."
+          }
+        ]
       }
     </script>
-    <script type="module" crossorigin src="/assets/main-b915d3b8.js"></script>
-    <link rel="modulepreload" crossorigin href="/assets/popups-show-hide-e105f9cc.js">
-    <link rel="stylesheet" href="/assets/index-eae36d50.css">
+    <script type=application/ld+json>
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is AnyCable?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AnyCable is an open-source WebSocket server written in Go with built-in delivery guarantees, presence tracking, and message ordering. It works with any backend — Ruby on Rails, Laravel, Node.js/TypeScript, Python/FastAPI, or any language that can make HTTP requests — via its pub/sub HTTP API. AnyCable handles 10,000+ concurrent connections per server and has been in production since 2017, powering 50+ companies including Doximity, CoinGecko, Jobber, and Circle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does AnyCable cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AnyCable open source is free. Managed AnyCable is free for up to 2,000 connections. AnyCable Pro costs $1,490 per year for unlimited connections and instances — flat pricing that doesn't grow with your user count. Enterprise plans have custom pricing. Consulting is available at $200 per hour."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does AnyCable work with Python, Laravel, or Node.js?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. AnyCable works with any backend language. For Rails, it's a drop-in Action Cable replacement. For Laravel, there's a native SDK with broadcasting and channels. For Python/FastAPI, Node.js, or any other backend, you broadcast messages via AnyCable's HTTP pub/sub API — a simple HTTP POST from your application delivers messages to all connected WebSocket clients with ordering and delivery guarantees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is AnyCable HIPAA compliant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. AnyCable Pro and open source run on your infrastructure — real-time data never leaves your servers. This makes AnyCable compliant with HIPAA, SOC2, and other data sovereignty requirements. Nine healthcare companies use AnyCable in production, including Doximity (professional network for 80% of US physicians), Healthie, and Headway ($2.3B valuation)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is AnyCable different from Socket.io?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Socket.io is a JavaScript library that provides WebSocket transport — you build reliability, presence, and authentication yourself. AnyCable is a standalone server with delivery guarantees, presence tracking, message ordering, and authentication built in. AnyCable works with any backend (not just Node.js), and because it's a separate process, WebSocket connections survive application deploys."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is AnyCable different from Pusher or Ably?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pusher and Ably are managed services that route your data through third-party servers — a problem for HIPAA and SOC2 compliance. Their pricing grows linearly with connections. AnyCable runs on your infrastructure (or use Managed AnyCable), offers flat pricing ($1,490/year for unlimited connections with Pro), and provides native SDKs for Rails and Laravel rather than generic client libraries."
+            }
+          }
+        ]
+      }
+    </script>
+    
+    <script type="module" crossorigin src="/assets/main-d62b4051.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/popups-show-hide-8ea0038b.js">
+    <link rel="stylesheet" href="/assets/popups-show-hide-0aebdb16.css">
   </head>
   <body>
     <div class="page">
       <header class='header'>
         <nav class='header__content'>
           <div class='header__left'>
-            <p class='header__logo'>AnyCable</p>
+            <a href="/" class='header__logo'>AnyCable</a>
             <div class='header__links no-mobile'>
+              <a href="/#features" class="header__link" data-ph-capture-attribute-link-id="nav-features">Features</a>
+              <a href="/#customers" class="header__link" data-ph-capture-attribute-link-id="nav-customers">Customers</a>
+              <a href="/#pricing" class="header__link" data-ph-capture-attribute-link-id="nav-pricing">Pricing</a>
               <a href="https://docs.anycable.io" target="_blank" class="header__link" data-ph-capture-attribute-link-id="nav-docs">Docs</a>
-              <a href="https://blog.anycable.io" target="_blank" class="header__link" data-ph-capture-attribute-link-id="nav-blog">Blog</a>
-              <a href="#pricing" class="header__link" data-ph-capture-attribute-link-id="nav-pricing">Pricing</a>
+              <a href="/#resources" class="header__link" data-ph-capture-attribute-link-id="nav-resources">Resources</a>
             </div>
           </div>
           <div class='header__right'>
@@ -213,14 +309,14 @@
     <div class='main-slide__right-content'>
       <h1 class='main-slide__title' id='pro'>AnyCable</h1>
       <p class='main-slide__subtitle'>
-        Realtime server for reliable two-way communication.
+        Realtime server with delivery guarantees, presence tracking, and message ordering — built in.
       </p>
       <div class='main-slide__text'>
-        <p class="no-mobile">
-          Comes in different flavors: open source, managed, on-premise Pro.
-        </p>
         <p>
-          Plays nice with Rails, JavaScript/TypeScript, and <strong>any</strong> backend.
+          Works with Rails, Laravel, Node.js, Python, and any backend via HTTP API.
+        </p>
+        <p class="no-mobile">
+          Open source, managed, or on-premise Pro.
         </p>
       </p>
       <div class='main-slide__footer'>
@@ -239,7 +335,7 @@
     </div>
   </div>
 </section>
- <section class='slide about-slide'>
+ <section class='slide about-slide' id="features">
   <div class='about-slide__wrapper'>
     <div class='about-slide__section'>
       <div class='about-slide__content'>
@@ -247,16 +343,16 @@
           Why AnyCable?
         </h2>
         <h3 class='about-slide__subtitle'>
-          Low-latency of realtime at scale
+          Delivery guarantees, out of the box
         </h3>
         <p class='about-slide__text'>
-          If your product needs low latency interactivity, communication, or collaboration, AnyCable can be the perfect solution at any stage: start building with a managed (SaaS) version, and move on to the cost efficient Pro version, or move off to open source. AnyCable has been around for 7+ years, and it is powering large-scale applications around the world (see use cases).
+          Most WebSocket solutions don't guarantee delivery. AnyCable does. Missed messages are automatically recovered during connectivity issues — micro-disconnections, subway rides, or network switches. Your connections also stay alive during deploys, so users never notice a deployment.
         </p>
         <h3 class='about-slide__subtitle'>
-          Reliable realtime delivery
+          10,000+ connections per server
         </h3>
         <p class='about-slide__text'>
-          Most WebSocket solutions do not have delivery guarantees, but AnyCable automatically recovers any messages missed during micro connectivity issues, common even for stable connections, as well as longer ones that happen when users commute, ride a subway, etc. We solve all realtime-specific problems, so that you don’t have to!
+          Written in Go for minimal memory overhead on long-lived connections. Works with any backend — Rails, Laravel, Node.js, Python, or any language via HTTP pub/sub API. In production since 2017, powering 50+ companies.
         </p>
       </div>
       <div class='about-slide__media about-slide__media-top demo__slide'>
@@ -307,7 +403,7 @@
           Managed, open source, or on-premise Pro
         </h3>
         <p class='about-slide__text'>
-          We recommend to start tinkering with AnyCable in its SaaS form, but consider switching to the on premise Pro version later one. You can always switch to open source, which is, of course, free. In any case, no changes in code are needed to make a switch. Choose what’s best for you today.
+          Start with AnyCable in its managed (SaaS) form, then switch to the on-premise Pro version as you scale. You can always move to open source, which is free. No code changes are needed to switch between any option — choose what's best for you today.
         </p>
         <h3 class='about-slide__subtitle'>Secure and HIPAA compliant messaging</h3>
         <p class='about-slide__text'>
@@ -508,9 +604,9 @@
     </div>
     <div class='about-slide__section'>
       <div class='about-slide__content'>
-        <h3 class='about-slide__subtitle'>Time-tested abstractions</h3>
+        <h3 class='about-slide__subtitle'>Works with any backend</h3>
         <p class='about-slide__text'>
-          Write clean and maintainable code, leveraging clear abstractions: channels, subscriptions, presence tracking. Higher-level APIs like collaboration: coming soon!
+          AnyCable runs as a standalone server alongside your application. Broadcast from any backend via HTTP API — or use native SDKs for Rails and Laravel. Works with Hotwire, Turbo Streams, and any JavaScript framework out of the box.
         </p>
         <div class='about-slide__arrow'>
           <svg width="171" height="20" viewBox="0 0 171 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -525,9 +621,10 @@
       </div>
       <div class='about-slide__media about-slide__media-align-top' data-controller="tabs">
         <div class='about-slide__tabs'>
-          <button data-tabs-target="code-pubsub" class='button about-slide__btn about-slide__btn-pubsub active-tab'>Pub/Sub</button>
-          <button data-tabs-target="code-rb" class='button about-slide__btn about-slide__btn-ruby'>Ruby Channels</button>
-          <button data-tabs-target="code-js" class='button about-slide__btn about-slide__btn-js'>JS Channels</button>
+          <button data-tabs-target="code-pubsub" class='button button_variant_outlined about-slide__tab active-tab'>Pub/Sub</button>
+          <button data-tabs-target="code-rb" class='button button_variant_outlined about-slide__tab'>Ruby</button>
+          <button data-tabs-target="code-js" class='button button_variant_outlined about-slide__tab'>JS/TS</button>
+          <button data-tabs-target="code-py" class='button button_variant_outlined about-slide__tab'>Python</button>
         </div>
         <div class='slide-show__frame' id="codes">
           <div data-tabs-id="code-pubsub" class='slide-show__code-wrapper'>
@@ -583,116 +680,374 @@
 <span class="line"><span style="color:#F0F3F6">}</span></span>
 <span class="line"></span></code></pre>
           </div>
+          <div data-tabs-id="code-py" style="display:none" class='slide-show__code-wrapper'>
+<pre class="shiki github-dark-high-contrast" style="background-color:#0a0c10;color:#f0f3f6" tabindex="0"><code style="padding:1em;overflow-x: auto;"><span class="line"><span style="color:#BDC4CC"># Broadcast from FastAPI via HTTP API</span></span>
+<span class="line"><span style="color:#FF9492">import</span><span style="color:#F0F3F6"> httpx</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F0F3F6">@app.</span><span style="color:#DBB7FF">post</span><span style="color:#F0F3F6">(</span><span style="color:#ADDCFF">"/messages"</span><span style="color:#F0F3F6">)</span></span>
+<span class="line"><span style="color:#FF9492">async def</span><span style="color:#DBB7FF"> create_message</span><span style="color:#F0F3F6">(msg: Message):</span></span>
+<span class="line"><span style="color:#FF9492">    async with</span><span style="color:#F0F3F6"> httpx.AsyncClient() </span><span style="color:#FF9492">as</span><span style="color:#F0F3F6"> client:</span></span>
+<span class="line"><span style="color:#FF9492">        await</span><span style="color:#F0F3F6"> client.</span><span style="color:#DBB7FF">post</span><span style="color:#F0F3F6">(</span></span>
+<span class="line"><span style="color:#ADDCFF">            f"</span><span style="color:#F0F3F6">{ANYCABLE_URL}</span><span style="color:#ADDCFF">/api/v1/broadcasts"</span><span style="color:#F0F3F6">,</span></span>
+<span class="line"><span style="color:#F0F3F6">            json={</span></span>
+<span class="line"><span style="color:#ADDCFF">                "stream"</span><span style="color:#F0F3F6">: </span><span style="color:#FF9492">f</span><span style="color:#ADDCFF">"chat/</span><span style="color:#F0F3F6">{msg.room_id}</span><span style="color:#ADDCFF">"</span><span style="color:#F0F3F6">,</span></span>
+<span class="line"><span style="color:#ADDCFF">                "data"</span><span style="color:#F0F3F6">: msg.</span><span style="color:#DBB7FF">json</span><span style="color:#F0F3F6">()</span></span>
+<span class="line"><span style="color:#F0F3F6">            }</span></span>
+<span class="line"><span style="color:#F0F3F6">        )</span></span>
+<span class="line"><span style="color:#FF9492">    return</span><span style="color:#F0F3F6"> {</span><span style="color:#ADDCFF">"ok"</span><span style="color:#F0F3F6">: </span><span style="color:#91CBFF">True</span><span style="color:#F0F3F6">}</span></span>
+<span class="line"></span></code></pre>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-        <section class='slide cases-slide'>
+        <section class='slide cases-slide' id="customers">
   <div class='cases-slide__wrapper'>
+
     <div class='cases-slide__section cases-slide__section-mobile-reverse'>
       <div class='cases-slide__media'>
-        <div class='cases-slide__logos'>
-          <img class='cases-slide__logo' src='/assets/healthie-text-4f869514.png' alt='Healthie' width="200" />
-          <img class='cases-slide__logo' src='/assets/joint-academy-text-a06443a2.png' alt='Joint Academy' width="250" />
+        <div class='cases-slide__companies'>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-doximity"
+            data-url="https://www.doximity.com"
+            data-case-study="https://evilmartians.com/chronicles/growing-pains-and-a-dose-of-go-real-time-features-for-this-rails-app"
+            data-case-study-title="How Doximity brought real-time Go power to their Rails app"
+            data-detail="Doximity uses AnyCable for their dialer products — video and voice for physicians. AnyCable keeps WebSocket connections alive during Rails deploys, so calls are never interrupted. NYSE-listed, used by 80% of US doctors.">
+            <span class="cases-slide__company-name">Doximity</span>
+            <span class="cases-slide__company-desc">Professional network for physicians, telehealth video</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-healthie"
+            data-url="https://www.gethealthie.com"
+            data-case-study="https://blog.anycable.io/p/making-real-time-chat-functionality-healthie-r"
+            data-case-study-title="Making real-time chat functionality Healthie-r with AnyCable Pro"
+            data-detail="Healthie powers HIPAA-compliant patient-doctor messaging for thousands of healthcare providers. AnyCable runs on-premise in their infrastructure, ensuring PHI never leaves their servers. $42M raised, 25K+ clinicians.">
+            <span class="cases-slide__company-name">Healthie</span>
+            <span class="cases-slide__company-desc">Healthcare infrastructure for virtual-first care</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-headway"
+            data-url="https://www.headway.co"
+            data-detail="Headway connects patients with affordable in-network therapists. AnyCable powers real-time notifications and session updates across their platform. $2.3B valuation, 600K+ therapy appointments per month.">
+            <span class="cases-slide__company-name">Headway</span>
+            <span class="cases-slide__company-desc">Affordable mental health therapy platform</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-jane"
+            data-url="https://jane.app"
+            data-detail="Jane is a practice management platform for allied health clinics across Canada. AnyCable powers real-time scheduling updates and notifications for thousands of clinics. $100M+ raised.">
+            <span class="cases-slide__company-name">Jane</span>
+            <span class="cases-slide__company-desc">Practice management for allied health clinics</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-fullscript"
+            data-url="https://fullscript.com"
+            data-detail="Fullscript lets healthcare practitioners recommend and dispense supplements to patients. AnyCable handles real-time inventory and order updates across their platform. $240M raised.">
+            <span class="cases-slide__company-name">Fullscript</span>
+            <span class="cases-slide__company-desc">Online supplement dispensary for practitioners</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-jointacademy"
+            data-url="https://www.jointacademy.com"
+            data-detail="Joint Academy delivers digital physical therapy for chronic joint and back pain via mobile app, connecting patients with licensed therapists in real time. Based in Sweden, $34M raised.">
+            <span class="cases-slide__company-name">Joint Academy</span>
+            <span class="cases-slide__company-desc">Digital physical therapy for chronic pain</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-wawafertility"
+            data-url="https://www.wawafertility.com"
+            data-detail="Wawa Fertility provides fertility care and benefits for employers and employees, with real-time communication between patients and care coordinators.">
+            <span class="cases-slide__company-name">Wawa Fertility</span>
+            <span class="cases-slide__company-desc">Fertility care and benefits platform</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-sessionshealth"
+            data-url="https://www.sessionshealth.com"
+            data-detail="Sessions Health provides EHR and practice management software for mental health therapists, with real-time session notes and client communication.">
+            <span class="cases-slide__company-name">Sessions Health</span>
+            <span class="cases-slide__company-desc">EHR and practice management for therapists</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-vinita"
+            data-url="https://www.vinitahealth.com"
+            data-detail="Vinita is a digital health platform focused on women's health and reproductive care, using AnyCable for real-time patient engagement.">
+            <span class="cases-slide__company-name">Vinita</span>
+            <span class="cases-slide__company-desc">Women's health and reproductive care</span>
+          </button>
         </div>
       </div>
       <div class='cases-slide__content'>
-        <h3 class='cases-slide__pretitle'>Use cases</h3>
-        <h2 class='cases-slide__title'>Secure chats for healthtech</h2>
+        <h3 class='cases-slide__pretitle'>Industries</h3>
+        <h2 class='cases-slide__title'>Healthtech</h2>
         <div class='cases-slide__text'>
           <ul>
-            <li>AnyCable is a HIPAA compliant and secure solution for messaging because it runs on premise, in your
-              infrastructure.</li>
-            <li>AnyCable serves some of the largest patient-doctor communication platforms in healthtech.</li>
-            <li>AnyCable is used as a critical component in software saving lives potentially every second.</li>
+            <li>HIPAA and SOC2 compliant — AnyCable runs on premise, data never leaves your infrastructure.</li>
+            <li>Powers patient-doctor communication, telehealth video, and real-time health monitoring.</li>
+            <li>Used as a critical component in software serving millions of patients.</li>
           </ul>
         </div>
       </div>
     </div>
+
+    <div class='cases-slide__section cases-slide__quote-section'>
+      <div class='cases-slide__quote-block'>
+        <blockquote class='cases-slide__quote'>
+          "We use AnyCable for our dialer products, which is where real-time is critical — it's our video and voice platform. Anytime you restart your application, which happens when you deploy, you're gonna get connection severances. AnyCable allows them to keep that connection open. That Go service stays up, and you can continue shipping your Rails application as normal."
+        </blockquote>
+        <div class='cases-slide__quote-attribution'>
+          <span class='cases-slide__quote-author'>Ryan Stawarz &amp; Austin Story</span>
+          <span class='cases-slide__quote-role'>Engineering at <a href="https://www.doximity.com" target="_blank">Doximity</a></span>
+          <span class='cases-slide__quote-source'>
+            <a href="https://podcast.rubyonrails.org/2462975/episodes/17653501" target="_blank" data-ph-capture-attribute-link-id="doximity-podcast">On Rails Podcast</a>
+          </span>
+        </div>
+      </div>
+    </div>
+
     <div class='cases-slide__section'>
       <div class='cases-slide__content'>
-        <h3 class='cases-slide__pretitle'>Use cases</h3>
-        <h2 class='cases-slide__title'>Streaming AI responses</h2>
+        <h3 class='cases-slide__pretitle'>Industries</h3>
+        <h2 class='cases-slide__title'>Fintech</h2>
         <div class='cases-slide__text'>
-          <strong>Faster AI responses, better UX, better retention</strong>
-          <br/>
-          <br/>
           <ul>
-            <li>Applications use AnyCable to stream each syllable of the AI-generated responses in realtime.</li>
-            <li>The faster users can access AI-generated response, the better their retention in the product.</li>
+            <li>Real-time market data, live dashboards, transaction notifications.</li>
+            <li>Handles massive concurrent connections where every millisecond matters.</li>
           </ul>
         </div>
       </div>
       <div class='cases-slide__media'>
-        <div class='cases-slide__logos'>
-          <img class='cases-slide__logo' src='data:image/png;base64,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VZUa4Hhqn9pTKS3trXHexJRrPe201zvhBhx+2fCnX/y3YV19522H2Ow3dq9IrUa6GIAjz35vy7bALTh0oLz54v/Nz//z64Z19Z233YpQGVrWe+imwxolwtszzoeESsZOe9gTQ14sYsh529H4fvbmk1NDfBk+8ee2rtbQTYdTlcIirqFvTiSudeh1wpHYKc8ixpwREQ3xnNMe5x5gNOQY19M1PgbGeQDZa8It00NhMVNqak0xd6irtH/mUjsMJky4dQKFRdUuWZL1+kOG6MaI61KuhaMTKCwujmHOXtIbPYp43aweULxO1jW2PTNFJDk6gcIqYlgqq8GO16nx9D/3GtsikoKEW2FSfqDs8XGNzEODHb+mnNUeP7/27JGaP8vzaxy6aqu9tmtzObWutet1p9Qye++13/2Mn1f8GWdc49Yc8T0N8eTu6bO3Db3aZaBZlD/vdr4c97Lqb/shXfMMktL1OR+FW6aHwqbU2IyYaevXB2syhwJACoECQAqBAkAKcygDZU603uoKEODYrPICIIUhLwBSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFIIFABSCBQAUggUAFJ8BZwSKPMPG3fkAAAAAElFTkSuQmCC' alt='Canfy' width="200" />
+        <div class='cases-slide__companies'>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-coingecko"
+            data-url="https://www.coingecko.com"
+            data-detail="CoinGecko is one of the largest cryptocurrency data aggregators, tracking real-time prices, volume, and market cap for thousands of tokens. AnyCable powers their live market data feeds. Profitable, 8-figure revenue.">
+            <span class="cases-slide__company-name">CoinGecko</span>
+            <span class="cases-slide__company-desc">Cryptocurrency data aggregator, real-time market tracking</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-dext"
+            data-url="https://dext.com"
+            data-detail="Dext (formerly Receipt Bank) automates accounting and bookkeeping with real-time data extraction from receipts and invoices. Backed by Insight Partners, used by accountants globally.">
+            <span class="cases-slide__company-name">Dext</span>
+            <span class="cases-slide__company-desc">Accounting automation and bookkeeping software</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-freeagent"
+            data-url="https://www.freeagent.com"
+            data-detail="FreeAgent is a cloud accounting platform for freelancers and small businesses, acquired by NatWest (Royal Bank of Scotland). Well-established in the UK market.">
+            <span class="cases-slide__company-name">FreeAgent</span>
+            <span class="cases-slide__company-desc">Cloud accounting for freelancers and small businesses</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-wealthbox"
+            data-url="https://www.wealthbox.com"
+            data-case-study="https://www.youtube.com/watch?v=J68QOBLEItY"
+            data-case-study-title="Talk: Real-time collaboration with AnyCable and Yjs — SF Ruby 2025"
+            data-case-study-cta="Watch the talk →"
+            data-detail="Wealthbox is a CRM built for financial advisors. Their engineer JP Camara presented on using AnyCable with Yjs for real-time collaborative editing at SF Ruby 2025.">
+            <span class="cases-slide__company-name">Wealthbox</span>
+            <span class="cases-slide__company-desc">CRM for financial advisors</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-floatcard"
+            data-url="https://floatcard.com"
+            data-detail="Floatcard provides corporate credit cards and spend management for businesses, with real-time transaction notifications and spend tracking.">
+            <span class="cases-slide__company-name">Floatcard</span>
+            <span class="cases-slide__company-desc">Corporate credit cards and spend management</span>
+          </button>
         </div>
       </div>
     </div>
+
     <div class='cases-slide__section cases-slide__section-mobile-reverse'>
       <div class='cases-slide__media'>
-        <div class='cases-slide__logos'>
-          <img class='cases-slide__logo cases-slide__logo-desktop-only' src='data:image/png;base64,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' alt='Circle' width="148" />
-          <img class='cases-slide__logo' src='/assets/live-voice-edb96913.png' alt='LiveVoice' width="120" />
-          <img class='cases-slide__logo cases-slide__logo-desktop-only' src='/assets/welcome-2ad4f33c.png' alt='Welcome' width="200" />
-          <img class='cases-slide__logo' src='data:image/png;base64,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' alt='Vito' width="60" />
-          <img class='cases-slide__logo' src='/assets/callbell-text-c0ea0458.png' alt='Callbell' width="190" />
+        <div class='cases-slide__companies'>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-jobber"
+            data-url="https://getjobber.com"
+            data-detail="Jobber is the leading field service management platform for home service businesses. AnyCable powers real-time job dispatching, schedule updates, and crew notifications. $191M raised, $167M revenue, 200K+ professionals.">
+            <span class="cases-slide__company-name">Jobber</span>
+            <span class="cases-slide__company-desc">Field service management, real-time dispatching</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-companycam"
+            data-url="https://www.companycam.com"
+            data-detail="CompanyCam is a photo documentation app for contractors — workers snap job-site photos that sync in real time across teams. $30M+ raised, fast-growing in the trades vertical.">
+            <span class="cases-slide__company-name">CompanyCam</span>
+            <span class="cases-slide__company-desc">Photo documentation for contractors</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-evconnection"
+            data-url="https://ev-connection.com"
+            data-detail="EV Connection builds EV charging infrastructure. AnyCable natively supports OCPP (Open Charge Point Protocol) for real-time communication between charging stations and management systems.">
+            <span class="cases-slide__company-name">EV Connection</span>
+            <span class="cases-slide__company-desc">EV charging infrastructure, OCPP protocol</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-via"
+            data-url="https://ridewithvia.com"
+            data-detail="Via Transportation (which acquired Remix for ~$100M) provides transit planning and on-demand fleet management. AnyCable powers live vehicle tracking and real-time dispatching.">
+            <span class="cases-slide__company-name">Via Transportation</span>
+            <span class="cases-slide__company-desc">Transit planning and live fleet tracking</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-agero"
+            data-url="https://www.agero.com"
+            data-detail="Agero is the largest provider of white-label roadside assistance in the US, powering most automaker and insurance roadside programs. Real-time dispatching and driver tracking. $538M revenue, founded 1972.">
+            <span class="cases-slide__company-name">Agero</span>
+            <span class="cases-slide__company-desc">Roadside assistance and connected vehicle services</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-rangee"
+            data-url="https://rang.ee"
+            data-detail="rang.ee provides Bluetooth beacon and indoor positioning solutions, using AnyCable for real-time proximity detection and device communication.">
+            <span class="cases-slide__company-name">rang.ee</span>
+            <span class="cases-slide__company-desc">Bluetooth beacons and indoor positioning</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-tasktag"
+            data-url="https://tasktag.co"
+            data-detail="Tasktag is a chat-based project management app for builders and contractors, combining real-time messaging with task tracking on job sites.">
+            <span class="cases-slide__company-name">Tasktag</span>
+            <span class="cases-slide__company-desc">Chat-based construction project management</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-sera"
+            data-url="https://sera.tech"
+            data-case-study="https://evilmartians.com/chronicles/real-time-magic-no-elixirs-optimizing-sera-with-anycable"
+            data-case-study-title="Real-time magic, no elixirs: optimizing Sera with AnyCable"
+            data-detail="Sera provides field service management software for HVAC, plumbing, and electrical businesses. Evil Martians migrated their real-time layer from Elixir to AnyCable, enabling voice processing and live data streaming.">
+            <span class="cases-slide__company-name">Sera</span>
+            <span class="cases-slide__company-desc">Field service software, voice processing and IoT data</span>
+          </button>
         </div>
       </div>
       <div class='cases-slide__content'>
-        <h3 class='cases-slide__pretitle'>Use cases</h3>
-        <h2 class='cases-slide__title'>Realtime-heavy apps</h2>
+        <h3 class='cases-slide__pretitle'>Industries</h3>
+        <h2 class='cases-slide__title'>Field Services &amp; IoT</h2>
         <div class='cases-slide__text'>
           <ul>
-            <li>Scalable chats and updates for platforms powering online events.</li>
-            <li>Scalable and cost-efficient infrastructure for real-time messaging: SaaS expenses grow uncomfortably as your product grows, but the cost of AnyCable Pro license does not.</li>
-            <li>AnyCable is both performant and cost-efficient for applications that are big on realtime: notifications, updates, communication and collaboration.</li>
+            <li>Live GPS tracking, real-time dispatching, and EV charging infrastructure.</li>
+            <li>Native support for OCPP (Open Charge Point Protocol) for EV charger communication.</li>
+            <li>Keeps field teams and transit fleets in sync with low-latency connections.</li>
           </ul>
         </div>
       </div>
     </div>
+
     <div class='cases-slide__section'>
       <div class='cases-slide__content'>
-        <h3 class='cases-slide__pretitle'>Use cases</h3>
-        <h2 class='cases-slide__title'>Voice processing and IoT data</h2>
+        <h3 class='cases-slide__pretitle'>Industries</h3>
+        <h2 class='cases-slide__title'>Communities</h2>
         <div class='cases-slide__text'>
           <ul>
-            <li>Process voice streaming APIs, like Twilio Media Streams, in Go. <a href="https://anycable.substack.com/p/anycable-off-rails-connecting-twilio" target="_blank" data-ph-capture-attribute-link-id="cases-twilio-post">Read more</a>.</li>
-            <li>Stream GPS coordinates and EV charging data. AnyCable supports OCPP protocol.</li>
+            <li>Real-time messaging, live events, presence indicators, activity feeds.</li>
+            <li>Community platforms need WebSocket connections at scale — AnyCable delivers.</li>
+            <li>From creator communities to live interpretation — reliable delivery across use cases.</li>
           </ul>
         </div>
       </div>
       <div class='cases-slide__media'>
-        <div class='cases-slide__logos'>
-          <img class='cases-slide__logo' src='/assets/sera-text-e8806acd.png' alt='Sera' width="150" />
+        <div class='cases-slide__companies'>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-circle"
+            data-url="https://circle.so"
+            data-detail="Circle is a leading community platform powering thousands of communities for creators and brands. AnyCable handles real-time messaging, live events, presence indicators, and activity feeds at scale. $30M+ raised.">
+            <span class="cases-slide__company-name">Circle</span>
+            <span class="cases-slide__company-desc">Community platform for creators and brands</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-mightynetworks"
+            data-url="https://www.mightynetworks.com"
+            data-detail="Mighty Networks serves millions of members across thousands of communities with real-time chat, live streaming, and interactive courses. Founded by Gina Bianchini (Ning co-founder), $50M+ raised.">
+            <span class="cases-slide__company-name">Mighty Networks</span>
+            <span class="cases-slide__company-desc">Community and course platform</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-livevoice"
+            data-url="https://www.livevoice.io"
+            data-case-study="https://blog.anycable.io/p/livevoice-shares-how-they-use-anycable"
+            data-case-study-title="LiveVoice: simultaneous interpretation powered by AnyCable Pro"
+            data-detail="LiveVoice powers simultaneous interpretation and guided tours at live events. Audiences listen via smartphones while AnyCable handles real-time audio streaming to hundreds of concurrent listeners.">
+            <span class="cases-slide__company-name">LiveVoice</span>
+            <span class="cases-slide__company-desc">Live audio streaming and interpretation</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-welcome"
+            data-url="https://www.gloo.us"
+            data-detail="Welcome (acquired by Gloo) is a virtual and hybrid events platform that uses AnyCable for real-time audience engagement during live events.">
+            <span class="cases-slide__company-name">Welcome</span>
+            <span class="cases-slide__company-desc">Virtual and hybrid events platform</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-uula"
+            data-url="https://uula.com"
+            data-detail="Uula offers live and on-demand wellness classes including meditation, yoga, and astrology, with real-time interaction between instructors and participants.">
+            <span class="cases-slide__company-name">Uula</span>
+            <span class="cases-slide__company-desc">Wellness and spiritual classes</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-nanameue"
+            data-url="https://yay.space"
+            data-detail="Yay! (by Nanameue) is a Japanese social networking app connecting users through interest-based communities and group chats, all powered by real-time messaging via AnyCable. $18M raised.">
+            <span class="cases-slide__company-name">Yay!</span>
+            <span class="cases-slide__company-desc">Social networking and interest-based communities</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-vito"
+            data-url="https://vito.io"
+            data-case-study="https://blog.anycable.io/p/revitalizing-vito-with-anycable-pro"
+            data-case-study-title="Revitalizing Vito with AnyCable Pro"
+            data-detail="Vito is a real-time transcription and meeting intelligence platform. Evil Martians helped migrate their WebSocket infrastructure to AnyCable Pro, resolving a critical deadlock issue within hours thanks to priority support.">
+            <span class="cases-slide__company-name">Vito</span>
+            <span class="cases-slide__company-desc">Real-time transcription and meeting intelligence</span>
+          </button>
         </div>
       </div>
     </div>
+
     <div class='cases-slide__section cases-slide__section-mobile-reverse'>
       <div class='cases-slide__media'>
-        <div class='cases-slide__logos'>
-          <img class='cases-slide__logo' src='/assets/poll-everywhere-20219e77.png' alt='Poll Everywhere' width="300" />
-          <img class='cases-slide__logo' src='/assets/clickfunnels-e846535d.png' alt='ClickFunnels' width="350" />
+        <div class='cases-slide__companies'>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-clickfunnels"
+            data-url="https://www.clickfunnels.com"
+            data-detail="ClickFunnels is a sales funnel builder used by hundreds of thousands of entrepreneurs. AnyCable powers real-time updates and Hotwire at scale. ~$265M revenue.">
+            <span class="cases-slide__company-name">ClickFunnels</span>
+            <span class="cases-slide__company-desc">Sales funnel and landing page builder</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-polleverywhere"
+            data-url="https://www.polleverywhere.com"
+            data-case-study="https://blog.anycable.io/p/anycable-everywhere-real-time-visualization"
+            data-case-study-title="AnyCable everywhere: real-time visualization streaming for Poll Everywhere"
+            data-detail="Poll Everywhere handles live polling and Q&amp;A with thousands of simultaneous participants, embedded in PowerPoint, Google Slides, and Zoom. Used by over 80% of Fortune 500 companies.">
+            <span class="cases-slide__company-name">Poll Everywhere</span>
+            <span class="cases-slide__company-desc">Live audience engagement and polling</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-callbell"
+            data-url="https://www.callbell.eu"
+            data-case-study="https://blog.anycable.io/p/a-call-for-pro-callbell"
+            data-case-study-title="A call for Pro: Callbell"
+            data-detail="Callbell was the first AnyCable Pro customer. They handle millions of messages daily for customer support teams, unifying WhatsApp, Messenger, Instagram, and Telegram in one inbox.">
+            <span class="cases-slide__company-name">Callbell</span>
+            <span class="cases-slide__company-desc">Unified messaging for customer support teams</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-qualified"
+            data-url="https://www.qualified.com"
+            data-detail="Qualified uses AI-powered chatbots and live chat to convert website visitors into sales meetings for B2B enterprise companies. $95M raised.">
+            <span class="cases-slide__company-name">Qualified</span>
+            <span class="cases-slide__company-desc">AI-powered pipeline generation and live chat</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-uscreen"
+            data-url="https://www.uscreen.tv"
+            data-detail="Uscreen lets creators and businesses sell video content, courses, and subscriptions with their own branded apps. $150M investment from PSG, 25K+ creators on the platform.">
+            <span class="cases-slide__company-name">Uscreen</span>
+            <span class="cases-slide__company-desc">Video membership and monetization platform</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-ctm"
+            data-url="https://www.calltrackingmetrics.com"
+            data-detail="CallTrackingMetrics helps marketers tie phone calls, texts, and form submissions back to ad campaigns with real-time call tracking and attribution.">
+            <span class="cases-slide__company-name">CallTrackingMetrics</span>
+            <span class="cases-slide__company-desc">Call tracking and marketing attribution</span>
+          </button>
+          <button class="cases-slide__company-card" data-ph-capture-attribute-link-id="customer-zyda"
+            data-url="https://www.zyda.com"
+            data-detail="Zyda helps restaurants in the Middle East build their own online ordering channels, with real-time order updates and kitchen notifications.">
+            <span class="cases-slide__company-name">Zyda</span>
+            <span class="cases-slide__company-desc">Restaurant online ordering platform</span>
+          </button>
         </div>
       </div>
       <div class='cases-slide__content'>
-        <h3 class='cases-slide__pretitle'>Use cases</h3>
-        <h2 class='cases-slide__title'>Hotwire at scale</h2>
+        <h3 class='cases-slide__pretitle'>Industries</h3>
+        <h2 class='cases-slide__title'>And more</h2>
         <div class='cases-slide__text'>
           <ul>
-            <li>AnyCable acts as a performance power-up for apps with HTML-over-the-wire frontends out-of-the-box.</li>
-            <li>Binary compression (Pro feature) ensures additional speed and performance benefits.</li>
+            <li>Live notifications, real-time collaboration, streaming AI responses.</li>
+            <li>From marketing funnels to audience engagement — AnyCable powers the real-time layer.</li>
+            <li>Cost-efficient: SaaS expenses grow as your product grows, but AnyCable Pro does not.</li>
           </ul>
         </div>
       </div>
     </div>
+
   </div>
 </section>
- <section class='slide plans-slide'>
+ <section class='slide plans-slide' id="pricing">
   <div class='slide__title-wrapper'>
-    <h3 class='plans-slide__pretitle' id="pricing">Pricing</h4>
+    <h3 class='plans-slide__pretitle'>Pricing</h3>
     <h2 class='slide__title plans-slide__title'>Choose option</h2>
   </div>
   <ul class='plans-slide__content'>
@@ -806,228 +1161,129 @@
   </ul>
 </section>
 
-        <section class='slide resources-slide'>
+        <section class='slide cases-slide' id="resources">
           <div class='cases-slide__wrapper'>
-            <div class='resources-slide__header mobile-only'>
-              <h3 class='cases-slide__pretitle'>Read more</h3>
-              <h2 class='cases-slide__title'>Resources</h2>
-            </div>
-            <div class='cases-slide__section resources-slide__section-wrapper'>
-              <div class='cases-slide__media resources-slide__media'>
-                <div class='resources-slide__section resources-slide__section_type_docs'>
-                  <ul class='docs'>
-                    <li class='docs__item'>
-                      <a class='link docs__link' href='https://docs.anycable.io/rails/getting_started' target='_blank'
-                        data-ph-capture-attribute-link-id='docs-rails'>
-                        <img src='/assets/rails-icon-2542515c.svg' class='docs__icon' alt='Rails icon' />
-                        <p class='docs__title'>Getting started with Rails</p>
-                      </a>
-                    </li>
-                    <li class='docs__item'>
-                      <a class='link docs__link' href='https://docs.anycable.io/guides/serverless' target='_blank'
-                        data-ph-capture-attribute-link-id='docs-install'>
-                        <img src='/assets/serverless-icon-96f68e96.svg' class='docs__icon' alt='Instalation icon' />
-                        <p class='docs__title'>Using with serverless JavaScript</p>
-                      </a>
-                    </li>
-                    <li class='docs__item'>
-                      <a class='link docs__link' href='https://docs.anycable.io/guides/hotwire' target='_blank'
-                        data-ph-capture-attribute-link-id='docs-hotwire'>
-                        <img src='/assets/hotwire-icon-43d9953a.svg' class='docs__icon' alt='Hotwire icon' />
-                        <p class='docs__title'>Using with Hotwire</p>
-                      </a>
-                    </li>
-                    <li class='docs__item docs__item_all_docs'>
-                      <a class='link docs__link' href='https://docs.anycable.io' target='_blank'
-                        data-ph-capture-attribute-link-id='docs-all'>
-                        <p class='docs__title docs__title_type_with-arrow'>
-                          All docs
-                        </p>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <div class='resources-slide__section resources-slide__section_type_videos'>
-                  <div class='videos'>
-                    <a class='link videos__item' href="https://youtube.com/watch?v=4n1SxfK0Uqg" target='_blank'
-                      data-ph-capture-attribute-link-id='anycasts-8-video'>
-                      <img class='videos__image' src="https://i.ytimg.com/vi/4n1SxfK0Uqg/maxresdefault.jpg"
-                        alt='AnyCast Ep. 8 video screenshot' />
-                      <div class='videos__overlay'>
-                        <p class='videos__title'>AnyCable v1.4: reliable real-time for all: Ruby, Rails, Hotwire and beyond</p>
-                      </div>
-                      <a class="link button button_variant_outlined"
-                        href="https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A"
-                        target="_blank" data-ph-capture-attribute-link-id='anycasts-previous-episodes'>
-                        Screencasts on YouTube
-                      </a>
-                    </a>
-                  </div>
-                </div>
-                <div class='resources-slide__section resources-slide__section_type_case-studies'>
-                  <ul class='case-studies'>
-                    <li class='case-studies__study' style='background-color: #f5f5f5;'>
-                      <a
-                        class='link case-studies__study-link'
-                        href=https://blog.anycable.io/p/livevoice-shares-how-they-use-anycable
-                        target='_blank'
-                        data-ph-capture-attribute-link-id='use-case'
-                        data-ph-capture-attribute-use-case=https://blog.anycable.io/p/livevoice-shares-how-they-use-anycable
-                      >
-                        <img
-                          src=/assets/live-voice-edb96913.png
-                          class='case-studies__study-logo'
-                          alt=LiveVoice logo
-                        />
-                        <div class='case-studies__study-content'>
-                          <p class='case-studies__study-date' style='color: rgb(71, 85, 105);'>
-                            April 11, 2024
-                          </p>
-                          <p
-                            class='case-studies__study-title' style='color: rgb(15, 23, 42);'
-                          >
-                           Simultaneous interpretation and guided tours powered by AnyCable Pro
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class='case-studies__study' style='background-color: rgba(226, 232, 240, 1);'>
-                      <a
-                        class='link case-studies__study-link'
-                        href=https://blog.anycable.io/p/anycable-everywhere-real-time-visualization
-                        target='_blank'
-                        data-ph-capture-attribute-link-id='use-case'
-                        data-ph-capture-attribute-use-case=https://blog.anycable.io/p/anycable-everywhere-real-time-visualization
-                      >
-                        <img
-                          src=/assets/polleverywhere-130e3cfd.svg
-                          class='case-studies__study-logo'
-                          alt=Poll Everywhere logo
-                        />
-                        <div class='case-studies__study-content'>
-                          <p class='case-studies__study-date' style='color: rgb(71, 85, 105);'>
-                            June 9, 2023
-                          </p>
-                          <p
-                            class='case-studies__study-title' style='color: rgb(15, 23, 42);'
-                          >
-                           AnyCable everywhere: real-time visualization streaming for Poll Everywhere
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                    <li class='case-studies__study' style='background-color: rgba(223, 233, 250, 1);'>
-                      <a
-                        class='link case-studies__study-link'
-                        href=https://blog.anycable.io/p/making-real-time-chat-functionality-healthie-r
-                        target='_blank'
-                        data-ph-capture-attribute-link-id='use-case'
-                        data-ph-capture-attribute-use-case=https://blog.anycable.io/p/making-real-time-chat-functionality-healthie-r
-                      >
-                        <img
-                          src=/assets/healthie-r-logo-07f18cf4.svg
-                          class='case-studies__study-logo'
-                          alt=Healthie-r logo
-                        />
-                        <div class='case-studies__study-content'>
-                          <p class='case-studies__study-date' style='color: rgba(14, 23, 43, 1);'>
-                            January 20, 2022
-                          </p>
-                          <p
-                            class='case-studies__study-title' style='color: rgba(98, 70, 237, 1);'
-                          >
-                           Making a chat’s real-time functionality Healthie-r with AnyCable&nbsp;Pro
-                          </p>
-                        </div>
-                      </a>
-                    </li>
-                  </ul>
-                  <br />
-                  <a class="link button button_variant_outlined" href="https://blog.anycable.io/t/case-study" target="_blank"
-                    data-ph-capture-attribute-link-id='case-studies'>
-                    Case studies
+        
+            <div class='cases-slide__section cases-slide__section-mobile-reverse'>
+              <div class='cases-slide__media'>
+                <div class='resource-cards'>
+                  <a href='https://docs.anycable.io/rails/getting_started' target='_blank' class='resource-card' data-ph-capture-attribute-link-id='docs-rails'>
+                    <img src='/assets/rails-icon-4a95d499.svg' class='resource-card__icon' alt='Rails' />
+                    <span class='resource-card__title'>Getting started with Rails</span>
+                  </a>
+                  <a href='https://docs.anycable.io/guides/laravel' target='_blank' class='resource-card' data-ph-capture-attribute-link-id='docs-laravel'>
+                    <img src='/assets/laravel-icon-132dbae1.svg' class='resource-card__icon' alt='Laravel' />
+                    <span class='resource-card__title'>Using with Laravel</span>
+                  </a>
+                  <a href='https://docs.anycable.io/guides/serverless' target='_blank' class='resource-card' data-ph-capture-attribute-link-id='docs-js'>
+                    <img src='/assets/js-icon-2f552bfe.svg' class='resource-card__icon' alt='JavaScript' />
+                    <span class='resource-card__title'>Using with JavaScript</span>
+                  </a>
+                  <a href='https://docs.anycable.io/guides/hotwire' target='_blank' class='resource-card' data-ph-capture-attribute-link-id='docs-hotwire'>
+                    <img src='/assets/hotwire-icon-ca87a74c.svg' class='resource-card__icon' alt='Hotwire' />
+                    <span class='resource-card__title'>Using with Hotwire</span>
+                  </a>
+                  <a href='https://docs.anycable.io' target='_blank' class='resource-card resource-card_all' data-ph-capture-attribute-link-id='docs-all'>
+                    <span class='resource-card__title'>All docs</span>
                   </a>
                 </div>
               </div>
               <div class='cases-slide__content'>
-                <div class='desktop-only'>
-                  <h3 class='cases-slide__pretitle'>Read more</h3>
-                  <h2 class='cases-slide__title'>Resources & Support</h2>
-                </div>
+                <h3 class='cases-slide__pretitle'>Resources</h3>
+                <h2 class='cases-slide__title'>Documentation</h2>
                 <div class='cases-slide__text'>
-                  <div class='resources-slide__section resources-slide__section_type_learn-more'>
-                    <p class='resources-slide__heading'>Learn more</p>
-                    <ul class='list-box'>
-                      <li class='list-box_item'>
-                        Read <a class='link' href='https://docs.anycable.io' target='_blank'
-                          data-ph-capture-attribute-link-id='docs'>the docs</a>
-                      </li>
-                      <li class='list-box_item'>
-                        Check <a class='link' href='https://blog.anycable.io' target='_blank'
-                          data-ph-capture-attribute-link-id='blog'>our blog</a>
-                      </li>
-                      <li class='list-box_item'>
-                        Watch <a class='link'
-                          href='https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A'
-                          target='_blank' data-ph-capture-attribute-link-id='screencasts'>screencasts</a> on YouTube
-                      </li>
-                      <li class='list-box_item'>
-                        Check out our <a class='link' href='https://github.com/anycable/anycable_rails_demo' target='_blank'
-                          data-ph-capture-attribute-link-id='rails-demo'>Rails</a> and
-                        <a class='link' href='https://github.com/anycable/vercel-anycable-demo' target='_blank'
-                          data-ph-capture-attribute-link-id='vercel-demo'>Next.js</a> demos
-                      </li>
-                      <li class='list-box__item'>
-                        Watch this talk:
-                      </li>
-                      <a class='link videos__item' href='https://www.youtube.com/watch?v=TgpSs2ffJL0' target='_blank'
-                        data-ph-capture-attribute-link-id='railsconf-2022-video'>
-                        <img class='videos__image' src='/assets/railsConf-video-screenshot-cd8c7316.jpg'
-                          alt='RailsConf 2022 video screenshot' />
-                        <div class='videos__overlay'>
-                          <p class='videos__title'>
-                            RailsConf 2022 - The pitfalls of realtime-ification
-                          </p>
-                        </div>
-                      </a>
-                    </ul>
-                  </div>
-                  <div class='resources-slide__section resources-slide__section_type_community'>
-                    <p class='resources-slide__heading'>Stay in the loop</p>
-                    <ul class='list-box'>
-                      <li class='list-box__item'>
-                        Sign up for
-                        <a class='link'
-                          href='https://blog.anycable.io/' target='_blank' data-ph-capture-attribute-link-id='substack'>our
-                          newsletter</a>
-                      </li>
-                      <li class='list-box__item'>
-                        Follow us on
-                        <a class='link'
-                          href='https://twitter.com/any_cable' data-ph-capture-attribute-link-id='twitter' target='_blank'>X (Twitter)</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class='resources-slide__section resources-slide__section_type_community'>
-                    <p class='resources-slide__heading'>Get help</p>
-                    <ul class='list-box'>
-                      <li class='list-box__item'>
-                        Ask a question on
-                        <a class='link'
-                          href='https://discord.gg/stimulus-reflex' target='_blank'
-                          data-ph-capture-attribute-link-id='discord'>Discord</a>
-                      </li>
-                      <li class='list-box__item'>
-                        Submit an issue on
-                        <a class='link'
-                          href='https://github.com/anycable/anycable' data-ph-capture-attribute-link-id='github-2'
-                          target='_blank'>GitHub</a>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul>
+                    <li>Works with Rails, Laravel, JavaScript, and any backend via HTTP API.</li>
+                    <li>Deploy with Docker, Kubernetes, Heroku, Fly.io, or as a standalone binary.</li>
+                    <li>Comprehensive guides for every integration.</li>
+                  </ul>
                 </div>
               </div>
             </div>
+        
+            <div class='cases-slide__section'>
+              <div class='cases-slide__content'>
+                <h3 class='cases-slide__pretitle'>Resources</h3>
+                <h2 class='cases-slide__title'>Talks & Videos</h2>
+                <div class='cases-slide__text'>
+                  <ul>
+                    <li>Conference talks, screencasts, and deep dives on real-time architecture.</li>
+                    <li>Learn from AnyCable users and maintainers.</li>
+                  </ul>
+                  <br />
+                  <a class="link" href="https://www.youtube.com/watch?v=4n1SxfK0Uqg&list=PLAgBW0XUpyOVFnpoS6FKDszd8WEvXzg-A" target="_blank" data-ph-capture-attribute-link-id='screencasts-all'>All screencasts on YouTube</a>
+                </div>
+              </div>
+              <div class='cases-slide__media'>
+                <div class='video-cards'>
+                  <a href="https://youtube.com/watch?v=4n1SxfK0Uqg" target='_blank' class='video-card' data-ph-capture-attribute-link-id='video-v14'>
+                    <img class='video-card__thumb' src="https://i.ytimg.com/vi/4n1SxfK0Uqg/hqdefault.jpg" alt='AnyCable v1.4 screencast' />
+                    <div class='video-card__overlay'>
+                      <div class='video-card__play'></div>
+                      <p class='video-card__title'>AnyCable v1.4: reliable real-time for all</p>
+                      <p class='video-card__speaker'>Vladimir Dementyev</p>
+                    </div>
+                  </a>
+                  <a href='https://www.youtube.com/watch?v=7WJFTvgnmWA&t=1083s' target='_blank' class='video-card' data-ph-capture-attribute-link-id='video-evolution'>
+                    <img class='video-card__thumb' src="https://i.ytimg.com/vi/7WJFTvgnmWA/hqdefault.jpg" alt='Rocky Mountain Ruby 2024' />
+                    <div class='video-card__overlay'>
+                      <div class='video-card__play'></div>
+                      <p class='video-card__title'>Evolution of Real-Time, AnyCable Pro and... me</p>
+                      <p class='video-card__speaker'>Irina Nazarova — Rocky Mountain Ruby 2024</p>
+                    </div>
+                  </a>
+                  <a href='https://www.youtube.com/watch?v=J68QOBLEItY' target='_blank' class='video-card' data-ph-capture-attribute-link-id='video-collab'>
+                    <img class='video-card__thumb' src="https://i.ytimg.com/vi/J68QOBLEItY/hqdefault.jpg" alt='SF Ruby 2025' />
+                    <div class='video-card__overlay'>
+                      <div class='video-card__play'></div>
+                      <p class='video-card__title'>Real-time collaboration with AnyCable and Yjs</p>
+                      <p class='video-card__speaker'>JP Camara (Wealthbox) — SF Ruby 2025</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+        
+            <div class='cases-slide__section cases-slide__section-mobile-reverse'>
+              <div class='cases-slide__media'>
+                <div class='cases-slide__companies'>
+                  <a href="https://blog.anycable.io/p/any-cables-33-durable-at-once" target="_blank" class="cases-slide__company-card" data-ph-capture-attribute-link-id="newsletter-33">
+                    <span class="cases-slide__company-name">Any Cables #33: Durable at Once</span>
+                    <span class="cases-slide__company-desc">Feb 2026</span>
+                  </a>
+                  <a href="https://blog.anycable.io/p/any-cables-32-2025-is-over" target="_blank" class="cases-slide__company-card" data-ph-capture-attribute-link-id="newsletter-32">
+                    <span class="cases-slide__company-name">Any Cables #32: 2025 is over</span>
+                    <span class="cases-slide__company-desc">Dec 2025</span>
+                  </a>
+                  <a href="https://blog.anycable.io/p/any-cables-monthly-31-whyjs" target="_blank" class="cases-slide__company-card" data-ph-capture-attribute-link-id="newsletter-31">
+                    <span class="cases-slide__company-name">Any Cables #31: Why.js?</span>
+                    <span class="cases-slide__company-desc">Oct 2025</span>
+                  </a>
+                  <a href="https://blog.anycable.io/p/building-bridges-announcing-anycable" target="_blank" class="cases-slide__company-card" data-ph-capture-attribute-link-id="newsletter-laravel">
+                    <span class="cases-slide__company-name">Announcing AnyCable for Laravel</span>
+                    <span class="cases-slide__company-desc">Jun 2025</span>
+                  </a>
+                  <a href="https://blog.anycable.io" target="_blank" class="cases-slide__company-card cases-slide__company-card_cta" data-ph-capture-attribute-link-id="newsletter-all">
+                    <span class="cases-slide__company-name">All issues & subscribe</span>
+                    <span class="cases-slide__company-desc">Monthly updates on AnyCable and real-time</span>
+                  </a>
+                </div>
+              </div>
+              <div class='cases-slide__content'>
+                <h3 class='cases-slide__pretitle'>Resources</h3>
+                <h2 class='cases-slide__title'>Newsletter & Community</h2>
+                <div class='cases-slide__text'>
+                  <ul>
+                    <li><a class='link' href='https://blog.anycable.io' target='_blank'>Subscribe to our newsletter</a> — monthly releases, tips, and case studies.</li>
+                    <li>Follow on <a class='link' href='https://twitter.com/any_cable' target='_blank'>X (Twitter)</a>.</li>
+                    <li>Submit issues on <a class='link' href='https://github.com/anycable/anycable' target='_blank'>GitHub</a>.</li>
+                  </ul>
+                  <br />
+                  <a class="link" href="https://github.com/anycable/slide-quiz" target="_blank" data-ph-capture-attribute-link-id="slide-quiz">Try Slide Quiz</a> — live polls for Sli.dev and Reveal.js web presentations powered by AnyCable
+                </div>
+              </div>
+            </div>
+        
           </div>
         </section>
       </main>
@@ -1105,14 +1361,6 @@
               <ul class='footer__column-links'>
                 <li class='footer__list-item'>
                   <a
-                    href='https://discord.gg/stimulus-reflex'
-                    class='link'
-                    target='_blank'
-                    data-ph-capture-attribute-link-id='footer-discord'
-                  >Discord</a>
-                </li>
-                <li class='footer__list-item'>
-                  <a
                     href='https://anycable.substack.com/'
                     class='link'
                     target='_blank'
@@ -1132,7 +1380,7 @@
           </div>
           <div class='footer__column footer__column_content_legals'>
             <p class='footer__legal footer__legal_type_copyright'>
-              2025
+              2026
               <a
                 class='link'
                 href='https://twitter.com/palkan_tula'
@@ -1251,6 +1499,22 @@
   </div>
 </div>
 
+    <div class="popup company-modal" id="company-modal">
+      <div class="popup__container company-modal__container">
+        <button class="popup__close-btn" type="button" aria-label="Close"></button>
+        <div class="company-modal__content">
+          <img class="company-modal__logo" id="company-modal-logo" src="" alt="" style="display:none" />
+          <h2 class="company-modal__name" id="company-modal-name"></h2>
+          <p class="company-modal__desc" id="company-modal-desc"></p>
+          <div class="company-modal__detail" id="company-modal-detail"></div>
+          <div class="company-modal__links">
+            <a class="company-modal__link" id="company-modal-case-study" href="#" target="_blank" style="display:none">Read case study</a>
+            <a class="company-modal__link" id="company-modal-link" href="#" target="_blank">Visit website</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     
     <anycable-cursors
       url="wss://stackblitz-demo-sx9f.fly.dev/cable"
