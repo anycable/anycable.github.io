@@ -92,20 +92,36 @@
             "name": "Managed AnyCable",
             "price": "0",
             "priceCurrency": "USD",
-            "description": "Free managed hosting, up to 2,000 connections."
+            "description": "Free for 1 instance (about 2,000 connections), no SLA. Run and upgraded for you."
           },
           {
             "@type": "Offer",
-            "name": "AnyCable Pro",
+            "name": "AnyCable Pro Startup",
             "price": "1490",
             "priceCurrency": "USD",
             "priceValidUntil": "2027-12-31",
-            "description": "$1,490 per year. Unlimited instances and connections. Cluster mode, binary compression, long-polling fallback, adaptive scaling, dedicated support."
+            "description": "$1,490 per year or $149 per month. Self-hosted, up to 5 production instances, unlimited connections. Cluster mode, binary compression, long-polling fallback, adaptive scaling, dedicated support."
           },
           {
             "@type": "Offer",
-            "name": "Enterprise",
-            "description": "Custom pricing for enterprise deployments."
+            "name": "AnyCable Pro Business",
+            "price": "4900",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "description": "$4,900 per year or $490 per month. Self-hosted, up to 20 production instances, unlimited connections."
+          },
+          {
+            "@type": "Offer",
+            "name": "AnyCable Pro Scale",
+            "price": "9000",
+            "priceCurrency": "USD",
+            "priceValidUntil": "2027-12-31",
+            "description": "From $9,000 per year. More than 20 production instances, priority support, 48-hour response on critical issues."
+          },
+          {
+            "@type": "Offer",
+            "name": "AnyCable Pro Enterprise",
+            "description": "Custom pricing. Source code access and customization, 48-hour response on critical issues."
           },
           {
             "@type": "Offer",
@@ -135,7 +151,7 @@
             "name": "How much does AnyCable cost?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AnyCable open source is free. Managed AnyCable is free for up to 2,000 connections. AnyCable Pro costs $1,490 per year for unlimited connections and instances — flat pricing that doesn't grow with your user count. Enterprise plans have custom pricing. Consulting is available at $200 per hour."
+              "text": "AnyCable open source is free. Managed AnyCable is free for 1 instance (about 2,000 connections). AnyCable Pro is self-hosted with unlimited connections and priced by production instance: $1,490 per year (or $149 per month) for up to 5 instances, $4,900 per year (or $490 per month) for up to 20, and from $9,000 per year beyond that. Enterprise, with source access, has custom pricing. Staging and development instances are free, and there is a free 2-month trial. Consulting is available at $200 per hour."
             }
           },
           {
@@ -167,7 +183,7 @@
             "name": "How is AnyCable different from Pusher or Ably?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pusher and Ably are managed services that route your data through third-party servers — a problem for HIPAA and SOC2 compliance. Their pricing grows linearly with connections. AnyCable runs on your infrastructure (or use Managed AnyCable), offers flat pricing ($1,490/year for unlimited connections with Pro), and provides native SDKs for Rails and Laravel rather than generic client libraries."
+              "text": "Pusher and Ably are managed services that route your data through third-party servers — a problem for HIPAA and SOC2 compliance. Their pricing grows linearly with connections. AnyCable runs on your infrastructure (or use Managed AnyCable), prices Pro by server instance with unlimited connections (from $1,490/year), and provides native SDKs for Rails and Laravel rather than generic client libraries."
             }
           }
         ]
@@ -176,7 +192,7 @@
     
     <script type="module" crossorigin src="/assets/popups-show-hide-56e47a6f.js"></script>
     <script type="module" crossorigin src="/assets/github-button-7d8948fb.js"></script>
-    <link rel="stylesheet" href="/assets/index-3d47ef30.css">
+    <link rel="stylesheet" href="/assets/index-90ee53fa.css">
   </head>
   <body>
     <div class="page">
@@ -955,17 +971,17 @@ app.publish(<span class='c-str'>'chat:42'</span>, <span class='c-str'>JSON</span
 
                 <details class='compare-faq__item'>
                   <summary>Is AnyCable open source?</summary>
-                  <div class='compare-faq__answer'>Yes, MIT-licensed since 2017. <a class='link' href='https://github.com/anycable/anycable' target='_blank'>anycable/anycable</a> on GitHub. A commercial Pro tier adds broker features (long-term history, embedded NATS) and priority support, free for small deployments.</div>
+                  <div class='compare-faq__answer'>Yes, MIT-licensed since 2017. <a class='link' href='https://github.com/anycable/anycable' target='_blank'>anycable/anycable</a> on GitHub. A commercial Pro tier adds broker features (long-term history, embedded NATS) and priority support.</div>
                 </details>
 
                 <details class='compare-faq__item'>
                   <summary>Is there a managed (hosted) AnyCable?</summary>
-                  <div class='compare-faq__answer'>Yes. <a class='link' href='https://plus.anycable.io/' target='_blank'>AnyCable+</a> is the managed tier: zero ops, free for early users, paid plans for scale. Same protocol and feature surface as self-hosted, so you can switch in either direction without changing app code.</div>
+                  <div class='compare-faq__answer'>Yes. <a class='link' href='https://plus.anycable.io/' target='_blank'>AnyCable+</a> is the managed tier: zero ops, free for 1 instance (about 2,000 connections), paid plans for scale. Same protocol and feature surface as self-hosted, so you can switch in either direction without changing app code.</div>
                 </details>
 
                 <details class='compare-faq__item'>
                   <summary>How does the cost compare to Pusher or Ably?</summary>
-                  <div class='compare-faq__answer'>Pusher and Ably charge per concurrent connection, so costs scale linearly with your user base. AnyCable Pro (self-hosted, unlimited connections and instances) is a flat-rate annual license at $1,490/yr with a 2-month free trial. <a class='link' href='https://plus.anycable.io/' target='_blank'>AnyCable+ Managed</a> is free for early users. At 10K+ concurrent connections, the flat-rate or self-hosted options typically save thousands per month versus per-connection pricing.</div>
+                  <div class='compare-faq__answer'>Pusher and Ably charge per concurrent connection, so costs scale linearly with your user base. AnyCable Pro (self-hosted, unlimited connections) is priced by server instance, from $1,490/yr for up to 5 production instances, with a 2-month free trial. <a class='link' href='https://plus.anycable.io/' target='_blank'>AnyCable+ Managed</a> is free for 1 instance (about 2,000 connections). At 10K+ concurrent connections, the flat-rate or self-hosted options typically save thousands per month versus per-connection pricing.</div>
                 </details>
 
                 <details class='compare-faq__item'>
@@ -1261,7 +1277,7 @@ app.publish(<span class='c-str'>'chat:42'</span>, <span class='c-str'>JSON</span
             "name": "Is AnyCable open source?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, MIT-licensed since 2017. anycable/anycable on GitHub. A commercial Pro tier adds broker features (long-term history, embedded NATS) and priority support, free for small deployments."
+              "text": "Yes, MIT-licensed since 2017. anycable/anycable on GitHub. A commercial Pro tier adds broker features (long-term history, embedded NATS) and priority support."
             }
           },
           {
@@ -1269,7 +1285,7 @@ app.publish(<span class='c-str'>'chat:42'</span>, <span class='c-str'>JSON</span
             "name": "Is there a managed (hosted) AnyCable?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. AnyCable+ is the managed tier: zero ops, free for early users, paid plans for scale. Same protocol and feature surface as self-hosted, so you can switch in either direction without changing app code."
+              "text": "Yes. AnyCable+ is the managed tier: zero ops, free for 1 instance (about 2,000 connections), paid plans for scale. Same protocol and feature surface as self-hosted, so you can switch in either direction without changing app code."
             }
           },
           {
@@ -1277,7 +1293,7 @@ app.publish(<span class='c-str'>'chat:42'</span>, <span class='c-str'>JSON</span
             "name": "How does the cost compare to Pusher or Ably?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Pusher and Ably charge per concurrent connection, so costs scale linearly with your user base. AnyCable Pro (self-hosted, unlimited connections and instances) is a flat-rate annual license at $1,490/yr with a 2-month free trial. AnyCable+ Managed is free for early users. At 10K+ concurrent connections, the flat-rate or self-hosted options typically save thousands per month versus per-connection pricing."
+              "text": "Pusher and Ably charge per concurrent connection, so costs scale linearly with your user base. AnyCable Pro (self-hosted, unlimited connections) is priced by server instance, from $1,490/yr for up to 5 production instances, with a 2-month free trial. AnyCable+ Managed is free for 1 instance (about 2,000 connections). At 10K+ concurrent connections, the flat-rate or self-hosted options typically save thousands per month versus per-connection pricing."
             }
           },
           {
